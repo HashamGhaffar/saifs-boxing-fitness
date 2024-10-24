@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import svgs from "../_assets/svgs/Page";
+import svgs from "../_assets/svgs/index";
 import { Button } from "@mui/material";
 import Image from "next/image";
 
