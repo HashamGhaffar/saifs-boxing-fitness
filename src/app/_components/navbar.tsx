@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import svgs from "../_assets/svgs/Page";
@@ -7,14 +7,21 @@ import { Button } from "@mui/material";
 import Image from "next/image";
 
 export default function Navbar() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   const text = {
     fontSize: {
+      xs: "12px",
       sm: "12px",
       md: "14px",
       lg: "18px",
     },
     fontWeight: "300",
     color: "#FFFFFF",
+  };
+
+  const toggleDrawer = (open: boolean) => {
+    setIsDrawerOpen(open);
   };
 
   return (
@@ -40,7 +47,7 @@ export default function Navbar() {
             margin: "auto",
           }}
         >
-          {/* logo  */}
+          {/* Logo */}
           <Box
             sx={{
               maxWidth: { xs: "90px", sm: "100px", md: "120px", lg: "184px" },
@@ -53,48 +60,24 @@ export default function Navbar() {
               alt="image"
             />
           </Box>
-          {/* nav nevigation dexktop */}
+
+          {/* Desktop navigation */}
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
               alignItems: "center",
               color: "#FFFFFF",
-              fontSize: "90px",
               fontWeight: "300",
               gap: { xs: "15px", md: "20px", lg: "40px" },
             }}
           >
-            <Typography
-              sx={{
-                ...text,
-              }}
-            >
-              Home
-            </Typography>
-            <Typography
-              sx={{
-                ...text,
-              }}
-            >
-              Education
-            </Typography>
-            <Typography
-              sx={{
-                ...text,
-              }}
-            >
-              1-2-1 Coaching
-            </Typography>
-            <Typography
-              sx={{
-                ...text,
-              }}
-            >
-              England Boxing
-            </Typography>
+            <Typography sx={{ ...text }}>Home</Typography>
+            <Typography sx={{ ...text }}>Education</Typography>
+            <Typography sx={{ ...text }}>1-2-1 Coaching</Typography>
+            <Typography sx={{ ...text }}>England Boxing</Typography>
           </Box>
 
-          {/* button  */}
+          {/* Contact Button */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <Button
               variant="contained"
@@ -121,12 +104,13 @@ export default function Navbar() {
             </Button>
           </Box>
 
-          {/* hamburger*/}
+          {/* Hamburger for mobile */}
           <Box
             sx={{
               width: { xs: "25px", sm: "35px" },
               display: { xs: "block", md: "none" },
             }}
+            onClick={() => toggleDrawer(true)}
           >
             <Image
               style={{ height: "100%", width: "100%" }}
@@ -136,6 +120,87 @@ export default function Navbar() {
           </Box>
         </Box>
       </Box>
+
+      {/* Custom Drawer Navigation */}
+      <Box
+        sx={{
+          position: "fixed",
+          top: 0,
+          right: 0,
+          height: "100%",
+          width: isDrawerOpen ? { xs: "200px", sm: "300px" } : "0",
+          backgroundColor: "#0D0D0D",
+          color: "white",
+          overflowX: "hidden",
+          transition: "0.3s",
+          paddingTop: "60px",
+          zIndex: "10",
+        }}
+      >
+        <Box sx={{ padding: "20px" }}>
+          <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
+            Home
+          </Typography>
+          <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
+            Education
+          </Typography>
+          <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
+            1-2-1 Coaching
+          </Typography>
+          <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
+            England Boxing
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              paddingBlockEndt: 2,
+            }}
+          >
+            <Button
+              variant="contained"
+              sx={{
+                ...text,
+                fontWeight: "400",
+                color: "#0D0D0D",
+                backgroundColor: "#FFFFFF",
+                borderRadius: "0px",
+                padding: {
+                  xs: "6px 10px",
+                  sm: "8px 15px",
+                  // md: "12px 20px",
+                  // lg: "15px 25px",
+                },
+                "&:hover": {
+                  backgroundColor: "#f0f0f0",
+                },
+                "&:active": {
+                  backgroundColor: "#e0e0e0",
+                },
+              }}
+            >
+              Get In Touch
+            </Button>
+          </Box>
+        </Box>
+      </Box>
+
+      {/* Backdrop (grey/blurred) */}
+      {isDrawerOpen && (
+        <Box
+          onClick={() => toggleDrawer(false)}
+          sx={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100vw",
+            height: "100vh",
+            backgroundColor: "rgba(0, 0, 0, 0.5)", // semi-transparent grey
+            zIndex: 1,
+            backdropFilter: "blur(10px)",
+          }}
+        />
+      )}
     </>
   );
 }
