@@ -110,7 +110,13 @@ export default function Facilities() {
                     alt="facility2"
                   />
                 </Box>
-                <Box sx={{ display: { xs: "none", sm: "block", md: "none" } }}>
+                <Box
+                  sx={{
+                    display: { xs: "none", sm: "block", md: "none" },
+                    width: "100%",
+                    height: "100%",
+                  }}
+                >
                   <Image
                     style={{
                       width: "100%",
@@ -194,7 +200,13 @@ export default function Facilities() {
                     alt="facility7"
                   />
                 </Box>
-                <Box sx={{ display: { xs: "none", sm: "block", md: "none" } }}>
+                <Box
+                  sx={{
+                    display: { xs: "none", sm: "block", md: "none" },
+                    width: "100%",
+                    height: "100%",
+                  }}
+                >
                   <Image
                     style={{
                       width: "100%",
@@ -226,7 +238,13 @@ export default function Facilities() {
                     alt="facility8"
                   />
                 </Box>
-                <Box sx={{ display: { xs: "none", sm: "block", md: "none" } }}>
+                <Box
+                  sx={{
+                    display: { xs: "none", sm: "block", md: "none" },
+                    width: "100%",
+                    height: "100%",
+                  }}
+                >
                   <Image
                     style={{
                       width: "100%",
