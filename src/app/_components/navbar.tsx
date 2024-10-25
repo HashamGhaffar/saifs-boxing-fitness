@@ -107,7 +107,7 @@ export default function Navbar() {
           {/* Hamburger for mobile */}
           <Box
             sx={{
-              width: { xs: "25px", sm: "35px" },
+              width: { xs: "30px", sm: "35px" },
               display: { xs: "block", md: "none" },
             }}
             onClick={() => toggleDrawer(true)}

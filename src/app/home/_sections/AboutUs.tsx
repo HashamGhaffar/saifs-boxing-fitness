@@ -26,6 +26,7 @@ export default function AboutUs() {
           backgroundSize: "cover",
           backgroundRepeat: "repeat",
           backgroundPosition: "center",
+          alignItems: "flex-end",
         }}
       >
         <Box
@@ -93,6 +94,7 @@ export default function AboutUs() {
                 height: "100%",
                 objectFit: "contain",
                 filter: "drop-shadow(10px 4px 8px rgba(13, 13, 13))",
+                margin: "0 0 -3px 0",
               }}
               src={webp.BoxerAboutUS}
               alt="BoxerAboutUS"
