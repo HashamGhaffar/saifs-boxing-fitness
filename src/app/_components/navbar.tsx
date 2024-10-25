@@ -36,6 +36,21 @@ export default function Navbar() {
             lg: "20px 100px",
           },
           backgroundColor: "#0D0D0D80",
+          animation: "slideInFromTop 2s ease",
+          "@keyframes slideInFromTop": {
+            "0%": {
+              transform: "translateY(-100%)",
+              opacity: 0,
+            },
+            "40%": {
+              transform: "translateY(-100%)",
+              opacity: 0,
+            },
+            "100%": {
+              transform: "translateY(0%)",
+              opacity: 1,
+            },
+          },
         }}
       >
         <Box
@@ -149,7 +164,7 @@ export default function Navbar() {
                   lg: "15px 25px",
                 },
                 transition:
-                  "background-color 0.8s ease-in, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out",
+                  "background-color 0.8s ease-in-out, color 0.4s ease-in, box-shadow 0.4s ease-in-out",
                 "&:hover": {
                   backgroundColor: "#0D0D0D",
                   color: "#FFFFFF",
