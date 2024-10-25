@@ -17,8 +17,8 @@ export default function AboutUs() {
           display: "flex",
           justifyContent: "center",
           padding: {
-            xs: "50px 20px 50px 20px",
-            sm: "70px 50px 70 50px",
+            xs: "50px 20px 0 20px",
+            sm: "70px 50px 0 50px",
             md: "10px 0px 0 50px",
             lg: "20px 0px 0 100px",
           },
@@ -50,10 +50,10 @@ export default function AboutUs() {
             <Typography
               sx={{
                 fontSize: {
-                  xs: "22px",
-                  sm: "28px",
-                  md: "36px",
-                  lg: "47px",
+                  xs: "24px",
+                  sm: "30px",
+                  md: "40px",
+                  lg: "48px",
                   xl: "64px",
                 },
                 fontWeight: "400",

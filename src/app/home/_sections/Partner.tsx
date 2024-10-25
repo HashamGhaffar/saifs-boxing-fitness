@@ -78,10 +78,10 @@ export default function Partners() {
         <Typography
           sx={{
             fontSize: {
-              xs: "22px",
-              sm: "28px",
-              md: "36px",
-              lg: "47px",
+              xs: "24px",
+              sm: "30px",
+              md: "40px",
+              lg: "48px",
               xl: "64px",
             },
             fontWeight: "400",
