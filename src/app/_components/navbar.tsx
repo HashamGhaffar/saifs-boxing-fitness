@@ -71,10 +71,66 @@ export default function Navbar() {
               gap: { xs: "15px", md: "20px", lg: "40px" },
             }}
           >
-            <Typography sx={{ ...text }}>Home</Typography>
-            <Typography sx={{ ...text }}>Education</Typography>
-            <Typography sx={{ ...text }}>1-2-1 Coaching</Typography>
-            <Typography sx={{ ...text }}>England Boxing</Typography>
+            <Typography
+              sx={{
+                ...text,
+                cursor: "pointer",
+                transition:
+                  "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
+                "&:hover": {
+                  color: "#F63333",
+                  textShadow: "1px 3px 4px #0D0D0D",
+                  scale: "1.1",
+                },
+              }}
+            >
+              Home
+            </Typography>
+            <Typography
+              sx={{
+                ...text,
+                cursor: "pointer",
+                transition:
+                  "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
+                "&:hover": {
+                  color: "#F63333",
+                  textShadow: "1px 3px 4px #0D0D0D",
+                  scale: "1.1",
+                },
+              }}
+            >
+              Education
+            </Typography>
+            <Typography
+              sx={{
+                ...text,
+                cursor: "pointer",
+                transition:
+                  "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
+                "&:hover": {
+                  color: "#F63333",
+                  textShadow: "1px 3px 4px #0D0D0D",
+                  scale: "1.1",
+                },
+              }}
+            >
+              1-2-1 Coaching
+            </Typography>
+            <Typography
+              sx={{
+                ...text,
+                cursor: "pointer",
+                transition:
+                  "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
+                "&:hover": {
+                  color: "#F63333",
+                  textShadow: "1px 3px 4px #0D0D0D",
+                  scale: "1.1",
+                },
+              }}
+            >
+              England Boxing
+            </Typography>
           </Box>
 
           {/* Contact Button */}
@@ -92,8 +148,12 @@ export default function Navbar() {
                   sm: "10px 15px",
                   lg: "15px 25px",
                 },
+                transition:
+                  "background-color 0.8s ease-in, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out",
                 "&:hover": {
-                  backgroundColor: "#f0f0f0",
+                  backgroundColor: "#0D0D0D",
+                  color: "#FFFFFF",
+                  boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.15)",
                 },
                 "&:active": {
                   backgroundColor: "#e0e0e0",
