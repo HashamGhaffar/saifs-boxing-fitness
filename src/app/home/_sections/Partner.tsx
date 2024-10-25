@@ -72,7 +72,11 @@ export default function Partners() {
       <Box
         sx={{
           backgroundColor: "#ffffff",
-          padding: { xs: "20px", sm: "30px", md: "50px" },
+          // paddingY: { xs: "20px", sm: "30px", md: "50px" },
+          height: "40vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
         }}
       >
         <Typography
