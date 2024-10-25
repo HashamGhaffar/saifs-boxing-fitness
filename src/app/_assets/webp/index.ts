@@ -18,16 +18,19 @@ import F6 from "./facilities/f6.webp";
 import F7 from "./facilities/f7.webp";
 import F8 from "./facilities/f8.webp";
 
+// coatches
+import CoachJames from "./coachJames.webp";
+
 const webp = {
   BoxerAboutUS,
-  // slider 
+  // slider
   Google,
   Amazon,
   Hardees,
   Aon,
   FRider,
   Spotify,
-  // faculity 
+  // faculity
   F1,
   F2,
   F3,
@@ -36,6 +39,8 @@ const webp = {
   F6,
   F7,
   F8,
+  //coatches
+  CoachJames
 };
 
 export default webp;
