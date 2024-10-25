@@ -54,7 +54,7 @@ export default function Facilities() {
           {/* grid images */}
           <Grid container spacing={1.25}>
             <Grid item xs={12} sm={4} md={4}>
-              <Box sx={{ height: "100%", width: "auto" }}>
+              <Box sx={{ height: { sm: "100%" }, width: "auto" }}>
                 <Box
                   sx={{
                     display: { xs: "block", sm: "none", md: "block" },
@@ -92,7 +92,7 @@ export default function Facilities() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={8} md={2}>
-              <Box sx={{ height: "100%", width: "auto" }}>
+              <Box sx={{ height: { sm: "100%" }, width: "auto" }}>
                 <Box
                   sx={{
                     display: { xs: "block", sm: "none", md: "block" },
@@ -124,7 +124,7 @@ export default function Facilities() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={8} md={4}>
-              <Box sx={{ height: "100%", width: "auto" }}>
+              <Box sx={{ height: { sm: "100%" }, width: "auto" }}>
                 <Image
                   style={{
                     width: "100%",
@@ -137,7 +137,7 @@ export default function Facilities() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={4} md={2}>
-              <Box sx={{ height: "100%", width: "auto" }}>
+              <Box sx={{ height: { sm: "100%" }, width: "auto" }}>
                 <Image
                   style={{
                     width: "100%",
@@ -150,7 +150,7 @@ export default function Facilities() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={4} md={2}>
-              <Box sx={{ height: "100%", width: "auto" }}>
+              <Box sx={{ height: { sm: "100%" }, width: "auto" }}>
                 <Image
                   style={{
                     width: "100%",
@@ -163,7 +163,7 @@ export default function Facilities() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={8} md={4}>
-              <Box sx={{ height: "100%", width: "auto" }}>
+              <Box sx={{ height: { sm: "100%" }, width: "auto" }}>
                 <Image
                   style={{
                     width: "100%",
@@ -176,7 +176,7 @@ export default function Facilities() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={8} md={2}>
-              <Box sx={{ height: "100%", width: "auto" }}>
+              <Box sx={{ height: { sm: "100%" }, width: "auto" }}>
                 <Box
                   sx={{
                     display: { xs: "block", sm: "none", md: "block" },
@@ -208,7 +208,7 @@ export default function Facilities() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={4} md={4}>
-              <Box sx={{ height: "100%", width: "auto" }}>
+              <Box sx={{ height: { sm: "100%" }, width: "auto" }}>
                 <Box
                   sx={{
                     display: { xs: "block", sm: "none", md: "block" },
