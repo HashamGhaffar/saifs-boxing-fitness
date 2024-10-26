@@ -86,7 +86,7 @@ export default function Location() {
                   sm: "400px",
                   //   md: "300px",
                   lg: "400px",
-                    xl: "450px",
+                  xl: "450px",
                 },
               }}
             >
