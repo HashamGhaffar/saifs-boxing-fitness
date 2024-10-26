@@ -32,6 +32,11 @@ import Fila from "./sponsors/fila.webp";
 import FR from "./sponsors/fr.webp";
 import Monster from "./sponsors/monster.webp";
 
+// insta links
+import Boxer1 from "./boxer1.webp";
+import Boxer2 from "./boxer2.webp";
+import Boxer3 from "./boxer3.webp";
+
 const webp = {
   BoxerAboutUS,
   // slider
@@ -63,6 +68,10 @@ const webp = {
   Fila,
   FR,
   Monster,
+  // insta Links
+  Boxer1,
+  Boxer2,
+  Boxer3,
 };
 
 export default webp;
