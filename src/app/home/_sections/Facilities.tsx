@@ -12,12 +12,14 @@ export default function Facilities() {
           backgroundPosition: "center",
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           padding: {
             xs: "40px 20px 40px",
             sm: "60px 50px 60px",
             md: "60px 50px 60px",
             lg: "80px 100px 80px",
           },
+          minHeight: "100vh",
         }}
       >
         <Box

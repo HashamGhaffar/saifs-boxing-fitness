@@ -1,3 +1,4 @@
+"use client";
 import Hero from "./_sections/Hero";
 import AboutUs from "./_sections/AboutUs";
 import Partners from "./_sections/Partner";

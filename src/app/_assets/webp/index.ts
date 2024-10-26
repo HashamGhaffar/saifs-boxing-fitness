@@ -21,6 +21,10 @@ import F8 from "./facilities/f8.webp";
 // coatches
 import CoachJames from "./coachJames.webp";
 
+// coach nevigation
+import NavJames from "./navJames.webp";
+import NavDaniel from "./navDaniel.webp";
+
 const webp = {
   BoxerAboutUS,
   // slider
@@ -40,7 +44,11 @@ const webp = {
   F7,
   F8,
   //coatches
-  CoachJames
+  CoachJames,
+
+  // coach nevigation
+  NavJames,
+  NavDaniel,
 };
 
 export default webp;
