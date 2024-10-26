@@ -25,13 +25,20 @@ import CoachJames from "./coachJames.webp";
 import NavJames from "./navJames.webp";
 import NavDaniel from "./navDaniel.webp";
 
+//  sponsors
+import Adidas from "./sponsors/adidas.webp";
+import Aons from "./sponsors/aon.webp";
+import Fila from "./sponsors/fila.webp";
+import FR from "./sponsors/fr.webp";
+import Monster from "./sponsors/monster.webp";
+
 const webp = {
   BoxerAboutUS,
   // slider
   Google,
   Amazon,
   Hardees,
-  Aon,
+  Aons,
   FRider,
   Spotify,
   // faculity
@@ -49,6 +56,13 @@ const webp = {
   // coach nevigation
   NavJames,
   NavDaniel,
+
+  // sponsors
+  Adidas,
+  Aon,
+  Fila,
+  FR,
+  Monster,
 };
 
 export default webp;
