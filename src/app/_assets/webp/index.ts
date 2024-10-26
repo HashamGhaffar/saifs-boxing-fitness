@@ -37,6 +37,9 @@ import Boxer1 from "./boxer1.webp";
 import Boxer2 from "./boxer2.webp";
 import Boxer3 from "./boxer3.webp";
 
+// footer
+import FooterLogo from "./footerLogo.webp";
+
 const webp = {
   BoxerAboutUS,
   // slider
@@ -72,6 +75,9 @@ const webp = {
   Boxer1,
   Boxer2,
   Boxer3,
+
+  // footer
+  FooterLogo,
 };
 
 export default webp;

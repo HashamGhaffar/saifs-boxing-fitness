@@ -75,7 +75,7 @@ export default function Sponsors() {
                 xl: "80px",
               },
               display: "flex",
-              justifyContent: "center",
+              justifyContent: { xs: "flex-start", sm: "center" },
             }}
           >
             <Box

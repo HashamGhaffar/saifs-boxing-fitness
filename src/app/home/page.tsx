@@ -7,6 +7,7 @@ import Coatches from "./_sections/Coatches";
 import Location from "./_sections/Location";
 import Sponsors from "./_sections/Sponsors";
 import InstagramFollow from "./_sections/InstagramFollow";
+import Footer from "../_components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Location />
       <Sponsors />
       <InstagramFollow />
+      <Footer />
     </>
   );
 }
