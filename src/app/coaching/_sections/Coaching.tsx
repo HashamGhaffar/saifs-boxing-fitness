@@ -1,33 +1,69 @@
 "use client";
 import { Box, Grid, Typography } from "@mui/material";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import webp from "@/app/_assets/webp";
 import svgs from "@/app/_assets/svgs";
 
+// Define prop types for CoachingCard
+interface CoachingCardProps {
+  introImage: StaticImageData;
+  clockImage: StaticImageData;
+  timerImage: StaticImageData;
+  timerText: string;
+  headingText: string;
+  descriptionText: string;
+}
+
 export default function CoachingCardBox() {
   return (
-    <>
-      <Box
-        sx={{
-          padding: {
-            xs: "40px 20px 40px",
-            sm: "60px 50px 60px",
-            md: "60px 50px 60px",
-            lg: "80px 100px 80px",
-          },
-          minHeight: "100vh",
-          backgroundColor: "#2a2a2a",
-        }}
-      >
-        <CoachingCard />
-      </Box>
-    </>
+    <Box
+      sx={{
+        padding: {
+          xs: "40px 20px 0 20px",
+          sm: "60px 50px 0 50px",
+          md: "60px 50px 0 50px",
+          lg: "80px 100px 0 100px",
+        },
+        minHeight: "100vh",
+        backgroundColor: "#2a2a2a",
+      }}
+    >
+      <CoachingCard
+        introImage={webp.Intro}
+        clockImage={svgs.Clock}
+        timerImage={svgs.Timer}
+        timerText="5 min. per round"
+        headingText="5 Min. Before Class"
+        descriptionText={`New here? Don’t worry, we’ve got you covered. In the 5 minutes
+          before class starts, we’ll walk you through the six fundamental
+          punches and explain the class format, so you'll be ready to jump
+          right in with confidence.`}
+      />
+    </Box>
   );
 }
 
-export function CoachingCard() {
+export function CoachingCard({
+  introImage,
+  clockImage,
+  timerImage,
+  timerText,
+  headingText,
+  descriptionText,
+}: CoachingCardProps) {
   return (
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        paddingBottom: {
+          xs: "40px",
+          sm: "60px",
+          md: "60px",
+          lg: "80px",
+        },
+      }}
+    >
       <Grid
         sx={{ maxWidth: { xs: "1200px", sm: "600px", md: "1200px" } }}
         container
@@ -36,7 +72,7 @@ export function CoachingCard() {
           <Box>
             <Image
               style={{ height: "100%", width: "100%" }}
-              src={webp.Intro}
+              src={introImage}
               alt="Intro"
             />
           </Box>
@@ -70,7 +106,7 @@ export function CoachingCard() {
                   paddingBottom: { xs: "20px", lg: "30px" },
                 }}
               >
-                {/* image  */}
+                {/* Clock Image */}
                 <Box
                   sx={{
                     height: "100%",
@@ -88,11 +124,11 @@ export function CoachingCard() {
                       width: "100%",
                       objectFit: "cover",
                     }}
-                    src={svgs.Clock}
-                    alt="aksjfdalks"
+                    src={clockImage}
+                    alt="Clock"
                   />
                 </Box>
-                {/* timer messg */}
+                {/* Timer Message */}
                 <Box
                   sx={{
                     display: "inline-flex",
@@ -102,7 +138,7 @@ export function CoachingCard() {
                 >
                   <Image
                     style={{ width: "20px", objectFit: "contain" }}
-                    src={svgs.Timer}
+                    src={timerImage}
                     alt="Timer"
                   />
                   <Typography
@@ -112,7 +148,7 @@ export function CoachingCard() {
                       color: "#ffffff",
                     }}
                   >
-                    5 min. per round
+                    {timerText}
                   </Typography>
                 </Box>
               </Box>
@@ -130,7 +166,7 @@ export function CoachingCard() {
                   },
                 }}
               >
-                5 Min. Before Class{" "}
+                {headingText}
               </Typography>
             </Box>
             <Typography
@@ -141,10 +177,7 @@ export function CoachingCard() {
                 paddingTop: { xs: "10px", sm: "15px", md: "0" },
               }}
             >
-              {`New here? Don’t worry, we’ve got you covered. In the 5 minutes
-              before class starts, we’ll walk you through the six fundamental
-              punches and explain the class format, so you'll be ready to jump
-              right in with confidence.`}
+              {descriptionText}
             </Typography>
           </Box>
         </Grid>
