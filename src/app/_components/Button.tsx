@@ -15,6 +15,7 @@ const Button: React.FC<CustomButtonProps> = ({
       variant="contained"
       sx={{
         ...textStyles,
+        width: "100%",
         fontWeight: "400",
         color: "#0D0D0D",
         backgroundColor: "#FFFFFF",
