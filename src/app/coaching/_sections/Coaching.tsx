@@ -8,10 +8,9 @@ import svgs from "@/app/_assets/svgs";
 interface CoachingCardProps {
   introImage: StaticImageData;
   clockImage: StaticImageData;
-  timerImage: StaticImageData;
-  timerText: string;
   headingText: string;
   descriptionText: string;
+  backgroundColor: string;
 }
 
 export default function CoachingCardBox() {
@@ -31,13 +30,33 @@ export default function CoachingCardBox() {
       <CoachingCard
         introImage={webp.Intro}
         clockImage={svgs.Clock}
-        timerImage={svgs.Timer}
-        timerText="5 min. per round"
         headingText="5 Min. Before Class"
         descriptionText={`New here? Don’t worry, we’ve got you covered. In the 5 minutes
           before class starts, we’ll walk you through the six fundamental
           punches and explain the class format, so you'll be ready to jump
           right in with confidence.`}
+        backgroundColor="#0D0D0D"
+      />
+      <CoachingCard
+        introImage={webp.Drumbbell}
+        clockImage={svgs.Exercise}
+        headingText="Warm Up"
+        descriptionText={`Get ready because things are about to heat up. Before hitting the bags, we’ll kick things off with a high-energy, cardio-packed warm-up to get your blood pumping.`}
+        backgroundColor="none"
+      />
+      <CoachingCard
+        introImage={webp.Punching}
+        clockImage={svgs.Gloves}
+        headingText="3 Rounds - punching"
+        descriptionText={`Glove up — it’s time to go all in.Three rounds on the heavy bags:You’ll master the 6 essential punches, throwing combos that keep it simple but still leave you feeling like a champ.In between rounds, you’ll get active recovery to catch your breath and gear up for the next punch-packed set.`}
+        backgroundColor="#0D0D0D"
+      />
+      <CoachingCard
+        introImage={webp.WarmUp}
+        clockImage={svgs.Drumbbells}
+        headingText="3 Rounds - dumbbell"
+        descriptionText={`Switch it up — you’ll drop down for strength and conditioning, incorporating dumbbells and bodyweight exercises to keep your heart rate elevated. Between each set on the floor, you’ll take a brief active recovery before jumping back in for more.`}
+        backgroundColor="none"
       />
     </Box>
   );
@@ -46,10 +65,9 @@ export default function CoachingCardBox() {
 export function CoachingCard({
   introImage,
   clockImage,
-  timerImage,
-  timerText,
   headingText,
   descriptionText,
+  backgroundColor,
 }: CoachingCardProps) {
   return (
     <Box
@@ -81,7 +99,7 @@ export function CoachingCard({
         <Grid
           sx={{
             padding: { xs: "20px", md: "30px", xl: "45px" },
-            backgroundColor: "#0D0D0D",
+            backgroundColor: backgroundColor,
           }}
           item
           xs={12}
@@ -138,7 +156,7 @@ export function CoachingCard({
                 >
                   <Image
                     style={{ width: "20px", objectFit: "contain" }}
-                    src={timerImage}
+                    src={svgs.Timer}
                     alt="Timer"
                   />
                   <Typography
@@ -148,7 +166,7 @@ export function CoachingCard({
                       color: "#ffffff",
                     }}
                   >
-                    {timerText}
+                    5 min. per round
                   </Typography>
                 </Box>
               </Box>
