@@ -202,7 +202,7 @@ export function CoachingCard({
                   sm: "14px",
                   md: "12px",
                   lg: "14px",
-                  lg: "18px",
+                  xl: "18px",
                 },
                 paddingTop: { xs: "10px", sm: "15px", md: "0" },
               }}
