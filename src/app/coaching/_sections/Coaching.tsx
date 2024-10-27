@@ -186,7 +186,7 @@ export function CoachingCard({
                     sm: "30px",
                     md: "40px",
                     lg: "48px",
-                    xl: "64px",
+                    xl: "60px",
                   },
                 }}
               >
@@ -197,7 +197,13 @@ export function CoachingCard({
               sx={{
                 fontWeight: "400",
                 color: "#ffffff",
-                fontSize: { xs: "12px", sm: "14px", lg: "18px", xl: "20px" },
+                fontSize: {
+                  xs: "12px",
+                  sm: "14px",
+                  md: "12px",
+                  lg: "14px",
+                  lg: "18px",
+                },
                 paddingTop: { xs: "10px", sm: "15px", md: "0" },
               }}
             >
