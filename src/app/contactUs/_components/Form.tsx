@@ -68,19 +68,21 @@ export default function ContactUsForm() {
               display: "flex",
               width: "100%",
               gap: { xs: "20px", md: "30px", lg: "40px" },
+              flexDirection: { xs: "column-reverse", md: "row" },
+              paddingTop: { xs: "15px", sm: "30px", lg: "50px" },
             }}
           >
             <Box
               sx={{
                 backgroundColor: "#0D0D0DB2",
-                padding: "40px 20px",
+                padding: { xs: "20px", sm: "20px 30px", md: "40px 20px" },
                 height: "auto",
-                minWidth: "550px",
+                minWidth: { xl: "550px" },
                 width: "100%",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
-                // minHeight: "450px",
+                minHeight: { xs: "300px", sm: "400px", md: "auto" },
                 border: {
                   sx: "1px solid #ffffff",
                   md: "2px solid #ffffff",
@@ -108,9 +110,9 @@ export default function ContactUsForm() {
             <Box
               sx={{
                 backgroundColor: "#0D0D0DB2",
-                padding: "20px 30px",
+                padding: { xs: "20px", sm: "20px 30px" },
                 height: "100%",
-                minWidth: "550px",
+                minWidth: { md: "500px" },
                 width: "100%",
                 display: "flex",
                 flexDirection: "column",
@@ -119,11 +121,23 @@ export default function ContactUsForm() {
                 gap: "20px",
               }}
             >
-              <Box sx={{ display: "flex", gap: "20px" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  gap: "20px",
+                  flexDirection: { xs: "column", md: "row" },
+                }}
+              >
                 <CustomTextField type="text" label="Name" />
                 <CustomTextField type="email" label="Email" />
               </Box>
-              <Box sx={{ display: "flex", gap: "20px" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  gap: "20px",
+                  flexDirection: { xs: "column", md: "row" },
+                }}
+              >
                 <CustomTextField type="number" label="Phone" />
                 <CustomTextField type="text" label="subject" />
               </Box>
@@ -170,7 +184,17 @@ export default function ContactUsForm() {
                 />
               </Box>
               <Box sx={{ width: "200px" }}>
-                <Button>Submit</Button>
+                <Button
+                  textStyles={{
+                    fontSize: {
+                      xs: "14px",
+                      sm: "16px",
+                      lg: "18px",
+                    },
+                  }}
+                >
+                  Submit
+                </Button>
               </Box>
             </Box>
           </Box>

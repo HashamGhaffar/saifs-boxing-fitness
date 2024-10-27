@@ -29,7 +29,7 @@ const Button: React.FC<CustomButtonProps> = ({
           "background-color 0.8s ease-in-out, color 0.4s ease-in, box-shadow 0.4s ease-in-out",
         textWrap: "nowrap",
         "&:hover": {
-          backgroundColor: "#0D0D0D",
+          backgroundColor: "#F63333",
           color: "#FFFFFF",
           boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.15)",
         },
