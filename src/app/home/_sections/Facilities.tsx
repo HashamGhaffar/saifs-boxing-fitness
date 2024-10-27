@@ -12,7 +12,7 @@ export default function Facilities() {
           backgroundPosition: "center",
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
+          alignItems: "right",
           padding: {
             xs: "40px 20px 40px",
             sm: "60px 50px 60px",

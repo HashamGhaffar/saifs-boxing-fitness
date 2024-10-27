@@ -182,12 +182,17 @@ export default function Navbar() {
           backgroundColor: "#0D0D0D",
           color: "white",
           overflowX: "hidden",
-          transition: "0.3s",
-          paddingTop: "60px",
+          transition: "all .5s ease",
           zIndex: "10",
         }}
       >
         <Box sx={{ padding: "20px" }}>
+          <Image
+            onClick={() => toggleDrawer(false)}
+            style={{ width: "30px", height: "auto", paddingBottom: "30px" }}
+            src={svgs.Cross}
+            alt="Cross"
+          />
           <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
             Home
           </Typography>
@@ -215,6 +220,7 @@ export default function Navbar() {
                 color: "#0D0D0D",
                 backgroundColor: "#FFFFFF",
                 borderRadius: "0px",
+                textWrap: "nowrap",
                 padding: {
                   xs: "6px 10px",
                   sm: "8px 15px",
@@ -245,7 +251,7 @@ export default function Navbar() {
             left: 0,
             width: "100vw",
             height: "100vh",
-            backgroundColor: "rgba(0, 0, 0, 0.5)", // semi-transparent grey
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
             zIndex: 1,
             backdropFilter: "blur(10px)",
           }}

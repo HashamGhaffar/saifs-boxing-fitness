@@ -26,6 +26,7 @@ const Button: React.FC<CustomButtonProps> = ({
         },
         transition:
           "background-color 0.8s ease-in-out, color 0.4s ease-in, box-shadow 0.4s ease-in-out",
+        textWrap: "nowrap",
         "&:hover": {
           backgroundColor: "#0D0D0D",
           color: "#FFFFFF",

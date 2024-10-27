@@ -65,7 +65,6 @@ export default function Footer() {
                 alignItems: "flex-start",
               }}
             >
-              <Typography sx={{ ...textStyle }}>Home</Typography>
               <Typography sx={{ ...textStyle }}>Facebook</Typography>
               <Typography sx={{ ...textStyle }}>Instagram</Typography>
               <Typography sx={{ ...textStyle }}>Twitter</Typography>
