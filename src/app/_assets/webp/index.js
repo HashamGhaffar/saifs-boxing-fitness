@@ -38,6 +38,12 @@ import Intro from "./education/intro.webp";
 import Signature from "./education/signature.webp";
 import Class from "./education/class.webp";
 
+// coaching
+// import Intro from "./education/intro.webp";
+import Drumbbell from "./coaching/drumbbell.webp";
+import Punching from "./coaching/punching.webp";
+import WarmUp from "./coaching/warmUp.webp";
+
 const webp = {
   BoxerAboutUS,
   // slider
@@ -81,6 +87,10 @@ const webp = {
   Intro,
   Signature,
   Class,
+  // coaching
+  Drumbbell,
+  Punching,
+  WarmUp,
 };
 
 export default webp;
