@@ -63,7 +63,9 @@ export default function Sponsors() {
             >
               our sponsors
             </Typography>
-            <Button textStyles={{ fontSize: "1rem" }}>Join Us</Button>
+            <Box>
+              <Button textStyles={{ fontSize: "1rem" }}>Join Us</Button>
+            </Box>
           </Box>
 
           <Box
