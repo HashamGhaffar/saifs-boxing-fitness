@@ -17,7 +17,7 @@ import F7 from "./facilities/f7.webp";
 import F8 from "./facilities/f8.webp";
 // coatches
 import CoachJames from "./coachJames.webp";
-// coach nevigation
+// coach navigations
 import NavJames from "./navJames.webp";
 import NavDaniel from "./navDaniel.webp";
 //  sponsors
