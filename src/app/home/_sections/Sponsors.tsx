@@ -1,9 +1,13 @@
-import { Box, Typography } from "@mui/material";
-import Button from "../../_components/Button";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
+import { Box, Typography } from "@mui/material";
+
+import Button from "../../_components/Button";
 import webp from "@/app/_assets/webp";
 
 export default function Sponsors() {
+  const router = useRouter();
   const imageData = [
     { src: webp.Monster, alt: "Monster energy drink logo" },
     { src: webp.Fila, alt: "Fila sportswear logo" },
@@ -64,7 +68,12 @@ export default function Sponsors() {
               our sponsors
             </Typography>
             <Box>
-              <Button textStyles={{ fontSize: "1rem" }}>Join Us</Button>
+              <Button
+                onClick={() => router.push("contact-us")}
+                textStyles={{ fontSize: "1rem" }}
+              >
+                Join Us
+              </Button>
             </Box>
           </Box>
 
