@@ -25,7 +25,6 @@ export default function EnglandBoxingCardBox() {
       <EnglandBoxingCard />
       <EnglandBoxingCard />
       <EnglandBoxingCard />
-      <EnglandBoxingCard />
 
       <Pagination
         count={5}

@@ -44,6 +44,8 @@ import Drumbbell from "./coaching/drumbbell.webp";
 import Punching from "./coaching/punching.webp";
 import WarmUp from "./coaching/warmUp.webp";
 
+import FuryVsSteel from "./furyVsSteel.webp";
+
 const webp = {
   BoxerAboutUS,
   // slider
@@ -91,6 +93,8 @@ const webp = {
   Drumbbell,
   Punching,
   WarmUp,
+
+  FuryVsSteel,
 };
 
 export default webp;

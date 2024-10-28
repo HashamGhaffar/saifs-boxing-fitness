@@ -1,5 +1,4 @@
 import { Box, Grid, Typography } from "@mui/material";
-// import webp form "../../"
 import Image from "next/image";
 import webp from "@/app/_assets/webp";
 
