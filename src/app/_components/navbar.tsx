@@ -68,10 +68,15 @@ export default function Navbar() {
             sx={{
               maxWidth: { xs: "90px", sm: "100px", md: "120px", lg: "184px" },
               width: "100%",
+              cursor: "pointer",
             }}
           >
             <Image
-              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "contain",
+              }}
               src={svgs.Logo}
               alt="image"
             />

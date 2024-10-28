@@ -76,15 +76,13 @@ export default function Location() {
               sx={{
                 width: {
                   xs: "100%",
-                  //   sm: "400px",
                   md: "500px",
-                  //   lg: "500px",
-                  xl: "600px",
+                  lg: "600px",
+                  xl: "700px",
                 },
                 height: {
                   xs: "300px",
                   sm: "400px",
-                  //   md: "300px",
                   lg: "400px",
                   xl: "450px",
                 },
@@ -141,7 +139,7 @@ export default function Location() {
                     ...heading,
                   }}
                 >
-                  location
+                  Phone
                 </Typography>
                 <Typography
                   sx={{
@@ -151,7 +149,7 @@ export default function Location() {
                     paddingTop: "15px",
                   }}
                 >
-                  1-5 Canklow Rd, Rotherham S60 2JB, United Kingdom
+                  +447860606986
                 </Typography>
               </Box>
               <Box
@@ -167,7 +165,7 @@ export default function Location() {
                     ...heading,
                   }}
                 >
-                  location
+                  email
                 </Typography>
                 <Typography
                   sx={{
@@ -177,7 +175,7 @@ export default function Location() {
                     paddingTop: "15px",
                   }}
                 >
-                  1-5 Canklow Rd, Rotherham S60 2JB, United Kingdom
+                  info@saifsboxing.com
                 </Typography>
               </Box>
             </Box>
