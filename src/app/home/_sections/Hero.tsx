@@ -1,5 +1,5 @@
+import Navbar from "@/app/_components/navbar";
 import { Box, Typography } from "@mui/material";
-import Navbar from "../../_components/Navbar";
 
 export default function Hero() {
   return (
