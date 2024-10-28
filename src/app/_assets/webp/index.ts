@@ -11,7 +11,7 @@ import F1 from "./facilities/f1.webp";
 import F2 from "./facilities/f2.webp";
 import F3 from "./facilities/f3.webp";
 import F4 from "./facilities/f4.webp";
-import F5 from "./facilities/F5.webp";
+import F5 from "./facilities/f5.webp";
 import F6 from "./facilities/f6.webp";
 import F7 from "./facilities/f7.webp";
 import F8 from "./facilities/f8.webp";
