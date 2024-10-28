@@ -1,13 +1,17 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
+
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import svgs from "../_assets/svgs/index";
-import Image from "next/image";
 
 import Button from "./Button";
 
+import svgs from "../_assets/svgs/index";
+
 export default function Navbar() {
+  const router = useRouter();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const text = {
@@ -93,6 +97,7 @@ export default function Navbar() {
             }}
           >
             <Typography
+              onClick={() => router.push("/")}
               sx={{
                 ...text,
                 cursor: "pointer",
@@ -156,7 +161,12 @@ export default function Navbar() {
 
           {/* Contact Button */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <Button textStyles={{ fontSize: "1rem" }}>Get In Touch</Button>
+            <Button
+              onClick={() => router.push("contact-us")}
+              textStyles={{ fontSize: "1rem" }}
+            >
+              Get In Touch
+            </Button>
           </Box>
 
           {/* Hamburger for mobile */}
@@ -198,7 +208,10 @@ export default function Navbar() {
             src={svgs.Cross}
             alt="Cross"
           />
-          <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
+          <Typography
+            onClick={() => router.push("/")}
+            sx={{ ...text, mb: 2, textAlign: "right" }}
+          >
             Home
           </Typography>
           <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
@@ -239,6 +252,7 @@ export default function Navbar() {
                   backgroundColor: "#e0e0e0",
                 },
               }}
+              onClick={() => router.push("contact-us")}
             >
               Get In Touch
             </Button>
