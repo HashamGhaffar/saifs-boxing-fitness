@@ -128,8 +128,8 @@ export default function ContactUsForm() {
                   flexDirection: { xs: "column", md: "row" },
                 }}
               >
-                <CustomTextField type="text" label="Name" />
-                <CustomTextField type="email" label="Email" />
+                <CustomTextField type="text" placeholder="Name" />
+                <CustomTextField type="email" placeholder="Email" />
               </Box>
               <Box
                 sx={{
@@ -138,13 +138,13 @@ export default function ContactUsForm() {
                   flexDirection: { xs: "column", md: "row" },
                 }}
               >
-                <CustomTextField type="number" label="Phone" />
-                <CustomTextField type="text" label="subject" />
+                <CustomTextField type="number" placeholder="Phone" />
+                <CustomTextField type="text" placeholder="subject" />
               </Box>
               <Box sx={{ width: "100%" }}>
                 <TextField
                   type="text"
-                  label="Message"
+                  placeholder="Message"
                   variant="outlined"
                   multiline
                   rows={6}

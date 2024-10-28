@@ -3,21 +3,33 @@ import TextField from "@mui/material/TextField";
 
 interface CustomTextFieldProps {
   type?: string;
-  label?: string;
+  placeholder?: string;
+  // placeholder?: string;
+  multiline?: boolean;
+  value?: string;
+  defaultValue?: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export default function CustomTextField({
   type = "text",
-  label = "Outlined",
+  placeholder = "Outlined",
+  multiline = false,
+  value,
+  defaultValue,
+  onChange,
   ...props
 }: CustomTextFieldProps) {
   return (
     <TextField
-      type={type}
-      label={label}
+      type={type === "message" ? "text" : type}
+      placeholder={placeholder}
       variant="outlined"
-      multiline={type === "message"}
-      rows={type === "message" ? 4 : 1}
+      multiline={multiline || type === "message"}
+      rows={type === "message" || multiline ? 4 : 1}
+      value={value} // Controls the input
+      defaultValue={defaultValue} // Provides an initial value if needed
+      onChange={onChange} // Allows for external state control
       sx={{
         width: "100%",
         "& .MuiOutlinedInput-root": {
