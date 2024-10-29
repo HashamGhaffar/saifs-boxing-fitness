@@ -11,7 +11,8 @@ export default function Footer() {
     fontSize: "12px",
     color: "#FFFFFF",
     cursor: "pointer",
-    transition: "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
+    transition:
+      "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
   };
   return (
     <>
@@ -110,7 +111,7 @@ export default function Footer() {
             sx={{
               height: "auto",
               width: "140px",
-             cursor: "pointer",
+              cursor: "pointer",
             }}
           >
             <Image
