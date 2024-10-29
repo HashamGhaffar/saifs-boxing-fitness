@@ -31,7 +31,7 @@ const Button: React.FC<CustomButtonProps> = ({
         "&:hover": {
           backgroundColor: "#F63333",
           color: "#FFFFFF",
-          boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.15)",
+          boxShadow: "0px 0px 8px #F63333",
         },
         "&:active": {
           backgroundColor: "#e0e0e0",
