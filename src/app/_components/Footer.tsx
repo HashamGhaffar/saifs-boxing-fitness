@@ -1,12 +1,17 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import webp from "../_assets/webp";
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
+  const router = useRouter();
+
   const textStyle = {
     fontWeight: "300",
     fontSize: "12px",
     color: "#FFFFFF",
+    cursor: "pointer",
+    transition: "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
   };
   return (
     <>
@@ -38,16 +43,74 @@ export default function Footer() {
               alignItems: { xs: "flex-start", sm: "flex-end" },
             }}
           >
-            <Typography sx={{ ...textStyle }}>Home</Typography>
-            <Typography sx={{ ...textStyle }}>Education</Typography>
-            <Typography sx={{ ...textStyle }}>England Boxing</Typography>
-            <Typography sx={{ ...textStyle }}>Coaching</Typography>
-            <Typography sx={{ ...textStyle }}>Contact Us</Typography>
+            <Typography
+              sx={{
+                ...textStyle,
+                "&:hover": {
+                  color: "#F63333",
+                  textShadow: "1px 3px 4px #0D0D0D",
+                  scale: "1.1",
+                },
+              }}
+            >
+              Home
+            </Typography>
+            <Typography
+              onClick={() => router.push("education")}
+              sx={{
+                ...textStyle,
+                "&:hover": {
+                  color: "#F63333",
+                  textShadow: "1px 3px 4px #0D0D0D",
+                  scale: "1.1",
+                },
+              }}
+            >
+              Education
+            </Typography>
+            <Typography
+              sx={{
+                ...textStyle,
+                "&:hover": {
+                  color: "#F63333",
+                  textShadow: "1px 3px 4px #0D0D0D",
+                  scale: "1.1",
+                },
+              }}
+            >
+              England Boxing
+            </Typography>
+            <Typography
+              sx={{
+                ...textStyle,
+                "&:hover": {
+                  color: "#F63333",
+                  textShadow: "1px 3px 4px #0D0D0D",
+                  scale: "1.1",
+                },
+              }}
+            >
+              Coaching
+            </Typography>
+            <Typography
+              onClick={() => router.push("contact-us")}
+              sx={{
+                ...textStyle,
+                "&:hover": {
+                  color: "#F63333",
+                  textShadow: "1px 3px 4px #0D0D0D",
+                  scale: "1.1",
+                },
+              }}
+            >
+              Contact Us
+            </Typography>
           </Box>
           <Box
             sx={{
               height: "auto",
               width: "140px",
+             cursor: "pointer",
             }}
           >
             <Image
@@ -65,9 +128,42 @@ export default function Footer() {
                 alignItems: "flex-start",
               }}
             >
-              <Typography sx={{ ...textStyle }}>Facebook</Typography>
-              <Typography sx={{ ...textStyle }}>Instagram</Typography>
-              <Typography sx={{ ...textStyle }}>Twitter</Typography>
+              <Typography
+                sx={{
+                  ...textStyle,
+                  "&:hover": {
+                    color: "#F63333",
+                    textShadow: "1px 3px 4px #0D0D0D",
+                    scale: "1.1",
+                  },
+                }}
+              >
+                Facebook
+              </Typography>
+              <Typography
+                sx={{
+                  ...textStyle,
+                  "&:hover": {
+                    color: "#F63333",
+                    textShadow: "1px 3px 4px #0D0D0D",
+                    scale: "1.1",
+                  },
+                }}
+              >
+                Instagram
+              </Typography>
+              <Typography
+                sx={{
+                  ...textStyle,
+                  "&:hover": {
+                    color: "#F63333",
+                    textShadow: "1px 3px 4px #0D0D0D",
+                    scale: "1.1",
+                  },
+                }}
+              >
+                Twitter
+              </Typography>
             </Box>
           </Box>
         </Box>

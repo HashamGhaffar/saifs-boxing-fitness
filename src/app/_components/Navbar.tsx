@@ -113,6 +113,7 @@ export default function Navbar() {
               Home
             </Typography>
             <Typography
+              onClick={() => router.push("education")}
               sx={{
                 ...text,
                 cursor: "pointer",
@@ -214,7 +215,10 @@ export default function Navbar() {
           >
             Home
           </Typography>
-          <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
+          <Typography
+            onClick={() => router.push("education")}
+            sx={{ ...text, mb: 2, textAlign: "right" }}
+          >
             Education
           </Typography>
           <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
@@ -224,6 +228,7 @@ export default function Navbar() {
             England Boxing
           </Typography>
           <Box
+            onClick={() => router.push("contact-us")}
             sx={{
               display: "flex",
               justifyContent: "center",
