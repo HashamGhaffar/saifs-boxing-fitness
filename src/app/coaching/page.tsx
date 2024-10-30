@@ -1,5 +1,5 @@
 "use client";
-import Hero from "../home/_sections/Hero";
+import Hero from "@/app/_components/Hero";
 import CoachingCardBox from "./_sections/Coaching";
 import Footer from "../_components/Footer";
 

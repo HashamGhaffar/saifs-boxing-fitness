@@ -6,7 +6,7 @@ export default function Hero() {
     <>
       <Box
         sx={{
-          height: "100vh",
+          minHeight: "70vh",
           backgroundImage: "url(bgHero.webp)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -58,13 +58,12 @@ export default function Hero() {
                   md: "1px white",
                   lg: "2px white",
                 },
-              }}
-              fontSize={{
-                xs: "20px",
-                sm: "31px",
-                md: "39px",
-                lg: "51px",
-                xl: "70px",
+                fontSize: {
+                  xs: "20px",
+                  md: "31px",
+                  lg: "39px",
+                  xl: "51px",
+                },
               }}
             >
               Unleash Your Inner
@@ -77,18 +76,17 @@ export default function Hero() {
                 color: "#F63333",
                 lineHeight: {
                   xs: "45px",
-                  sm: "65px",
-                  md: "80px",
-                  lg: "100px",
-                  xl: "135px",
+                  // sm: "40px",
+                  md: "60px",
+                  lg: "80px",
+                  xl: "90px",
                 },
                 fontWeight: "400",
                 fontSize: {
                   xs: "50px",
-                  sm: "80px",
-                  md: "100px",
-                  lg: "130px",
-                  xl: "180px",
+                  md: "80px",
+                  lg: "100px",
+                  xl: "120px",
                 },
               }}
             >

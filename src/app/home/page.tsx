@@ -1,5 +1,5 @@
 "use client";
-import Hero from "./_sections/Hero";
+import HeroHome from "./_sections/HeroHome";
 import AboutUs from "./_sections/AboutUs";
 import Partners from "./_sections/Partner";
 import Facilities from "./_sections/Facilities";
@@ -13,7 +13,7 @@ import Schedule from "./_sections/Schedule";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <HeroHome />
       <AboutUs />
       <Partners />
       <Facilities />
