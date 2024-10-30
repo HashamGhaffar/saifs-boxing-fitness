@@ -2,8 +2,10 @@
 import { Box, Typography, Button, Pagination } from "@mui/material";
 import Image from "next/image";
 import webp from "@/app/_assets/webp";
+import { useRouter } from "next/navigation";
 
 export default function EnglandBoxingCardBox() {
+  const router = useRouter();
   return (
     <Box
       sx={{
@@ -21,10 +23,10 @@ export default function EnglandBoxingCardBox() {
         },
       }}
     >
-      <EnglandBoxingCard />
-      <EnglandBoxingCard />
-      <EnglandBoxingCard />
-      <EnglandBoxingCard />
+      <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
+      <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
+      <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
+      <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
 
       <Pagination
         count={5}
@@ -55,7 +57,11 @@ export default function EnglandBoxingCardBox() {
   );
 }
 
-export function EnglandBoxingCard() {
+export function EnglandBoxingCard({
+  onClick = () => {},
+}: {
+  onClick?: () => void;
+}) {
   return (
     <Box
       sx={{
@@ -147,6 +153,7 @@ export function EnglandBoxingCard() {
 
         <Box sx={{ marginTop: { xs: "15px", sm: "50px", md: "0" } }}>
           <Button
+            onClick={onClick}
             variant="outlined"
             sx={{
               color: "#FFFFFF",
