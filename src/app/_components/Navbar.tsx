@@ -69,6 +69,7 @@ export default function Navbar() {
         >
           {/* Logo */}
           <Box
+            onClick={() => router.push("/")}
             sx={{
               maxWidth: { xs: "90px", sm: "100px", md: "120px", lg: "184px" },
               width: "100%",
@@ -144,6 +145,7 @@ export default function Navbar() {
               1-2-1 Coaching
             </Typography>
             <Typography
+              onClick={() => router.push("england-boxing")}
               sx={{
                 ...text,
                 cursor: "pointer",
@@ -224,7 +226,10 @@ export default function Navbar() {
           <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
             1-2-1 Coaching
           </Typography>
-          <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
+          <Typography
+            onClick={() => router.push("england-boxing")}
+            sx={{ ...text, mb: 2, textAlign: "right" }}
+          >
             England Boxing
           </Typography>
           <Box

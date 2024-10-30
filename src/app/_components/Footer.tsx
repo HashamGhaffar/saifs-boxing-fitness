@@ -45,6 +45,7 @@ export default function Footer() {
             }}
           >
             <Typography
+              onClick={() => router.push("/")}
               sx={{
                 ...textStyle,
                 "&:hover": {
@@ -70,6 +71,7 @@ export default function Footer() {
               Education
             </Typography>
             <Typography
+              onClick={() => router.push("england-boxing")}
               sx={{
                 ...textStyle,
                 "&:hover": {
@@ -108,6 +110,7 @@ export default function Footer() {
             </Typography>
           </Box>
           <Box
+            onClick={() => router.push("/")}
             sx={{
               height: "auto",
               width: "140px",
