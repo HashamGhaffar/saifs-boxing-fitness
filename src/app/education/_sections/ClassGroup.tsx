@@ -94,7 +94,6 @@ export function Class({
           md: "60px 50px 60px",
           lg: "80px 100px 80px",
         },
-        minHeight: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -130,7 +129,7 @@ export function Class({
             gap: "50px",
             justifyContent: "center",
             // flexDirection: { xs: "column", lg: "row" },
-            paddingTop: { xs: "10px", sm: "15px", md: "30px", xl: "70px" },
+            paddingTop: { xs: "10px", sm: "15px", md: "30px", xl: "40px" },
             alignItems: { xs: "center", lg: "flex-start" },
             flexDirection: alignment ? { ...alignment } : "column",
           }}
