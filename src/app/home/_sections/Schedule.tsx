@@ -92,7 +92,9 @@ export default function Schedule() {
               justifyContent: "center",
             }}
           >
-            <Box sx={{ maxWidth: "900px", width: "100%" }}>
+            <Box
+              sx={{ maxWidth: { lg: "900px", xl: "1600px" }, width: "100%" }}
+            >
               <TableContainer>
                 <Table
                   sx={{
@@ -103,7 +105,13 @@ export default function Schedule() {
                   }}
                 >
                   <TableRow>
-                    <TableCell sx={{ ...headingStyle }}>
+                    <TableCell
+                      sx={{
+                        ...headingStyle,
+                        display: "flex",
+                        justifyContent: "center",
+                      }}
+                    >
                       <Box sx={{ height: "40px", width: "95px" }}>
                         <Image
                           style={{
