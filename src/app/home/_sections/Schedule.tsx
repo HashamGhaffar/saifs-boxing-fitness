@@ -92,16 +92,14 @@ export default function Schedule() {
               justifyContent: "center",
             }}
           >
-            <Box
-              sx={{ maxWidth: { lg: "900px", xl: "1600px" }, width: "100%" }}
-            >
+            <Box sx={{ maxWidth: "1600px", width: "100%" }}>
               <TableContainer>
                 <Table
                   sx={{
                     "& .MuiTableCell-root": { padding: "10px 5px" },
                     tableLayout: "auto",
                     borderCollapse: "separate",
-                    borderSpacing: "20px 15px",
+                    borderSpacing: { xs: "20px 15px", xl: "30px 25px" },
                   }}
                 >
                   <TableRow>
@@ -112,7 +110,7 @@ export default function Schedule() {
                         justifyContent: "center",
                       }}
                     >
-                      <Box sx={{ height: "40px", width: "95px" }}>
+                      <Box sx={{ height: "55px", width: "95px" }}>
                         <Image
                           style={{
                             height: "100%",
