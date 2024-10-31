@@ -19,6 +19,7 @@ export default function Schedule() {
     textAlign: "center",
     padding: "10px",
     borderRadius: "6px",
+    textTransform: "uppercase",
   };
   const paragraphStyle = {
     backgroundColor: "#0D0D0DB2",
