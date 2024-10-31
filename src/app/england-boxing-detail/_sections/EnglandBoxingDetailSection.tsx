@@ -82,12 +82,12 @@ export default function EnglandBoxingDetailSection() {
                 xl: "60px 0",
               },
               flexDirection: { xs: "column", md: "row" },
-              justifyContent: "center",
+              justifyContent: "space-between",
             }}
           >
             <Box
               sx={{
-                maxWidth: "700px",
+                maxWidth: { xs: "700px", xl: "1000px" },
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -123,7 +123,11 @@ export default function EnglandBoxingDetailSection() {
               champ.`}
               </Typography>
             </Box>
-            <Box sx={{ width: { xs: "100%", sm: "450px" } }}>
+            <Box
+              sx={{
+                width: { xs: "100%", sm: "450px", lg: "500px", xl: "550px" },
+              }}
+            >
               <Image
                 style={{ width: "100%", height: "100%", objectFit: "contain" }}
                 src={webp.Boxer1}
