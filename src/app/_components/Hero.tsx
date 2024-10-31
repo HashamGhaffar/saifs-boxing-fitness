@@ -32,21 +32,7 @@ export default function Hero() {
             left: "50%",
           }}
         >
-          <Box
-            sx={{
-              animation: "slideInFromLeft 2s ease-in-out forwards",
-              "@keyframes slideInFromLeft": {
-                "0%": {
-                  transform: "translateX(-100%)",
-                  opacity: 0,
-                },
-                "100%": {
-                  transform: "translateX(0%)",
-                  opacity: 1,
-                },
-              },
-            }}
-          >
+          <Box>
             <Typography
               sx={{
                 textTransform: "uppercase",

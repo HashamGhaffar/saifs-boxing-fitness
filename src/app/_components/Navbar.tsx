@@ -41,21 +41,6 @@ export default function Navbar() {
             lg: "20px 100px",
           },
           backgroundColor: "#0D0D0D80",
-          animation: "slideInFromTop 2s ease",
-          "@keyframes slideInFromTop": {
-            "0%": {
-              transform: "translateY(-100%)",
-              opacity: 0,
-            },
-            "40%": {
-              transform: "translateY(-100%)",
-              opacity: 0,
-            },
-            "100%": {
-              transform: "translateY(0%)",
-              opacity: 1,
-            },
-          },
         }}
       >
         <Box
