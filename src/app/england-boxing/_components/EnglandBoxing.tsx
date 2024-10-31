@@ -1,5 +1,5 @@
 "use client";
-import { Box, Typography, Button, Pagination } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import Image from "next/image";
 import webp from "@/app/_assets/webp";
 import { useRouter } from "next/navigation";
@@ -26,9 +26,9 @@ export default function EnglandBoxingCardBox() {
       <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
       <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
       <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
-      <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
+      {/* <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} /> */}
 
-      <Pagination
+      {/* <Pagination
         count={5}
         shape="rounded"
         sx={{
@@ -52,7 +52,7 @@ export default function EnglandBoxingCardBox() {
             borderRadius: "0px",
           },
         }}
-      />
+      /> */}
     </Box>
   );
 }
