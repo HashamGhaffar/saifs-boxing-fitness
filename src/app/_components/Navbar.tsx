@@ -3,18 +3,17 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
+import { Typography, Box } from "@mui/material";
 
 import Button from "./Button";
-
 import svgs from "../_assets/svgs/index";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Navbar() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 500, once: true });
     AOS.refresh();
   }, []);
 

@@ -1,7 +1,15 @@
 import Navbar from "@/app/_components/Navbar";
 import { Box, Typography } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function HeroHome() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
+
   return (
     <>
       <Box
@@ -32,7 +40,7 @@ export default function HeroHome() {
             left: "50%",
           }}
         >
-          <Box>
+          <Box data-aos="fade-right">
             <Typography
               sx={{
                 textTransform: "uppercase",
