@@ -1,8 +1,16 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import webp from "@/app/_assets/webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function EnglandBoxingDetailSection() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
+
   const paragraph = {
     fontSize: {
       xs: "14px",
@@ -31,46 +39,48 @@ export default function EnglandBoxingDetailSection() {
       >
         <Box sx={{ maxWidth: "1600px" }}>
           {/* main image  */}
-          <Box>
+          <Box data-aos="zoom-in" data-aos-duration="1000">
             <Image
               style={{ height: "100%", width: "100%", objectFit: "cover" }}
               src={webp.FuryVsSteel}
               alt="FuryVsSteel"
             />
           </Box>
-          {/* heading  */}
-          <Typography
-            sx={{
-              fontSize: {
-                xs: "24px",
-                sm: "30px",
-                md: "40px",
-                lg: "48px",
-                xl: "64px",
-              },
-              fontWeight: "400",
-              fontFamily: "Anton, sans-serif",
-              color: "#F63333",
-              textTransform: "uppercase",
-              padding: {
-                xs: "20px 0",
-                sm: "30px 0",
-                md: "40px 0",
-                xl: "60px 0",
-              },
-            }}
-          >
-            The Titan Showdown: Fury vs. Steel
-          </Typography>
-          <Typography sx={{ ...paragraph }}>
-            {`On a cool October evening, boxing fans around the world witnessed one
+          {/* heading  initial describtion */}
+          <Box data-aos="fade-up" data-aos-duration="1000">
+            <Typography
+              sx={{
+                fontSize: {
+                  xs: "24px",
+                  sm: "30px",
+                  md: "40px",
+                  lg: "48px",
+                  xl: "64px",
+                },
+                fontWeight: "400",
+                fontFamily: "Anton, sans-serif",
+                color: "#F63333",
+                textTransform: "uppercase",
+                padding: {
+                  xs: "20px 0",
+                  sm: "30px 0",
+                  md: "40px 0",
+                  xl: "60px 0",
+                },
+              }}
+            >
+              The Titan Showdown: Fury vs. Steel
+            </Typography>
+            <Typography sx={{ ...paragraph }}>
+              {`On a cool October evening, boxing fans around the world witnessed one
           of the most electrifying battles in the history of the sport. The
           much-anticipated match between the undefeated champion Jack "Iron
           Fist" Steele and the ferocious up-and-comer, Rico "Thunder" Morales,
           had fans on the edge of their seats. Billed as the "Clash of Titans,"
           this bout promised to deliver a high-octane display of skill, power,
           and heart—and it did not disappoint.`}
-          </Typography>
+            </Typography>
+          </Box>
           <Box
             sx={{
               display: "flex",
@@ -86,6 +96,8 @@ export default function EnglandBoxingDetailSection() {
             }}
           >
             <Box
+              data-aos="fade-right"
+              data-aos-duration="1000"
               sx={{
                 maxWidth: { xs: "700px", xl: "1000px" },
                 display: "flex",
@@ -124,6 +136,8 @@ export default function EnglandBoxingDetailSection() {
               </Typography>
             </Box>
             <Box
+              data-aos="fade-left"
+              data-aos-duration="1000"
               sx={{
                 width: { xs: "100%", sm: "450px", lg: "500px", xl: "550px" },
               }}
@@ -135,7 +149,7 @@ export default function EnglandBoxingDetailSection() {
               />
             </Box>
           </Box>
-          <Box>
+          <Box data-aos="fade-up" data-aos-duration="1000">
             <Typography sx={{ ...paragraph }}>
               The final rounds were a brutal test of endurance. Both men,
               bloodied and battered, fought with everything they had. Thunder,
