@@ -123,6 +123,7 @@ export default function Navbar() {
                 Education
               </Typography>
               <Typography
+                onClick={() => router.push("coaching")}
                 sx={{
                   ...text,
                   cursor: "pointer",
@@ -217,7 +218,10 @@ export default function Navbar() {
           >
             Education
           </Typography>
-          <Typography sx={{ ...text, mb: 2, textAlign: "right" }}>
+          <Typography
+            onClick={() => router.push("coaching")}
+            sx={{ ...text, mb: 2, textAlign: "right" }}
+          >
             1-2-1 Coaching
           </Typography>
           <Typography

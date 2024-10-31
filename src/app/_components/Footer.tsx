@@ -84,6 +84,7 @@ export default function Footer() {
               England Boxing
             </Typography>
             <Typography
+              onClick={() => router.push("coaching")}
               sx={{
                 ...textStyle,
                 "&:hover": {
