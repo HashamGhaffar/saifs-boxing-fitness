@@ -6,7 +6,7 @@ export default function Hero() {
     <>
       <Box
         sx={{
-          minHeight: "70vh",
+          minHeight: "50vh",
           backgroundImage: "url(bgHero.webp)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -46,9 +46,9 @@ export default function Hero() {
                 },
                 fontSize: {
                   xs: "20px",
-                  md: "31px",
-                  lg: "39px",
-                  xl: "51px",
+                  md: "20px",
+                  lg: "24px",
+                  xl: "32px",
                 },
               }}
             >
@@ -62,17 +62,16 @@ export default function Hero() {
                 color: "#F63333",
                 lineHeight: {
                   xs: "45px",
-                  // sm: "40px",
-                  md: "60px",
-                  lg: "80px",
-                  xl: "90px",
+                  md: "42px",
+                  lg: "50px",
+                  xl: "64px",
                 },
                 fontWeight: "400",
                 fontSize: {
                   xs: "50px",
-                  md: "80px",
-                  lg: "100px",
-                  xl: "120px",
+                  md: "50px",
+                  lg: "64px",
+                  xl: "80px",
                 },
               }}
             >
