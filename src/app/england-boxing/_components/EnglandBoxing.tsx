@@ -163,8 +163,14 @@ export function EnglandBoxingCard({
               borderBottom: "2px solid #FFFFFF",
               padding: "10px 0",
               fontSize: { xs: "12px", sm: "14px", lg: "18px", xl: "20px" },
+              transition:
+                "background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,  box-shadow 0.3s ease , padding  0.3s ease ",
               "&:hover": {
-                backgroundColor: "#2a2a2a",
+                backgroundColor: "#F63333",
+                color: "#FFFFFF",
+                transform: "scale(1.05)",
+                boxShadow: "0px 4px 15px #F63333",
+                padding: "10px",
               },
             }}
           >
