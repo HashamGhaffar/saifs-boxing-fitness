@@ -2,8 +2,16 @@ import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import webp from "../_assets/webp";
 import { useRouter } from "next/navigation";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Footer() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
+
   const router = useRouter();
 
   const textStyle = {
@@ -28,6 +36,8 @@ export default function Footer() {
         }}
       >
         <Box
+          data-aos="zoom-out"
+          data-aos-duration="1000"
           sx={{
             display: "flex",
             justifyContent: "center",

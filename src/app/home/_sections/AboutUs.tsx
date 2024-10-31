@@ -1,8 +1,15 @@
 import { Box, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import webp from "@/app/_assets/webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function AboutUs() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
   const paragraph = {
     xs: "16px",
     sm: "18px",
@@ -40,6 +47,7 @@ export default function AboutUs() {
             <Grid container alignItems="center" item md={6} sm={10} xs={10}>
               {/* textual content  */}
               <Box
+                data-aos="fade-right"
                 sx={{
                   paddingBottom: {},
                   maxWidth: {
@@ -89,6 +97,8 @@ export default function AboutUs() {
         </Box>
         {/* boxer image  */}
         <Box
+          data-aos="fade-left"
+          data-aos-duration="1000"
           sx={{
             maxWidth: {
               xs: "300px",

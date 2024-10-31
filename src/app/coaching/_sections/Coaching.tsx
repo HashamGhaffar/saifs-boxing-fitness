@@ -3,6 +3,9 @@ import { Box, Grid, Typography } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 import webp from "@/app/_assets/webp";
 import svgs from "@/app/_assets/svgs";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 // Define prop types for CoachingCard
 interface CoachingCardProps {
@@ -15,6 +18,10 @@ interface CoachingCardProps {
 }
 
 export default function CoachingCardBox() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
   return (
     <Box
       sx={{
@@ -92,7 +99,13 @@ export function CoachingCard({
         sx={{ maxWidth: { xs: "1200px", sm: "600px", md: "1200px" } }}
         container
       >
-        <Grid item xs={12} md={6}>
+        <Grid
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+          item
+          xs={12}
+          md={6}
+        >
           <Box>
             <Image
               style={{ height: "100%", width: "100%" }}
@@ -103,6 +116,8 @@ export function CoachingCard({
         </Grid>
 
         <Grid
+          data-aos="fade-up-left"
+          data-aos-duration="1000"
           sx={{
             padding: { xs: "20px", md: "30px", xl: "45px" },
             backgroundColor: backgroundColor,

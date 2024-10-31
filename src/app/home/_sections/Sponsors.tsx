@@ -5,8 +5,16 @@ import { Box, Typography } from "@mui/material";
 
 import Button from "../../_components/Button";
 import webp from "@/app/_assets/webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Sponsors() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
+
   const router = useRouter();
   const imageData = [
     { src: webp.Monster, alt: "Monster energy drink logo" },
@@ -50,6 +58,8 @@ export default function Sponsors() {
           >
             {/* heading  */}
             <Typography
+              data-aos="fade-right"
+              data-aos-duration="1000"
               sx={{
                 fontSize: {
                   xs: "24px",
@@ -69,6 +79,8 @@ export default function Sponsors() {
             </Typography>
             <Box>
               <Button
+                data-aos="fade-left"
+                data-aos-duration="1000"
                 onClick={() => router.push("contact-us")}
                 textStyles={{ fontSize: "1rem" }}
               >
@@ -90,6 +102,8 @@ export default function Sponsors() {
             }}
           >
             <Box
+              data-aos="zoom-in"
+              data-aos-duration="1000"
               sx={{
                 display: "flex",
                 justifyContent: "center",

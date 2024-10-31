@@ -1,8 +1,15 @@
 import webp from "@/app/_assets/webp";
 import { Box, Grid, Typography } from "@mui/material";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Facilities() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Box
@@ -30,6 +37,8 @@ export default function Facilities() {
         >
           {/* heading  */}
           <Typography
+            data-aos="fade-left"
+            data-aos-duration="1000"
             sx={{
               fontSize: {
                 xs: "24px",
@@ -54,7 +63,12 @@ export default function Facilities() {
             our facilities
           </Typography>
           {/* grid images */}
-          <Grid container spacing={1.25}>
+          <Grid
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            container
+            spacing={1.25}
+          >
             <Grid item xs={12} sm={4} md={4}>
               <Box
                 sx={{

@@ -3,8 +3,16 @@ import { Box, Typography, Button } from "@mui/material";
 import Image from "next/image";
 import webp from "@/app/_assets/webp";
 import { useRouter } from "next/navigation";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function EnglandBoxingCardBox() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
+
   const router = useRouter();
   return (
     <Box
@@ -81,6 +89,8 @@ export function EnglandBoxingCard({
       }}
     >
       <Box
+        data-aos="fade-up-right"
+        data-aos-duration="1000"
         sx={{ height: { md: "380px" }, width: { sm: "500px", md: "400px" } }}
       >
         <Image
@@ -95,6 +105,8 @@ export function EnglandBoxingCard({
         />
       </Box>
       <Box
+        data-aos="fade-up-left"
+        data-aos-duration="1000"
         sx={{
           display: "flex",
           flexDirection: "column",

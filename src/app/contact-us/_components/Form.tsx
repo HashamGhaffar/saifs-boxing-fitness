@@ -3,8 +3,15 @@ import CustomTextField from "../../_components/CustomTextField";
 import Button from "../../_components/Button";
 import TextField from "@mui/material/TextField";
 import Navbar from "@/app/_components/Navbar";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function ContactUsForm() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
   const cardHeading = {
     color: "#FFFFFF",
     fontWeight: "700",
@@ -51,6 +58,8 @@ export default function ContactUsForm() {
           <Box sx={{ maxWidth: "1600px", width: "100%" }}>
             {/* heading  */}
             <Typography
+              data-aos="zoom-in"
+              data-aos-duration="1000"
               sx={{
                 fontSize: {
                   xs: "24px",
@@ -79,6 +88,8 @@ export default function ContactUsForm() {
               }}
             >
               <Box
+                data-aos="fade-right"
+                data-aos-duration="1000"
                 sx={{
                   backgroundColor: "#0D0D0DB2",
                   padding: { xs: "20px", sm: "20px 30px", md: "40px 20px" },
@@ -114,6 +125,8 @@ export default function ContactUsForm() {
                 </Box>
               </Box>
               <Box
+                data-aos="fade-left"
+                data-aos-duration="1000"
                 sx={{
                   backgroundColor: "#0D0D0DB2",
                   padding: { xs: "20px", sm: "20px 30px" },
