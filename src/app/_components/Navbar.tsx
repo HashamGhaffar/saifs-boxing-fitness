@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
@@ -9,8 +9,15 @@ import Box from "@mui/material/Box";
 import Button from "./Button";
 
 import svgs from "../_assets/svgs/index";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Navbar() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+    AOS.refresh();
+  }, []);
+
   const router = useRouter();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -32,147 +39,150 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <Box
-        sx={{
-          padding: {
-            xs: "20px 20px",
-            sm: "20px 30px",
-            md: "20px 50px",
-            lg: "20px 100px",
-          },
-          backgroundColor: "#0D0D0D80",
-        }}
-      >
+      <div data-aos="fade-down">
         <Box
+          // data-aos="fade-down"
           sx={{
-            maxWidth: "1600px",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            margin: "auto",
+            padding: {
+              xs: "20px 20px",
+              sm: "20px 30px",
+              md: "20px 50px",
+              lg: "20px 100px",
+            },
+            backgroundColor: "#0D0D0D80",
           }}
         >
-          {/* Logo */}
-          <Box
-            onClick={() => router.push("/")}
-            sx={{
-              maxWidth: { xs: "90px", sm: "100px", md: "120px", lg: "184px" },
-              width: "100%",
-              cursor: "pointer",
-            }}
-          >
-            <Image
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "contain",
-              }}
-              src={svgs.Logo}
-              alt="image"
-            />
-          </Box>
-
-          {/* Desktop navigation */}
           <Box
             sx={{
-              display: { xs: "none", md: "flex" },
+              maxWidth: "1600px",
+              display: "flex",
+              justifyContent: "space-between",
               alignItems: "center",
-              color: "#FFFFFF",
-              fontWeight: "300",
-              gap: { xs: "15px", md: "20px", lg: "40px" },
+              margin: "auto",
             }}
           >
-            <Typography
+            {/* Logo */}
+            <Box
               onClick={() => router.push("/")}
               sx={{
-                ...text,
+                maxWidth: { xs: "90px", sm: "100px", md: "120px", lg: "184px" },
+                width: "100%",
                 cursor: "pointer",
-                transition:
-                  "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
-                "&:hover": {
-                  color: "#F63333",
-                  textShadow: "1px 3px 4px #0D0D0D",
-                  scale: "1.1",
-                },
               }}
             >
-              Home
-            </Typography>
-            <Typography
-              onClick={() => router.push("education")}
-              sx={{
-                ...text,
-                cursor: "pointer",
-                transition:
-                  "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
-                "&:hover": {
-                  color: "#F63333",
-                  textShadow: "1px 3px 4px #0D0D0D",
-                  scale: "1.1",
-                },
-              }}
-            >
-              Education
-            </Typography>
-            <Typography
-              sx={{
-                ...text,
-                cursor: "pointer",
-                transition:
-                  "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
-                "&:hover": {
-                  color: "#F63333",
-                  textShadow: "1px 3px 4px #0D0D0D",
-                  scale: "1.1",
-                },
-              }}
-            >
-              1-2-1 Coaching
-            </Typography>
-            <Typography
-              onClick={() => router.push("england-boxing")}
-              sx={{
-                ...text,
-                cursor: "pointer",
-                transition:
-                  "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
-                "&:hover": {
-                  color: "#F63333",
-                  textShadow: "1px 3px 4px #0D0D0D",
-                  scale: "1.1",
-                },
-              }}
-            >
-              England Boxing
-            </Typography>
-          </Box>
+              <Image
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+                src={svgs.Logo}
+                alt="image"
+              />
+            </Box>
 
-          {/* Contact Button */}
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <Button
-              onClick={() => router.push("contact-us")}
-              textStyles={{ fontSize: "1rem" }}
+            {/* Desktop navigation */}
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex" },
+                alignItems: "center",
+                color: "#FFFFFF",
+                fontWeight: "300",
+                gap: { xs: "15px", md: "20px", lg: "40px" },
+              }}
             >
-              Get In Touch
-            </Button>
-          </Box>
+              <Typography
+                onClick={() => router.push("/")}
+                sx={{
+                  ...text,
+                  cursor: "pointer",
+                  transition:
+                    "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
+                  "&:hover": {
+                    color: "#F63333",
+                    textShadow: "1px 3px 4px #0D0D0D",
+                    scale: "1.1",
+                  },
+                }}
+              >
+                Home
+              </Typography>
+              <Typography
+                onClick={() => router.push("education")}
+                sx={{
+                  ...text,
+                  cursor: "pointer",
+                  transition:
+                    "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
+                  "&:hover": {
+                    color: "#F63333",
+                    textShadow: "1px 3px 4px #0D0D0D",
+                    scale: "1.1",
+                  },
+                }}
+              >
+                Education
+              </Typography>
+              <Typography
+                sx={{
+                  ...text,
+                  cursor: "pointer",
+                  transition:
+                    "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
+                  "&:hover": {
+                    color: "#F63333",
+                    textShadow: "1px 3px 4px #0D0D0D",
+                    scale: "1.1",
+                  },
+                }}
+              >
+                1-2-1 Coaching
+              </Typography>
+              <Typography
+                onClick={() => router.push("england-boxing")}
+                sx={{
+                  ...text,
+                  cursor: "pointer",
+                  transition:
+                    "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
+                  "&:hover": {
+                    color: "#F63333",
+                    textShadow: "1px 3px 4px #0D0D0D",
+                    scale: "1.1",
+                  },
+                }}
+              >
+                England Boxing
+              </Typography>
+            </Box>
 
-          {/* Hamburger for mobile */}
-          <Box
-            sx={{
-              width: { xs: "30px", sm: "35px" },
-              display: { xs: "block", md: "none" },
-            }}
-            onClick={() => toggleDrawer(true)}
-          >
-            <Image
-              style={{ height: "100%", width: "100%" }}
-              src={svgs.Hamburger}
-              alt="hamburger"
-            />
+            {/* Contact Button */}
+            <Box sx={{ display: { xs: "none", md: "flex" } }}>
+              <Button
+                onClick={() => router.push("contact-us")}
+                textStyles={{ fontSize: "1rem" }}
+              >
+                Get In Touch
+              </Button>
+            </Box>
+
+            {/* Hamburger for mobile */}
+            <Box
+              sx={{
+                width: { xs: "30px", sm: "35px" },
+                display: { xs: "block", md: "none" },
+              }}
+              onClick={() => toggleDrawer(true)}
+            >
+              <Image
+                style={{ height: "100%", width: "100%" }}
+                src={svgs.Hamburger}
+                alt="hamburger"
+              />
+            </Box>
           </Box>
         </Box>
-      </Box>
+      </div>
 
       {/* Custom Drawer Navigation */}
       <Box
