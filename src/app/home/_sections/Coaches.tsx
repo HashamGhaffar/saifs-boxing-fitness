@@ -6,7 +6,7 @@ import CoachesCard from "../_components/CoachesCard";
 import ImageBox from "../_components/ImageBox";
 import { CoachCardProps, Coaches } from "@/app/constants/constants";
 
-export default function Coatches() {
+export default function CoachesSection() {
   const [coaches, setCoaches] = React.useState<CoachCardProps[]>(Coaches);
 
   const handleCoachClick = (index: number) => {
