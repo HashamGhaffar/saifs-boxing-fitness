@@ -2,8 +2,15 @@ import MapComponent from "../../_components/Map";
 import { Box, Typography } from "@mui/material";
 // import Image from "next/image";
 // import webp from "@/app/_assets/webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Location() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
   const heading = {
     fontSize: {
       xs: "22px",
@@ -41,6 +48,8 @@ export default function Location() {
         >
           {/* heading  */}
           <Typography
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
             sx={{
               fontSize: {
                 xs: "24px",
@@ -73,6 +82,8 @@ export default function Location() {
           >
             {/* location  */}
             <Box
+              data-aos="fade-right"
+              data-aos-duration="1000"
               sx={{
                 width: {
                   xs: "100%",
@@ -91,6 +102,8 @@ export default function Location() {
               <MapComponent />
             </Box>
             <Box
+              data-aos="fade-left"
+              data-aos-duration="1000"
               sx={{
                 width: "100%",
                 display: "flex",

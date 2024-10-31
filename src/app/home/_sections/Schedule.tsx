@@ -8,8 +8,15 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import svgs from "@/app/_assets/svgs";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Schedule() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
   const headingStyle = {
     border: "none",
     backgroundColor: "#ffffff",
@@ -65,6 +72,8 @@ export default function Schedule() {
         >
           {/* heading  */}
           <Typography
+            data-aos="fade-right"
+            data-aos-duration="1000"
             sx={{
               fontSize: {
                 xs: "24px",
@@ -94,7 +103,7 @@ export default function Schedule() {
             }}
           >
             <Box sx={{ maxWidth: "1600px", width: "100%" }}>
-              <TableContainer>
+              <TableContainer data-aos="fade-left" data-aos-duration="1000">
                 <Table
                   sx={{
                     "& .MuiTableCell-root": { padding: "10px 5px" },

@@ -40,7 +40,7 @@ export default function HeroHome() {
             left: "50%",
           }}
         >
-          <Box data-aos="fade-right">
+          <Box data-aos="fade-right" data-aos-duration="1000">
             <Typography
               sx={{
                 textTransform: "uppercase",

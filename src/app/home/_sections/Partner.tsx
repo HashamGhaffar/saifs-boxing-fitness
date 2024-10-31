@@ -5,8 +5,15 @@ import webp from "@/app/_assets/webp";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Partners() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
   const settings = {
     dots: false,
     infinite: true,
@@ -80,6 +87,8 @@ export default function Partners() {
         }}
       >
         <Typography
+          data-aos="fade-down"
+          data-aos-duration="1000"
           sx={{
             fontSize: {
               xs: "24px",
@@ -102,7 +111,12 @@ export default function Partners() {
         {/* Slider for Partner Images */}
         <Slider {...settings}>
           {partnerImages.map((image, index) => (
-            <Box key={index} sx={{ display: "flex", justifyContent: "cneter" }}>
+            <Box
+              data-aos="flip-up"
+              data-aos-duration="1000"
+              key={index}
+              sx={{ display: "flex", justifyContent: "center" }}
+            >
               <Box
                 sx={{
                   maxWidth: {

@@ -1,8 +1,15 @@
 import { Box, Typography, Grid } from "@mui/material";
 import Image from "next/image";
 import webp from "@/app/_assets/webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Coatches() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Box
@@ -30,6 +37,8 @@ export default function Coatches() {
         >
           {/* heading  */}
           <Typography
+            data-aos="fade-left"
+            data-aos-duration="1000"
             sx={{
               fontSize: {
                 xs: "24px",
@@ -55,6 +64,8 @@ export default function Coatches() {
           </Typography>
           {/* coatch card */}
           <Box
+            data-aos="fade-right"
+            data-aos-duration="1000"
             sx={{
               display: "flex",
               justifyContent: "space-between",
@@ -176,6 +187,8 @@ export default function Coatches() {
             </Grid>
           </Box>
           <Box
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
             sx={{
               display: "flex",
               gap: { xs: "10px", lg: "20px" },
