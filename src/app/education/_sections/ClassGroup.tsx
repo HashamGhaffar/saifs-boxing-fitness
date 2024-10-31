@@ -2,6 +2,9 @@
 import { Box, Typography } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 import webp from "@/app/_assets/webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const text = {
   fontWeight: "400",
@@ -10,6 +13,10 @@ const text = {
 };
 
 export default function ClassGroup() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Class
@@ -104,6 +111,8 @@ export function Class({
       <Box>
         {/* Heading */}
         <Typography
+          data-aos="zoom-in"
+          data-aos-duration="1000"
           sx={{
             fontSize: {
               xs: "24px",
@@ -136,6 +145,8 @@ export function Class({
         >
           {/* Typography box */}
           <Box
+            data-aos="fade-right"
+            data-aos-duration="1000"
             sx={{
               maxWidth: {
                 xs: "100%",
@@ -155,6 +166,8 @@ export function Class({
 
           {/* Image */}
           <Box
+            data-aos="fade-left"
+            data-aos-duration="1000"
             sx={{
               height: "auto",
               maxWidth: {
