@@ -1,11 +1,22 @@
+"use client";
+import React from "react";
 import webp from "@/app/_assets/webp";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Modal, Typography } from "@mui/material";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function Facilities() {
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  function openModal() {
+    setIsModalOpen(true);
+  }
+  function closeModal() {
+    setIsModalOpen(false);
+  }
+
+  // animation function
   useEffect(() => {
     AOS.init({ duration: 500, once: true });
     AOS.refresh();
@@ -69,7 +80,7 @@ export default function Facilities() {
             container
             spacing={1.25}
           >
-            <Grid item xs={12} sm={4} md={4}>
+            <Grid onClick={openModal} item xs={12} sm={4} md={4}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -126,7 +137,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={8} md={2}>
+            <Grid onClick={openModal} item xs={12} sm={8} md={2}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -182,7 +193,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={8} md={4}>
+            <Grid onClick={openModal} item xs={12} sm={8} md={4}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -215,7 +226,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={4} md={2}>
+            <Grid onClick={openModal} item xs={12} sm={4} md={2}>
               <Box
                 sx={{
                   overflow: "hidden",
@@ -247,7 +258,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={4} md={2}>
+            <Grid onClick={openModal} item xs={12} sm={4} md={2}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -280,7 +291,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={8} md={4}>
+            <Grid onClick={openModal} item xs={12} sm={8} md={4}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -313,7 +324,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={8} md={2}>
+            <Grid onClick={openModal} item xs={12} sm={8} md={2}>
               <Box sx={{ height: { sm: "100%" }, width: "auto" }}>
                 <Box
                   sx={{
@@ -371,7 +382,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={4} md={4}>
+            <Grid onClick={openModal} item xs={12} sm={4} md={4}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -430,6 +441,62 @@ export default function Facilities() {
           </Grid>
         </Box>
       </Box>
+
+      <Modal open={isModalOpen} onClose={closeModal}>
+        <Box
+          sx={{
+            height: { xs: "60vh", md: "50vh" },
+            width: { xs: "80vw", md: "50vw" },
+            backgroundColor: "red",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            borderRadius: "0",
+            outline: "none",
+          }}
+        >
+          <Box sx={{ height: "100%", width: "100%", position: "relative" }}>
+            <Image
+              style={{
+                position: "absolute",
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                zIndex: "10",
+              }}
+              src={webp.F1}
+              alt="facility1"
+            />
+            <Box
+              sx={{
+                width: "100%",
+                height: "100%",
+                position: "absolute",
+                bottom: "0",
+                zIndex: "20",
+                background:
+                  "linear-gradient(180deg, rgba(13, 13, 13, 0) 55%, #000000 91.79%)",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-end",
+              }}
+            >
+              <Typography
+                sx={{
+                  color: "#FFFFFF",
+                  maxWidth: { xs: "70vw", md: "40vw" },
+                  textAlign: "left",
+                  paddingBottom: { xs: "20px", lg: "40px" },
+                }}
+              >
+                Build strength and conditioning, incorporating dumbbells and
+                bodyweight exercises to keep your heart rate elevated.
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
+      </Modal>
     </>
   );
 }
