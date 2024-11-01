@@ -18,25 +18,50 @@ function CoachesCard({
       <Box
         sx={{
           display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-end",
-          padding: {
-            xs: "20px 30px 0 20px",
-            sm: "30px 30px 0 30px",
-            lg: "30px 50px 0 30px",
-          },
-          backgroundImage: `${backgroundImage}`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          // justifyContent: "space-between",
+          // alignItems: "center",
+
           gap: { xs: "", sm: "", md: "", lg: "", xl: "50px" },
+          minHeight: {
+            xs: "450px",
+            sm: "350px",
+            lg: "400px",
+            xl: "450px",
+          },
+          overflow: "hidden",
         }}
       >
         <Grid
+          sx={{
+            backgroundImage: `${backgroundImage}`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            padding: {
+              xs: "20px 30px 0 20px",
+              sm: "30px 30px 0 30px",
+              lg: "30px 50px 0 30px",
+            },
+            // alignItems: { xs: "center", md: "none" },
+            // justifyContent: { xs: "none", md: "none" },
+            // display: "flex÷\",
+          }}
           // alignItems="flex-end"
           justifyContent="space-between"
           container
         >
-          <Grid item xs={12} md={7.5}>
+          <Grid
+            sx={{
+              height: "100%",
+              display: "flex",
+              alignItems: { xs: "center" },
+              md: "none",
+            }}
+            alignItems="center"
+            justifyContent="center"
+            item
+            xs={12}
+            md={7.5}
+          >
             {/* coach details  */}
             <Box
               sx={{
@@ -44,6 +69,7 @@ function CoachesCard({
                 flexDirection: "column",
                 gap: { xs: "10px", xl: "20px" },
                 paddingBottom: { xs: "10px", sm: "20px", xl: "40px" },
+                overflow: "scroll",
               }}
             >
               <Typography
@@ -55,6 +81,8 @@ function CoachesCard({
                     sm: "24px",
                     lg: "26px",
                   },
+                  textOverflow: "scroll",
+                  whiteSpace: "nowrap",
                 }}
               >
                 {name}
