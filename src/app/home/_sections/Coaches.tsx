@@ -6,7 +6,16 @@ import CoachesCard from "../_components/CoachesCard";
 import ImageBox from "../_components/ImageBox";
 import { CoachCardProps, Coaches } from "@/app/constants/constants";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function CoachesSection() {
+  useEffect(() => {
+    AOS.init({ duration: 500, once: true });
+    AOS.refresh();
+  }, []);
+
   const [coaches, setCoaches] = React.useState<CoachCardProps[]>(Coaches);
 
   const handleCoachClick = (index: number) => {
@@ -45,6 +54,8 @@ export default function CoachesSection() {
         >
           {/* heading  */}
           <Typography
+            data-aos="fade-left"
+            data-aos-duration="1000"
             sx={{
               fontSize: {
                 xs: "24px",
@@ -70,18 +81,23 @@ export default function CoachesSection() {
           </Typography>
 
           {/* coatch card */}
-          {coaches
-            .filter((coach) => coach.isSelected)
-            .map((coach, index) => (
-              <CoachesCard
-                key={index}
-                name={coach.name}
-                image={coach.image}
-                backgroundImage={coach.backgroundImage}
-                description={coach.description}
-              />
-            ))}
+          <Box data-aos="fade-right" data-aos-duration="1000">
+            {coaches
+              .filter((coach) => coach.isSelected)
+              .map((coach, index) => (
+                <CoachesCard
+                  key={index}
+                  name={coach.name}
+                  image={coach.image}
+                  backgroundImage={coach.backgroundImage}
+                  description={coach.description}
+                />
+              ))}
+          </Box>
+          {/* nevigation images  */}
           <Box
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
             sx={{
               display: "flex",
               gap: { xs: "10px", lg: "20px" },
