@@ -67,7 +67,7 @@ export default function Fighters() {
             },
           }}
         >
-          our schedule
+          our Fighters
         </Typography>
         <Box
           sx={{
