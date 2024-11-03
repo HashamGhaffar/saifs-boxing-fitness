@@ -100,7 +100,6 @@ const FightersSlider = ({
         <Slider
           {...sliderSettings}
           beforeChange={(_currentSlide: number, nextSlide: number) => {
-            console.log(fighterImages[nextSlide % 3].id);
             setActiveFighter(fighterImages[nextSlide % 3].id);
           }}
           ref={sliderRef}
