@@ -95,10 +95,10 @@ export default function Fighters() {
                   height: { xs: "50px", md: "77px", xl: "90px" },
                   position: "relative",
                 }}
-                onClick={() => {
-                  setActiveFighter(fighterImage.id);
-                  sliderRef.current?.slickGoTo(fighterImage.index);
-                }}
+                // onClick={() => {
+                //   setActiveFighter(fighterImage.id);
+                //   sliderRef.current?.slickGoTo(fighterImage.index);
+                // }}
               >
                 <Image
                   style={{
