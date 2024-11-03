@@ -20,7 +20,7 @@ export function FighterCard({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        transform: { lg: "scale(0.4)" },
+        transform: { lg: "scale(0.6)" },
       }}
       className="project"
     >
@@ -33,7 +33,7 @@ export function FighterCard({
           },
           borderWidth: { xs: "1px", md: "1.7px" },
           borderStyle: "solid",
-          borderColor: "#ffffff",
+          borderColor: isSelected ? "#FFFFFF" : "transparent",
         }}
       >
         <Box
@@ -47,7 +47,6 @@ export function FighterCard({
               width: "100%",
               objectFit: "cover",
               filter: isSelected ? "grayscale(0%)" : "grayscale(100%)",
-              outline: `${isSelected ? "2px" : "0px"} solid #FFFFFF`,
             }}
             src={imageSrc}
             alt={name}

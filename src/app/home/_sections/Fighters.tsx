@@ -12,7 +12,7 @@ import { fighterImages } from "@/app/constants/constants";
 import FightersSlider from "../_components/FightersSlider";
 
 export default function Fighters() {
-  const [activeFighter, setActiveFighter] = useState("fighter1");
+  const [activeFighter, setActiveFighter] = useState("fighter3");
   const sliderRef = useRef<Slider>(null);
 
   useEffect(() => {

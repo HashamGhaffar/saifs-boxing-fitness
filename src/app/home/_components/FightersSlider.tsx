@@ -99,7 +99,9 @@ const FightersSlider = ({
       >
         <Slider
           {...sliderSettings}
-          afterChange={(index) => setActiveFighter(fighterImages[index % 3].id)}
+          beforeChange={(index) =>
+            setActiveFighter(fighterImages[(index + 1) % 3].id)
+          }
           ref={sliderRef}
         >
           {fighters.map((fighter, index) => (
