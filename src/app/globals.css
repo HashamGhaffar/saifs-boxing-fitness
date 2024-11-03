@@ -51,3 +51,10 @@ a {
   transition: all 0.4s ease-in;
   filter: "grayscale(0%)";
 }
+
+@media only screen and (max-width: 600px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: translate(0) scale(1) !important;
+  }
+}
