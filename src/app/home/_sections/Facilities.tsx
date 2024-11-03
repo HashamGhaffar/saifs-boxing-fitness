@@ -2,14 +2,24 @@
 import React from "react";
 import webp from "@/app/_assets/webp";
 import { Box, Grid, Modal, Typography } from "@mui/material";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function Facilities() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
-  function openModal() {
+  const [selectedImage, setSelectedImage] = React.useState<StaticImageData>(
+    webp.F1
+  );
+  const [selectedImageText, setSelectedImageText] = React.useState<string>("");
+
+  function openModal(
+    selectedImage: StaticImageData,
+    selectedImageText: string = "Build strength and conditioning, incorporating dumbbells and bodyweight exercises to keep your heart rate elevated."
+  ) {
+    setSelectedImage(selectedImage);
+    setSelectedImageText(selectedImageText);
     setIsModalOpen(true);
   }
   function closeModal() {
@@ -80,7 +90,7 @@ export default function Facilities() {
             container
             spacing={1.25}
           >
-            <Grid onClick={openModal} item xs={12} sm={4} md={4}>
+            <Grid item xs={12} sm={4} md={4}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -103,6 +113,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
+                  onClick={() => openModal(webp.F1)}
                 >
                   <Image
                     style={{
@@ -124,6 +135,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
+                  onClick={() => openModal(webp.F2)}
                 >
                   <Image
                     style={{
@@ -137,7 +149,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid onClick={openModal} item xs={12} sm={8} md={2}>
+            <Grid item xs={12} sm={8} md={2}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -159,6 +171,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
+                  onClick={() => openModal(webp.F2)}
                 >
                   <Image
                     style={{
@@ -180,6 +193,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
+                  onClick={() => openModal(webp.F1)}
                 >
                   <Image
                     style={{
@@ -193,7 +207,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid onClick={openModal} item xs={12} sm={8} md={4}>
+            <Grid item xs={12} sm={8} md={4}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -213,6 +227,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
+                  onClick={() => openModal(webp.F3)}
                 >
                   <Image
                     style={{
@@ -226,7 +241,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid onClick={openModal} item xs={12} sm={4} md={2}>
+            <Grid item xs={12} sm={4} md={2}>
               <Box
                 sx={{
                   overflow: "hidden",
@@ -245,6 +260,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
+                  onClick={() => openModal(webp.F4)}
                 >
                   <Image
                     style={{
@@ -258,7 +274,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid onClick={openModal} item xs={12} sm={4} md={2}>
+            <Grid item xs={12} sm={4} md={2}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -278,6 +294,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
+                  onClick={() => openModal(webp.F5)}
                 >
                   <Image
                     style={{
@@ -291,7 +308,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid onClick={openModal} item xs={12} sm={8} md={4}>
+            <Grid item xs={12} sm={8} md={4}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -311,6 +328,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
+                  onClick={() => openModal(webp.F6)}
                 >
                   <Image
                     style={{
@@ -324,7 +342,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid onClick={openModal} item xs={12} sm={8} md={2}>
+            <Grid item xs={12} sm={8} md={2}>
               <Box sx={{ height: { sm: "100%" }, width: "auto" }}>
                 <Box
                   sx={{
@@ -346,6 +364,7 @@ export default function Facilities() {
                         transform: "scale(1.1)",
                       },
                     }}
+                    onClick={() => openModal(webp.F7)}
                   >
                     <Image
                       style={{
@@ -368,6 +387,7 @@ export default function Facilities() {
                         transform: "scale(1.1)",
                       },
                     }}
+                    onClick={() => openModal(webp.F8)}
                   >
                     <Image
                       style={{
@@ -382,7 +402,7 @@ export default function Facilities() {
                 </Box>
               </Box>
             </Grid>
-            <Grid onClick={openModal} item xs={12} sm={4} md={4}>
+            <Grid item xs={12} sm={4} md={4}>
               <Box
                 sx={{
                   height: { sm: "100%" },
@@ -404,6 +424,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
+                  onClick={() => openModal(webp.F8)}
                 >
                   <Image
                     style={{
@@ -425,6 +446,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
+                  onClick={() => openModal(webp.F7)}
                 >
                   <Image
                     style={{
@@ -465,7 +487,7 @@ export default function Facilities() {
                 objectFit: "cover",
                 zIndex: "10",
               }}
-              src={webp.F1}
+              src={selectedImage}
               alt="facility1"
             />
             <Box
@@ -490,8 +512,7 @@ export default function Facilities() {
                   paddingBottom: { xs: "20px", lg: "40px" },
                 }}
               >
-                Build strength and conditioning, incorporating dumbbells and
-                bodyweight exercises to keep your heart rate elevated.
+                {selectedImageText}
               </Typography>
             </Box>
           </Box>
