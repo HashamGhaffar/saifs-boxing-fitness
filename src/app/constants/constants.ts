@@ -53,3 +53,75 @@ qualities.
     isSelected: false,
   },
 ];
+
+export interface FighterCardProps {
+  index: number;
+  name: string;
+  description: string;
+  imageSrc: StaticImageData;
+  id: string;
+}
+
+export const fighters: FighterCardProps[] = [
+  {
+    index: 0,
+    name: "Allen Rivera",
+    description:
+      "A fierce middleweight champion known for her precision strikes",
+    imageSrc: webp.Fighter1,
+    id: "fighter1",
+  },
+  {
+    index: 1,
+    name: "Allen Rivera",
+    description:
+      "A fierce middleweight champion known for her precision strikes",
+    imageSrc: webp.Fighter2,
+    id: "fighter2",
+  },
+  {
+    index: 2,
+    name: "Allen Rivera",
+    description:
+      "A fierce middleweight champion known for her precision strikes",
+    imageSrc: webp.Fighter3,
+    id: "fighter3",
+  },
+  {
+    index: 3,
+    name: "Allen Rivera",
+    description:
+      "A fierce middleweight champion known for her precision strikes",
+    imageSrc: webp.Fighter1,
+    id: "fighter1",
+  },
+  {
+    index: 4,
+    name: "Allen Rivera",
+    description:
+      "A fierce middleweight champion known for her precision strikes",
+    imageSrc: webp.Fighter2,
+    id: "fighter2",
+  },
+  {
+    index: 5,
+    name: "Allen Rivera",
+    description:
+      "A fierce middleweight champion known for her precision strikes",
+    imageSrc: webp.Fighter3,
+    id: "fighter3",
+  },
+];
+
+export interface FighterImage {
+  index: number;
+  imagePath: StaticImageData;
+  alt: string;
+  id: string;
+}
+
+export const fighterImages: FighterImage[] = [
+  { index: 0, imagePath: webp.Fighter1, alt: "fighter1", id: "fighter1" },
+  { index: 1, imagePath: webp.Fighter2, alt: "fighter2", id: "fighter2" },
+  { index: 2, imagePath: webp.Fighter3, alt: "fighter3", id: "fighter3" },
+];
