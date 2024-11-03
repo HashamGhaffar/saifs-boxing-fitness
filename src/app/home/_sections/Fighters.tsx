@@ -19,14 +19,37 @@ const fighters = [
   },
   {
     index: 1,
-    name: "Another Fighter",
-    description: "A heavyweight champion known for his endurance and strength",
-    imageSrc: webp.Fighter3,
+    name: "Allen Rivera",
+    description:
+      "A fierce middleweight champion known for her precision strikes",
+    imageSrc: webp.Fighter2,
   },
   {
     index: 2,
-    name: "Yet Another Fighter",
-    description: "A heavyweight champion known for his endurance and strength",
+    name: "Allen Rivera",
+    description:
+      "A fierce middleweight champion known for her precision strikes",
+    imageSrc: webp.Fighter3,
+  },
+  {
+    index: 3,
+    name: "Allen Rivera",
+    description:
+      "A fierce middleweight champion known for her precision strikes",
+    imageSrc: webp.Fighter1,
+  },
+  {
+    index: 4,
+    name: "Allen Rivera",
+    description:
+      "A fierce middleweight champion known for her precision strikes",
+    imageSrc: webp.Fighter2,
+  },
+  {
+    index: 5,
+    name: "Allen Rivera",
+    description:
+      "A fierce middleweight champion known for her precision strikes",
     imageSrc: webp.Fighter3,
   },
 ];
@@ -44,22 +67,20 @@ export default function Fighters() {
   }, []);
 
   const sliderSettings = {
-    dots: true,
+    className: "center",
+    centerMode: true,
+    centerPadding: "0px",
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
+    initialSlide: 2,
     nextArrow: <CustomRightArrow />,
     prevArrow: <CustomLeftArrow />,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 1 },
-      },
+      { breakpoint: 1200, settings: { slidesToShow: 2, centerMode: false } },
+      { breakpoint: 600, settings: { slidesToShow: 1, centerMode: false } },
     ],
   };
 
@@ -80,6 +101,7 @@ export default function Fighters() {
           lg: "80px 100px 80px",
         },
       }}
+      className="project"
     >
       <Box
         sx={{
@@ -154,7 +176,10 @@ export default function Fighters() {
           </Box>
 
           {/* React Slick Slider */}
-          <Box sx={{ maxWidth: { xs: "300px", sm: "1000px" }, width: "100%" }}>
+          <Box
+            className="slider-container"
+            sx={{ maxWidth: { xs: "300px", sm: "1000px" }, width: "100%" }}
+          >
             <Slider {...sliderSettings}>
               {fighters.map((fighter, index) => (
                 <FighterCard
@@ -181,7 +206,14 @@ type FighterCardProps = {
 export function FighterCard({ name, description, imageSrc }: FighterCardProps) {
   return (
     <Box
-      sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        transform: { lg: "scale(0.4)" },
+        // filter: "grayscale(100%)",
+      }}
+      className="project"
     >
       <Box
         sx={{
@@ -189,17 +221,15 @@ export function FighterCard({ name, description, imageSrc }: FighterCardProps) {
             xs: "200px",
             sm: "250px",
             md: "300px",
-            borderWidth: { xs: "1px", md: "1.7px" },
-            borderStyle: "solid",
-            borderColor: "#ffffff",
           },
+          borderWidth: { xs: "1px", md: "1.7px" },
+          borderStyle: "solid",
+          borderColor: "#ffffff",
         }}
       >
         <Box
           sx={{
             maxWidth: "300px",
-            width: "100%",
-            height: "100%",
           }}
         >
           <Image
