@@ -51,7 +51,7 @@ export default function ContactUsForm() {
               sm: "60px 50px 60px",
               md: "60px 50px 60px",
               lg: "80px 100px 80px",
-              height: "100vh",
+              minHeight: "100vh",
             },
           }}
         >

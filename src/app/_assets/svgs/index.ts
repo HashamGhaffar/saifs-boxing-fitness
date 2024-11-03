@@ -6,6 +6,7 @@ import Exercise from "./exercise.svg";
 import Gloves from "./gloves.svg";
 import Clock from "./clock.svg";
 import Timer from "./timer.svg";
+import Arrow from "./arrow.svg";
 
 const svgs = {
   Logo,
@@ -16,6 +17,7 @@ const svgs = {
   Gloves,
   Clock,
   Timer,
+  Arrow,
 };
 
 export default svgs;
