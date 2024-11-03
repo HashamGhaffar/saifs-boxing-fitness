@@ -48,6 +48,11 @@ import WarmUp from "./coaching/warmUp.webp";
 
 import FuryVsSteel from "./furyVsSteel.webp";
 
+// fighters
+import Fighter1 from "./fighter1.webp";
+import Fighter2 from "./fighter2.webp";
+import Fighter3 from "./fighter3.webp";
+
 const webp = {
   BoxerAboutUS,
   // slider
@@ -97,6 +102,11 @@ const webp = {
   WarmUp,
 
   FuryVsSteel,
+
+  // fighters
+  Fighter1,
+  Fighter2,
+  Fighter3,
 };
 
 export default webp;

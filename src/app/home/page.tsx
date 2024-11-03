@@ -3,6 +3,7 @@ import HeroHome from "./_sections/HeroHome";
 import AboutUs from "./_sections/AboutUs";
 import Partners from "./_sections/Partner";
 import Facilities from "./_sections/Facilities";
+import Fighters from "./_sections/Fighters";
 import Coatches from "./_sections/Coaches";
 import Location from "./_sections/Location";
 import Sponsors from "./_sections/Sponsors";
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutUs />
       <Partners />
       <Facilities />
+      <Fighters />
       <Coatches />
       <Schedule />
       <Location />
