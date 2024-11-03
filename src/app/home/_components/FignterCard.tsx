@@ -20,7 +20,7 @@ export function FighterCard({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        transform: { lg: "scale(0.6)" },
+        transform: { lg: "scale(0.7)" },
       }}
       className="project"
     >
