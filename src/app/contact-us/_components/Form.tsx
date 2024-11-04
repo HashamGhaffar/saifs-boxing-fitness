@@ -15,6 +15,7 @@ export default function ContactUsForm() {
   const cardHeading = {
     color: "#FFFFFF",
     fontWeight: "700",
+    textTransform: "uppercase",
     fontSize: {
       xs: "18px",
       sm: "20px",

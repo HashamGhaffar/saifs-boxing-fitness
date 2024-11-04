@@ -22,9 +22,10 @@ export default function AboutUs() {
         sx={{
           display: "flex",
           justifyContent: "center",
+          flexDirection: { xs: "column", md: "row" },
           padding: {
-            xs: "0px 0px 0 20px",
-            sm: "0px 0px 0 50px",
+            xs: "20px 0px 0 20px",
+            sm: "50px 0px 0 50px",
             md: "0px 0px 0 50px",
             lg: "0px 0px 0 100px",
           },
@@ -33,7 +34,7 @@ export default function AboutUs() {
           backgroundRepeat: "repeat",
           backgroundPosition: "center",
           alignItems: "center",
-          height: "60vh",
+          height: { md: "60vh" },
           position: "relative",
         }}
       >
@@ -49,7 +50,6 @@ export default function AboutUs() {
               <Box
                 data-aos="fade-right"
                 sx={{
-                  paddingBottom: {},
                   maxWidth: {
                     xs: "500px",
                     sm: "700px",
@@ -108,8 +108,8 @@ export default function AboutUs() {
             },
             width: "100%",
             height: "auto",
-            display: { xs: "none", md: "block" },
-            position: "absolute",
+            display: { xs: "block", md: "block" },
+            position: { md: "absolute" },
             bottom: "0",
             right: "0",
           }}

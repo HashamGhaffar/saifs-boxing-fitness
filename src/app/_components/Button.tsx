@@ -20,6 +20,7 @@ const Button: React.FC<CustomButtonProps> = ({
         color: "#0D0D0D",
         backgroundColor: "#FFFFFF",
         borderRadius: "0px",
+        textTransform: "capitalize",
         padding: {
           xs: "10px 15px",
           sm: "10px 15px",

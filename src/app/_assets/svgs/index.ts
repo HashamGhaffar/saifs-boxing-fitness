@@ -8,6 +8,7 @@ import Clock from "./clock.svg";
 import Timer from "./timer.svg";
 import Arrow from "./arrow.svg";
 
+import ScrollTop from "./scrollTop.svg";
 const svgs = {
   Logo,
   Hamburger,
@@ -18,6 +19,7 @@ const svgs = {
   Clock,
   Timer,
   Arrow,
+  ScrollTop,
 };
 
 export default svgs;
