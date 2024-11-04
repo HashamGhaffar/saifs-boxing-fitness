@@ -202,7 +202,7 @@ export default function ContactUsForm() {
                     }}
                   />
                 </Box>
-                <Box sx={{ width: "200px" }}>
+                <Box sx={{ width: { xs: "100%", sm: "200px" } }}>
                   <Button
                     textStyles={{
                       fontSize: {
