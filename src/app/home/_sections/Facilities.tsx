@@ -6,6 +6,7 @@ import Image, { StaticImageData } from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import svgs from "@/app/_assets/svgs";
 
 export default function Facilities() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
@@ -31,6 +32,22 @@ export default function Facilities() {
     AOS.init({ duration: 500, once: true });
     AOS.refresh();
   }, []);
+
+  // close the modal on 10% scroll either direction
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPercentage =
+        window.scrollY /
+        (document.documentElement.scrollHeight - window.innerHeight);
+      if (scrollPercentage > 0.1 || scrollPercentage < 0.9) {
+        setIsModalOpen(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
   return (
     <>
       <Box
@@ -469,7 +486,6 @@ export default function Facilities() {
           sx={{
             height: { xs: "60vh", md: "50vh" },
             width: { xs: "80vw", md: "50vw" },
-            backgroundColor: "red",
             position: "absolute",
             top: "50%",
             left: "50%",
@@ -479,6 +495,32 @@ export default function Facilities() {
           }}
         >
           <Box sx={{ height: "100%", width: "100%", position: "relative" }}>
+            <Box
+              onClick={closeModal}
+              sx={{
+                height: "auto",
+                width: "50px",
+                position: "absolute",
+                top: "20px",
+                right: "20px",
+                zIndex: "30",
+                cursor: "pointer",
+                background:
+                  "radial-gradient(rgba(0,0, 0, 0.4), rgba(255, 255, 255, 0.4))",
+                borderRadius: "50%",
+              }}
+            >
+              <Image
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                  display: "block",
+                }}
+                src={svgs.Cross}
+                alt="cross"
+              />
+            </Box>
             <Image
               style={{
                 position: "absolute",

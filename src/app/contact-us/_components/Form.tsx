@@ -15,6 +15,7 @@ export default function ContactUsForm() {
   const cardHeading = {
     color: "#FFFFFF",
     fontWeight: "700",
+    textTransform: "uppercase",
     fontSize: {
       xs: "18px",
       sm: "20px",
@@ -158,7 +159,7 @@ export default function ContactUsForm() {
                   }}
                 >
                   <CustomTextField type="number" placeholder="Phone" />
-                  <CustomTextField type="text" placeholder="subject" />
+                  <CustomTextField type="text" placeholder="Subject" />
                 </Box>
                 <Box sx={{ width: "100%" }}>
                   <TextField
@@ -195,14 +196,14 @@ export default function ContactUsForm() {
                         fontSize: "18px",
                       },
                       "& .MuiInputBase-input::placeholder": {
-                        color: "#FFFFFF",
+                        color: "#FFFFFF66",
                         opacity: 1,
                         fontSize: "18px",
                       },
                     }}
                   />
                 </Box>
-                <Box sx={{ width: "200px" }}>
+                <Box sx={{ width: { xs: "100%", sm: "200px" } }}>
                   <Button
                     textStyles={{
                       fontSize: {

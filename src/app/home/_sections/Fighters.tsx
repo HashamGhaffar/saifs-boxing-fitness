@@ -97,7 +97,7 @@ export default function Fighters() {
                 }}
                 onClick={() => {
                   setActiveFighter(fighterImage.id);
-                  sliderRef.current?.slickGoTo(fighterImage.index);
+                  sliderRef.current?.slickGoTo(fighterImage.index, true);
                 }}
               >
                 <Image

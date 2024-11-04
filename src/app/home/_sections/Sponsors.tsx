@@ -72,7 +72,6 @@ export default function Sponsors() {
                 fontFamily: "Anton, sans-serif",
                 color: "#F63333",
                 textTransform: "uppercase",
-                //   textAlign: "right",
               }}
             >
               our sponsors
@@ -98,7 +97,8 @@ export default function Sponsors() {
                 xl: "80px",
               },
               display: "flex",
-              justifyContent: { xs: "flex-start", sm: "center" },
+              justifyContent: "center",
+              margin: "auto",
             }}
           >
             <Box
@@ -109,9 +109,9 @@ export default function Sponsors() {
                 justifyContent: "center",
                 alignItems: "center",
                 flexWrap: "wrap",
-                flexDirection: { xs: "column", sm: "row" },
-                maxWidth: "1300px",
-                rowGap: "30px",
+                flexDirection: "row",
+                maxWidth: { xs: "400px", md: "500px", lg: "1300px" },
+                rowGap: "50px",
                 columnGap: { sm: "40px", md: "60px", lg: "90px" },
               }}
             >

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, Divider } from "@mui/material";
 
 import Button from "./Button";
 import svgs from "../_assets/svgs/index";
@@ -212,59 +212,55 @@ export default function Navbar() {
           >
             Home
           </Typography>
+          <Divider sx={{ margin: "16px 0", backgroundColor: "#ffffff" }} />
           <Typography
             onClick={() => router.push("education")}
             sx={{ ...text, mb: 2, textAlign: "right" }}
           >
             Education
           </Typography>
+          <Divider sx={{ margin: "16px 0", backgroundColor: "#ffffff" }} />
           <Typography
             onClick={() => router.push("coaching")}
             sx={{ ...text, mb: 2, textAlign: "right" }}
           >
             1-2-1 Coaching
           </Typography>
+          <Divider sx={{ margin: "16px 0", backgroundColor: "#ffffff" }} />
           <Typography
             onClick={() => router.push("england-boxing")}
             sx={{ ...text, mb: 2, textAlign: "right" }}
           >
             England Boxing
           </Typography>
-          <Box
-            onClick={() => router.push("contact-us")}
+          <Divider sx={{ margin: "16px 0", backgroundColor: "#ffffff" }} />
+          <Button
+            variant="contained"
             sx={{
-              display: "flex",
-              justifyContent: "center",
-              paddingBlockEndt: 2,
+              ...text,
+              fontWeight: "400",
+              color: "#0D0D0D",
+              backgroundColor: "#FFFFFF",
+              borderRadius: "0px",
+              textWrap: "nowrap",
+              padding: {
+                xs: "6px 10px",
+                sm: "8px 15px",
+                // md: "12px 20px",
+                // lg: "15px 25px",
+              },
+              float: "right",
+              "&:hover": {
+                backgroundColor: "#f0f0f0",
+              },
+              "&:active": {
+                backgroundColor: "#e0e0e0",
+              },
             }}
+            onClick={() => router.push("contact-us")}
           >
-            <Button
-              variant="contained"
-              sx={{
-                ...text,
-                fontWeight: "400",
-                color: "#0D0D0D",
-                backgroundColor: "#FFFFFF",
-                borderRadius: "0px",
-                textWrap: "nowrap",
-                padding: {
-                  xs: "6px 10px",
-                  sm: "8px 15px",
-                  // md: "12px 20px",
-                  // lg: "15px 25px",
-                },
-                "&:hover": {
-                  backgroundColor: "#f0f0f0",
-                },
-                "&:active": {
-                  backgroundColor: "#e0e0e0",
-                },
-              }}
-              onClick={() => router.push("contact-us")}
-            >
-              Get In Touch
-            </Button>
-          </Box>
+            Get In Touch
+          </Button>
         </Box>
       </Box>
 
