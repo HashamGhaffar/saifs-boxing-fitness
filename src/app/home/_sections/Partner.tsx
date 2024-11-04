@@ -71,8 +71,8 @@ export default function Partners() {
       <Box
         sx={{
           backgroundColor: "#ffffff",
-          // paddingY: { xs: "20px", sm: "30px", md: "50px" },
-          height: "40vh",
+          height: { sm: "40vh" },
+          minHeight: "30vh",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -112,7 +112,7 @@ export default function Partners() {
               <Box
                 sx={{
                   maxWidth: {
-                    xs: "90px",
+                    xs: "140px",
                     sm: "150px",
                     md: "200px",
                     lg: "250px",
