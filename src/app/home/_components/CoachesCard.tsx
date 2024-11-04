@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
+import { Box, Button, Grid, Typography } from "@mui/material";
 
-import { Box, Grid, Typography } from "@mui/material";
 function CoachesCard({
   name,
   image,
@@ -13,117 +13,103 @@ function CoachesCard({
   backgroundImage: string;
   description: string;
 }) {
-  return (
-    <>
-      <Box
-        sx={{
-          display: "flex",
-          // justifyContent: "space-between",
-          // alignItems: "center",
+  const [showFullText, setShowFullText] = useState(false);
+  const [height, setHeight] = useState("80px");
+  const contentRef = useRef<HTMLDivElement>(null);
 
-          gap: { xs: "", sm: "", md: "", lg: "", xl: "50px" },
-          minHeight: {
-            xs: "450px",
-            sm: "350px",
-            lg: "400px",
-            xl: "450px",
+  useEffect(() => {
+    const content = contentRef.current;
+
+    if (content) {
+      if (showFullText) {
+        setHeight(`${content.scrollHeight}px`);
+      } else {
+        setHeight("80px");
+      }
+    }
+  }, [showFullText]);
+
+  const handleToggle = () => {
+    if (showFullText) {
+      setHeight(`${contentRef.current?.scrollHeight}px`);
+      requestAnimationFrame(() => setShowFullText(false));
+    } else {
+      setShowFullText(true);
+    }
+  };
+
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        gap: { xs: "", sm: "", md: "", lg: "", xl: "50px" },
+        minHeight: {
+          xs: "450px",
+          sm: "350px",
+          lg: "400px",
+          xl: "450px",
+        },
+      }}
+    >
+      <Grid
+        sx={{
+          backgroundImage: `${backgroundImage}`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          padding: {
+            xs: "20px 30px 0 20px",
+            sm: "30px 30px 0 30px",
+            lg: "30px 50px 0 30px",
           },
         }}
+        justifyContent="space-between"
+        container
       >
         <Grid
           sx={{
-            backgroundImage: `${backgroundImage}`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            padding: {
-              xs: "20px 30px 0 20px",
-              sm: "30px 30px 0 30px",
-              lg: "30px 50px 0 30px",
-            },
+            height: "100%",
+            display: "flex",
+            alignItems: { xs: "center" },
+            md: "none",
           }}
-          justifyContent="space-between"
-          container
+          alignItems="center"
+          justifyContent="center"
+          item
+          xs={12}
+          md={7.5}
         >
-          <Grid
+          {/* Coach details */}
+          <Box
             sx={{
-              height: "100%",
               display: "flex",
-              alignItems: { xs: "center" },
-              md: "none",
+              flexDirection: "column",
+              gap: { xs: "10px", xl: "20px" },
+              paddingBottom: { xs: "10px", sm: "20px", xl: "40px" },
             }}
-            alignItems="center"
-            justifyContent="center"
-            item
-            xs={12}
-            md={7.5}
           >
-            {/* coach details  */}
-            <Box
+            <Typography
               sx={{
-                display: "flex",
-                flexDirection: "column",
-                gap: { xs: "10px", xl: "20px" },
-                paddingBottom: { xs: "10px", sm: "20px", xl: "40px" },
+                fontWeight: "700",
+                color: "#ffffff",
+                fontSize: {
+                  xs: "22px",
+                  sm: "24px",
+                  lg: "26px",
+                },
+                whiteSpace: "nowrap",
               }}
             >
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  color: "#ffffff",
-                  fontSize: {
-                    xs: "22px",
-                    sm: "24px",
-                    lg: "26px",
-                  },
-                  whiteSpace: "nowrap",
-                }}
-              >
-                {name}
-              </Typography>
-              <Typography
-                sx={{
-                  fontWeight: "400",
-                  color: "#ffffff",
-                  fontSize: { xs: "12px", md: "14px", xl: "18px" },
-                }}
-              >
-                {/* {description} */}
-                {description.split("<br>").map((paragraph, index) => (
-                  <React.Fragment key={index}>
-                    {paragraph}
-                    <br />
-                  </React.Fragment>
-                ))}
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid
-            sx={{
-              position: "relative",
-              display: { xs: "none", md: "flex" },
-              alignItems: "flex-end",
-            }}
-            item
-            xs={0}
-            md={4}
-            lg={4}
-            xl={4}
-          >
-            {/* coach image  */}
+              {name}
+            </Typography>
             <Box
               sx={{
-                // height: "100%",
-                display: { xs: "none", md: "flex" },
-                alignItems: "flex-end",
+                display: { xs: "block", md: "none" },
                 height: {
-                  xs: "auto",
+                  xs: "250px",
                   sm: "280px",
                   lg: "290px",
                   xl: "400px",
                 },
-                position: "absolute",
-                bottom: "0",
-                right: "0",
               }}
             >
               <Image
@@ -136,10 +122,87 @@ function CoachesCard({
                 alt="CoachJames"
               />
             </Box>
-          </Grid>
+            <Box
+              ref={contentRef}
+              sx={{
+                overflow: "hidden",
+                height,
+                transition: "height 0.5s ease",
+              }}
+            >
+              <Typography
+                sx={{
+                  fontWeight: 400,
+                  color: "#ffffff",
+                  fontSize: { xs: "12px", md: "14px", xl: "18px" },
+                  display: "-webkit-box",
+                  WebkitBoxOrient: "vertical",
+                  WebkitLineClamp: showFullText ? "unset" : 4, // Clamps lines for ellipsis
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                }}
+              >
+                {description.split("<br>").map((paragraph, index) => (
+                  <React.Fragment key={index}>
+                    {paragraph}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </Typography>
+            </Box>
+            <Button
+              onClick={handleToggle}
+              sx={{
+                mt: 2,
+                color: "#ffffff",
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {showFullText ? "Read Less" : "Read More"}
+            </Button>
+          </Box>
         </Grid>
-      </Box>
-    </>
+        <Grid
+          sx={{
+            position: "relative",
+            display: { xs: "none", md: "flex" },
+            alignItems: "flex-end",
+          }}
+          item
+          xs={0}
+          md={4}
+          lg={4}
+          xl={4}
+        >
+          {/* Coach image */}
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              alignItems: "flex-end",
+              height: {
+                xs: "auto",
+                sm: "280px",
+                lg: "290px",
+                xl: "400px",
+              },
+              position: "absolute",
+              bottom: "0",
+              right: "0",
+            }}
+          >
+            <Image
+              style={{
+                height: "100%",
+                width: "100%",
+                objectFit: "contain",
+              }}
+              src={image}
+              alt="CoachJames"
+            />
+          </Box>
+        </Grid>
+      </Grid>
+    </Box>
   );
 }
 
