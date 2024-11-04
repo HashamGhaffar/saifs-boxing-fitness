@@ -58,7 +58,7 @@ export default function CustomTextField({
           fontSize: "18px",
         },
         "& .MuiInputBase-input::placeholder": {
-          color: "#FFFFFF",
+          color: "#FFFFFF66",
           opacity: 1,
           fontSize: "18px",
         },

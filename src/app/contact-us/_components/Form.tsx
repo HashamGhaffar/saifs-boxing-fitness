@@ -158,7 +158,7 @@ export default function ContactUsForm() {
                   }}
                 >
                   <CustomTextField type="number" placeholder="Phone" />
-                  <CustomTextField type="text" placeholder="subject" />
+                  <CustomTextField type="text" placeholder="Subject" />
                 </Box>
                 <Box sx={{ width: "100%" }}>
                   <TextField
@@ -195,7 +195,7 @@ export default function ContactUsForm() {
                         fontSize: "18px",
                       },
                       "& .MuiInputBase-input::placeholder": {
-                        color: "#FFFFFF",
+                        color: "#FFFFFF66",
                         opacity: 1,
                         fontSize: "18px",
                       },
