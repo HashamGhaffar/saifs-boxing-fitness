@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Button from "@mui/material/Button";
 import HeroHome from "./_sections/HeroHome";
 import AboutUs from "./_sections/AboutUs";
 import Partners from "./_sections/Partner";
@@ -13,6 +12,9 @@ import Sponsors from "./_sections/Sponsors";
 // import InstagramFollow from "./_sections/InstagramFollow";
 import Footer from "../_components/Footer";
 import Schedule from "./_sections/Schedule";
+import svgs from "../_assets/svgs";
+import Image from "next/image";
+import { Box } from "@mui/material";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -55,30 +57,31 @@ export default function Home() {
       <Footer />
 
       {isVisible && (
-        <Button
-          onClick={scrollToTop}
-          variant="contained"
-          color="error" // Use MUI color scheme
+        <Box
           sx={{
             position: "fixed",
-            bottom: "30px",
-            right: "30px",
-            padding: "10px 15px",
-            borderRadius: "5px",
+            bottom: { xs: "30px", lg: "50px" },
+            right: { xs: "30px", lg: "50px" },
             zIndex: 1000,
-            opacity: 0.8, // Set initial opacity
-            transition: "opacity 0.3s ease", // Smooth transition for opacity
+            opacity: 0.6,
+            transition: "opacity 0.3s ease",
             "&:hover": {
-              backgroundColor: "#d32f2f", // Darker shade for hover effect
-              opacity: 1, // Full opacity on hover
+              opacity: 1,
             },
             "&:active": {
-              transform: "scale(0.95)", // Click effect
+              transform: "scale(0.95)",
             },
+            height: "auto",
+            width: { xs: "30px", md: "50px", xl: "70px" },
           }}
         >
-          ↑ Scroll To Top
-        </Button>
+          <Image
+            onClick={scrollToTop}
+            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+            src={svgs.ScrollTop}
+            alt="scroll top"
+          />
+        </Box>
       )}
     </>
   );

@@ -1,16 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import webp from "@/app/_assets/webp";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 export default function EnglandBoxingDetailSection() {
-  useEffect(() => {
-    AOS.init({ duration: 500, once: true });
-    AOS.refresh();
-  }, []);
-
   const paragraph = {
     fontSize: {
       xs: "14px",
@@ -39,7 +31,7 @@ export default function EnglandBoxingDetailSection() {
       >
         <Box sx={{ maxWidth: "1600px" }}>
           {/* main image  */}
-          <Box data-aos="zoom-in" data-aos-duration="1000">
+          <Box>
             <Image
               style={{ height: "100%", width: "100%", objectFit: "cover" }}
               src={webp.FuryVsSteel}
@@ -47,7 +39,7 @@ export default function EnglandBoxingDetailSection() {
             />
           </Box>
           {/* heading  initial describtion */}
-          <Box data-aos="fade-up" data-aos-duration="1000">
+          <Box>
             <Typography
               sx={{
                 fontSize: {
@@ -96,8 +88,6 @@ export default function EnglandBoxingDetailSection() {
             }}
           >
             <Box
-              data-aos="fade-right"
-              data-aos-duration="1000"
               sx={{
                 maxWidth: { xs: "700px", xl: "1000px" },
                 display: "flex",
@@ -136,8 +126,6 @@ export default function EnglandBoxingDetailSection() {
               </Typography>
             </Box>
             <Box
-              data-aos="fade-left"
-              data-aos-duration="1000"
               sx={{
                 width: { xs: "100%", sm: "450px", lg: "500px", xl: "550px" },
               }}
@@ -149,7 +137,7 @@ export default function EnglandBoxingDetailSection() {
               />
             </Box>
           </Box>
-          <Box data-aos="fade-up" data-aos-duration="1000">
+          <Box>
             <Typography sx={{ ...paragraph }}>
               The final rounds were a brutal test of endurance. Both men,
               bloodied and battered, fought with everything they had. Thunder,

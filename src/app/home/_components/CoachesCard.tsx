@@ -28,7 +28,6 @@ function CoachesCard({
             lg: "400px",
             xl: "450px",
           },
-          overflow: "hidden",
         }}
       >
         <Grid
@@ -41,11 +40,7 @@ function CoachesCard({
               sm: "30px 30px 0 30px",
               lg: "30px 50px 0 30px",
             },
-            // alignItems: { xs: "center", md: "none" },
-            // justifyContent: { xs: "none", md: "none" },
-            // display: "flex÷\",
           }}
-          // alignItems="flex-end"
           justifyContent="space-between"
           container
         >
@@ -69,7 +64,6 @@ function CoachesCard({
                 flexDirection: "column",
                 gap: { xs: "10px", xl: "20px" },
                 paddingBottom: { xs: "10px", sm: "20px", xl: "40px" },
-                overflow: "scroll",
               }}
             >
               <Typography
@@ -81,7 +75,6 @@ function CoachesCard({
                     sm: "24px",
                     lg: "26px",
                   },
-                  textOverflow: "scroll",
                   whiteSpace: "nowrap",
                 }}
               >

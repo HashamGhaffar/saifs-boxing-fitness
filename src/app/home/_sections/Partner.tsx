@@ -46,14 +46,6 @@ export default function Partners() {
           autoplaySpeed: 3000,
         },
       },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplaySpeed: 3000,
-        },
-      },
     ],
   };
 
@@ -79,8 +71,8 @@ export default function Partners() {
       <Box
         sx={{
           backgroundColor: "#ffffff",
-          // paddingY: { xs: "20px", sm: "30px", md: "50px" },
-          height: "40vh",
+          height: { sm: "40vh" },
+          minHeight: "30vh",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -102,7 +94,7 @@ export default function Partners() {
             color: "#F63333",
             textTransform: "uppercase",
             textAlign: "center",
-            paddingBottom: { xs: "20px", sm: "30px", md: "50px" },
+            paddingBottom: { xs: "60px", sm: "50px" },
           }}
         >
           Our Partners
@@ -120,7 +112,7 @@ export default function Partners() {
               <Box
                 sx={{
                   maxWidth: {
-                    xs: "90px",
+                    xs: "140px",
                     sm: "150px",
                     md: "200px",
                     lg: "250px",
