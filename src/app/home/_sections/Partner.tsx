@@ -46,14 +46,6 @@ export default function Partners() {
           autoplaySpeed: 3000,
         },
       },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplaySpeed: 3000,
-        },
-      },
     ],
   };
 
@@ -102,7 +94,7 @@ export default function Partners() {
             color: "#F63333",
             textTransform: "uppercase",
             textAlign: "center",
-            paddingBottom: { xs: "20px", sm: "30px", md: "50px" },
+            paddingBottom: { xs: "60px", sm: "50px" },
           }}
         >
           Our Partners
