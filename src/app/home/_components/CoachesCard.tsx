@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
 import { Box, Button, Grid, Typography } from "@mui/material";
 
@@ -14,9 +14,28 @@ function CoachesCard({
   description: string;
 }) {
   const [showFullText, setShowFullText] = useState(false);
+  const [height, setHeight] = useState("80px");
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const content = contentRef.current;
+
+    if (content) {
+      if (showFullText) {
+        setHeight(`${content.scrollHeight}px`);
+      } else {
+        setHeight("80px");
+      }
+    }
+  }, [showFullText]);
 
   const handleToggle = () => {
-    setShowFullText((prev) => !prev);
+    if (showFullText) {
+      setHeight(`${contentRef.current?.scrollHeight}px`);
+      requestAnimationFrame(() => setShowFullText(false));
+    } else {
+      setShowFullText(true);
+    }
   };
 
   return (
@@ -59,7 +78,7 @@ function CoachesCard({
           xs={12}
           md={7.5}
         >
-          {/* coach details  */}
+          {/* Coach details */}
           <Box
             sx={{
               display: "flex",
@@ -104,12 +123,11 @@ function CoachesCard({
               />
             </Box>
             <Box
+              ref={contentRef}
               sx={{
-                display: "block",
-                transition: "max-height 0.4s ease, opacity 0.4s ease", // Adjust duration for smoother animation
-                overflow: "hidden", // Prevent overflow
-                maxHeight: showFullText ? "400px" : "80px", // Set max-height based on state
-                opacity: showFullText ? 1 : 0.9, // Animate opacity
+                overflow: "hidden",
+                height,
+                transition: "height 0.5s ease",
               }}
             >
               <Typography
@@ -117,40 +135,19 @@ function CoachesCard({
                   fontWeight: 400,
                   color: "#ffffff",
                   fontSize: { xs: "12px", md: "14px", xl: "18px" },
-                  display: {
-                    xs: "-webkit-box",
-                    md: "-webkit-box",
-                    lg: "block",
-                  },
-                  WebkitBoxOrient: {
-                    xs: "vertical",
-                    md: "vertical",
-                    lg: "unset",
-                  },
-                  overflow: { xs: "hidden", sm: "hidden", lg: "unset" },
-                  WebkitLineClamp: {
-                    xs: showFullText ? "unset" : 4,
-                    md: "unset",
-                  },
-                  textOverflow: { xs: "ellipsis", sm: "ellipsis", lg: "unset" },
+                  display: "-webkit-box",
+                  WebkitBoxOrient: "vertical",
+                  WebkitLineClamp: showFullText ? "unset" : 4, // Clamps lines for ellipsis
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
                 }}
               >
-                {showFullText
-                  ? description.split("<br>").map((paragraph, index) => (
-                      <React.Fragment key={index}>
-                        {paragraph}
-                        <br />
-                      </React.Fragment>
-                    ))
-                  : description
-                      .split("<br>")
-                      .slice(0, 4)
-                      .map((paragraph, index) => (
-                        <React.Fragment key={index}>
-                          {paragraph}
-                          <br />
-                        </React.Fragment>
-                      ))}
+                {description.split("<br>").map((paragraph, index) => (
+                  <React.Fragment key={index}>
+                    {paragraph}
+                    <br />
+                  </React.Fragment>
+                ))}
               </Typography>
             </Box>
             <Button
@@ -177,7 +174,7 @@ function CoachesCard({
           lg={4}
           xl={4}
         >
-          {/* coach image  */}
+          {/* Coach image */}
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
