@@ -7,6 +7,10 @@ import Gloves from "./gloves.svg";
 import Clock from "./clock.svg";
 import Timer from "./timer.svg";
 import Arrow from "./arrow.svg";
+import Email from "./email.svg";
+import FaceBook from "./facebook.svg";
+import Instagram from "./instagram.svg";
+import Phone from "./phone.svg";
 
 import ScrollTop from "./scrollTop.svg";
 const svgs = {
@@ -20,6 +24,10 @@ const svgs = {
   Timer,
   Arrow,
   ScrollTop,
+  Email,
+  FaceBook,
+  Instagram,
+  Phone,
 };
 
 export default svgs;
