@@ -2,17 +2,9 @@ import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import webp from "../_assets/webp";
 import { useRouter } from "next/navigation";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import svgs from "../_assets/svgs";
 
 export default function Footer() {
-  useEffect(() => {
-    AOS.init({ duration: 500, once: true });
-    AOS.refresh();
-  }, []);
-
   const router = useRouter();
 
   const textStyle = {
@@ -47,8 +39,6 @@ export default function Footer() {
         }}
       >
         <Box
-          data-aos="zoom-out"
-          data-aos-duration="1000"
           sx={{
             display: "flex",
             justifyContent: { xs: "space-between" },
@@ -60,6 +50,7 @@ export default function Footer() {
             width: "100%",
           }}
         >
+          {/* footer logo  */}
           <Box
             onClick={() => router.push("/")}
             sx={{
@@ -157,30 +148,6 @@ export default function Footer() {
               alignItems: { xs: "flex-start" },
             }}
           >
-            <Typography sx={{ ...headingStyle }}>quick links</Typography>
-            <Typography
-              onClick={() => router.push("/")}
-              sx={{
-                ...textStyle,
-                maxWidth: "180px",
-                "&:hover": {
-                  color: "#F63333",
-                  textShadow: "1px 3px 4px #0D0D0D",
-                  scale: "1.1",
-                },
-              }}
-            >
-              1-5 Canklow Rd, Rotherham S60 2JB, United Kingdom
-            </Typography>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "12px",
-              alignItems: { xs: "flex-start" },
-            }}
-          >
             <Typography sx={{ ...headingStyle }}>contact us</Typography>
 
             <Box sx={{ display: "flex", gap: "10px", alignItems: "center" }}>
@@ -191,6 +158,26 @@ export default function Footer() {
             <Box sx={{ display: "flex", gap: "10px", alignItems: "center" }}>
               <Image src={svgs.Email} alt="Email" />
               <Typography sx={{ ...textStyle }}>+info@sabirs.com</Typography>
+            </Box>
+            {/* location   */}
+            <Box
+              sx={{ display: "flex", gap: "10px", alignItems: "flex-start" }}
+            >
+              <Image src={svgs.Location} alt="location" />
+              <Typography
+                onClick={() => router.push("/")}
+                sx={{
+                  ...textStyle,
+                  maxWidth: "180px",
+                  "&:hover": {
+                    color: "#F63333",
+                    textShadow: "1px 3px 4px #0D0D0D",
+                    scale: "1.1",
+                  },
+                }}
+              >
+                1-5 Canklow Rd, Rotherham S60 2JB, United Kingdom
+              </Typography>
             </Box>
           </Box>
           <Box
@@ -228,6 +215,7 @@ export function MobileFooter() {
     cursor: "pointer",
     transition:
       "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
+    textWrap: "nowrap",
   };
   const headingStyle = {
     fontWeight: "700",
@@ -238,30 +226,71 @@ export function MobileFooter() {
     paddingBottom: "15px",
   };
   return (
-    <Box sx={{ padding: "30px 40px", display: { xs: "block", sm: "none" } }}>
+    <Box
+      sx={{
+        padding: "30px 40px",
+        display: { xs: "block", sm: "none" },
+        backgroundImage: "url(bgFooter.webp)",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "#0D0D0D",
+      }}
+    >
       <Box sx={{ paddingBottom: "30px" }}>
-        <Typography sx={{ ...headingStyle }}>quick links</Typography>
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Box
-            sx={{
-              display: "flex",
-              gap: "60px",
-              rowGap: "15px",
-              flexWrap: "wrap",
-              justifyContent: "flex-start",
-              maxWidth: "300px",
-            }}
-          >
-            <Typography style={{ ...textStyle }}>Home</Typography>
-            <Typography style={{ ...textStyle }}>1-2-1 Coaching</Typography>
-            <Typography style={{ ...textStyle }}>Contact US</Typography>
-            <Typography style={{ ...textStyle }}>Education</Typography>
-            <Typography style={{ ...textStyle }}>England Boxing</Typography>
-          </Box>
+        <Typography sx={{ ...headingStyle }}>Quick Links</Typography>
+        <Box sx={{ width: "100%", maxWidth: "350px", margin: "0 auto" }}>
+          <table style={{ width: "100%" }}>
+            <tr>
+              <td
+                style={{
+                  textAlign: "center",
+                  paddingBottom: "15px",
+                }}
+              >
+                <Typography sx={{ ...textStyle, marginLeft: "-22px" }}>
+                  Home
+                </Typography>
+              </td>
+              <td
+                style={{
+                  textAlign: "center",
+                  paddingBottom: "15px",
+                }}
+              >
+                <Typography sx={{ ...textStyle }}>1-2-1 Coaching</Typography>
+              </td>
+              <td
+                style={{
+                  textAlign: "center",
+                  paddingBottom: "15px",
+                }}
+              >
+                <Typography sx={{ ...textStyle }}>Contact US</Typography>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                <Typography sx={{ ...textStyle }}>Education</Typography>
+              </td>
+              <td
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                <Typography sx={{ ...textStyle }}>England Boxing</Typography>
+              </td>
+              <td style={{ padding: 0 }} />
+            </tr>
+          </table>
         </Box>
       </Box>
       <Box sx={{ paddingBottom: "30px" }}>
-        <Typography sx={{ ...headingStyle }}>Address</Typography>
+        <Typography sx={{ ...headingStyle }}>contact us</Typography>
         <Box
           sx={{
             display: "flex",
@@ -275,7 +304,7 @@ export function MobileFooter() {
                 alignItems: "center",
                 gap: "10px",
                 justifyContent: "flex-start",
-                paddingBottom: "8px",
+                paddingBottom: "10px",
               }}
             >
               <Image
@@ -283,7 +312,7 @@ export function MobileFooter() {
                 src={svgs.Phone}
                 alt="Phone"
               />
-              <Typography style={{ ...textStyle }}>+447860606986</Typography>
+              <Typography sx={{ ...textStyle }}>+447860606986</Typography>
             </Box>
             <Box
               sx={{
@@ -291,15 +320,46 @@ export function MobileFooter() {
                 alignItems: "center",
                 gap: "10px",
                 justifyContent: "flex-start",
+                paddingBottom: "10px",
               }}
             >
               <Image
-                style={{ width: "20px", height: "20px", objectFit: "contain" }}
+                style={{
+                  width: "20px",
+                  height: "20px",
+                  objectFit: "contain",
+                }}
                 src={svgs.Email}
                 alt="Email"
               />
-              <Typography style={{ ...textStyle, fontSize: "14px" }}>
+              <Typography sx={{ ...textStyle, fontSize: "14px" }}>
                 info@sabirs.com
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "flex-start",
+                gap: "10px",
+              }}
+            >
+              <Image
+                style={{
+                  width: "20px",
+                  height: "20px",
+                  objectFit: "contain",
+                }}
+                src={svgs.Location}
+                alt="Location"
+              />
+              <Typography
+                sx={{
+                  ...textStyle,
+                  maxWidth: "200px",
+                  textWrap: "wrap",
+                }}
+              >
+                1-5 Canklow Rd, Rotherham S60 2JB, United Kingdom
               </Typography>
             </Box>
           </Box>

@@ -43,6 +43,7 @@ export default function Fighters() {
         sx={{
           maxWidth: "1600px",
           width: "100%",
+          margin: "0 auto",
         }}
       >
         <Typography
@@ -69,65 +70,69 @@ export default function Fighters() {
         >
           our Fighters
         </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: { xs: "50px", md: "70px", xl: "100px" },
-            flexDirection: { xs: "column-reverse", lg: "row" },
-          }}
-        >
+        <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
           <Box
             sx={{
               display: "flex",
-              justifyContent: "center",
+              justifyContent: { xs: "center", xl: "space-between" },
               alignItems: "center",
-              flexDirection: { xs: "row", lg: "column" },
-              gap: "25px",
+              gap: { xs: "50px", md: "70px", xl: "100px" },
+              flexDirection: { xs: "column-reverse", lg: "row" },
+              maxWidth: "1400px",
+              width: "100%",
             }}
           >
-            {fighterImages.map((fighterImage, index) => (
-              <Box
-                key={index}
-                sx={{
-                  width: { xs: "50px", md: "77px", xl: "90px" },
-                  height: { xs: "50px", md: "77px", xl: "90px" },
-                  position: "relative",
-                }}
-                onClick={() => {
-                  setActiveFighter(fighterImage.id);
-                  sliderRef.current?.slickGoTo(fighterImage.index, true);
-                }}
-              >
-                <Image
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    objectFit: "cover",
-                    position: "absolute",
-                    top: "0",
-                    outline: `${
-                      activeFighter === fighterImage.id ? "2px" : "0px"
-                    } solid #FFFFFF`,
-                    filter:
-                      activeFighter === fighterImage.id
-                        ? "grayscale(0%)"
-                        : "grayscale(100%)",
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: { xs: "row", lg: "column" },
+                gap: "25px",
+              }}
+            >
+              {fighterImages.map((fighterImage, index) => (
+                <Box
+                  key={index}
+                  sx={{
+                    width: { xs: "50px", md: "77px", xl: "90px" },
+                    height: { xs: "50px", md: "77px", xl: "90px" },
+                    position: "relative",
                   }}
-                  src={fighterImage.imagePath}
-                  alt={fighterImage.alt}
-                />
-              </Box>
-            ))}
-          </Box>
+                  onClick={() => {
+                    setActiveFighter(fighterImage.id);
+                    sliderRef.current?.slickGoTo(fighterImage.index, true);
+                  }}
+                >
+                  <Image
+                    style={{
+                      height: "100%",
+                      width: "100%",
+                      objectFit: "cover",
+                      position: "absolute",
+                      top: "0",
+                      outline: `${
+                        activeFighter === fighterImage.id ? "2px" : "0px"
+                      } solid #FFFFFF`,
+                      filter:
+                        activeFighter === fighterImage.id
+                          ? "grayscale(0%)"
+                          : "grayscale(100%)",
+                    }}
+                    src={fighterImage.imagePath}
+                    alt={fighterImage.alt}
+                  />
+                </Box>
+              ))}
+            </Box>
 
-          {/* React Slick Slider */}
-          <FightersSlider
-            activeFighter={activeFighter}
-            setActiveFighter={setActiveFighter}
-            sliderRef={sliderRef}
-          />
+            {/* React Slick Slider */}
+            <FightersSlider
+              activeFighter={activeFighter}
+              setActiveFighter={setActiveFighter}
+              sliderRef={sliderRef}
+            />
+          </Box>
         </Box>
       </Box>
     </Box>

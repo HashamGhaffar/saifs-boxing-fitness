@@ -42,7 +42,7 @@ function CoachesCard({
     <Box
       sx={{
         display: "flex",
-        gap: { xs: "", sm: "", md: "", lg: "", xl: "50px" },
+        gap: { xl: "50px" },
         minHeight: {
           xs: "450px",
           sm: "350px",
@@ -125,21 +125,21 @@ function CoachesCard({
             <Box
               ref={contentRef}
               sx={{
-                overflow: "hidden",
                 height,
                 transition: "height 0.5s ease",
               }}
             >
               <Typography
                 sx={{
-                  fontWeight: 400,
+                  fontWeight: "400",
                   color: "#ffffff",
                   fontSize: { xs: "12px", md: "14px", xl: "18px" },
                   display: "-webkit-box",
                   WebkitBoxOrient: "vertical",
-                  WebkitLineClamp: showFullText ? "unset" : 4, // Clamps lines for ellipsis
+                  WebkitLineClamp: showFullText ? "unset" : "4",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
+                  textShadow: "0px 0px 6px #000",
                 }}
               >
                 {description.split("<br>").map((paragraph, index) => (
@@ -155,7 +155,6 @@ function CoachesCard({
               sx={{
                 mt: 2,
                 color: "#ffffff",
-                display: { xs: "block", md: "none" },
               }}
             >
               {showFullText ? "Read Less" : "Read More"}

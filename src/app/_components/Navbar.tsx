@@ -29,6 +29,7 @@ export default function Navbar() {
     },
     fontWeight: "300",
     color: "#FFFFFF",
+    overflow: "hidden",
   };
 
   const toggleDrawer = (open: boolean) => {
@@ -197,6 +198,8 @@ export default function Navbar() {
           overflowX: "hidden",
           transition: "all .5s ease",
           zIndex: "10",
+          textWrap: "nowrap",
+          overflow: "hidden",
         }}
       >
         <Box sx={{ padding: "20px" }}>
@@ -246,9 +249,8 @@ export default function Navbar() {
               padding: {
                 xs: "6px 10px",
                 sm: "8px 15px",
-                // md: "12px 20px",
-                // lg: "15px 25px",
               },
+              overflow: "hidden",
               float: "right",
               "&:hover": {
                 backgroundColor: "#f0f0f0",

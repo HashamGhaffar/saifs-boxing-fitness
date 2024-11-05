@@ -108,23 +108,36 @@ export default function AboutUs() {
             },
             width: "100%",
             height: "auto",
-            display: { xs: "block", md: "block" },
             position: { md: "absolute" },
             bottom: "0",
-            right: "0",
+            right: { md: "20px", lg: "50px", xl: "100px" },
+            display: "flex",
+            justifyContent: "flex-end",
           }}
         >
-          <Image
-            style={{
-              width: "100%",
+          <Box
+            sx={{
+              maxWidth: {
+                xs: "300px",
+                sm: "400px",
+                md: "450px",
+                xl: "500px",
+              },
               height: "100%",
-              objectFit: "contain",
-              filter: "drop-shadow(10px 4px 8px rgba(13, 13, 13))",
-              margin: "0 0 -3px 0",
+              width: "100%",
             }}
-            src={webp.BoxerAboutUS}
-            alt="BoxerAboutUS"
-          />
+          >
+            <Image
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "contain",
+                margin: "0 0 -3px 0",
+              }}
+              src={webp.BoxerAboutUS2}
+              alt="BoxerAboutUS"
+            />
+          </Box>
         </Box>
       </Box>
     </>

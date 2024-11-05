@@ -73,7 +73,7 @@ export function FighterCard({
               color: "#FFFFFF",
               fontWeight: "700",
               fontFamily: "lato, sans-serif",
-              fontSize: { xs: "14px", md: "16px", lg: "18px" },
+              fontSize: { xs: "16px", md: "18px", lg: "20px", xl: "22px" },
             }}
           >
             {name}
@@ -84,7 +84,7 @@ export function FighterCard({
               color: "#ffffff",
               fontWeight: "400",
               fontFamily: "lato, sans-serif",
-              fontSize: "12px",
+              fontSize: { xs: "14px", xl: "16px" },
             }}
           >
             {description}

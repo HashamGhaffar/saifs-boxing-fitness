@@ -7,6 +7,25 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import svgs from "@/app/_assets/svgs";
+import { keyframes } from "@mui/system";
+
+// const unfoldAnimation = keyframes`
+//   0% { opacity: 0; transform: scale(0.95); }
+//   100% { opacity: 1; transform: scale(1); }
+// `;
+
+const unfoldAnimation = keyframes`
+ 
+   0%{
+  opacity:0;
+  transform: scale(0) translateX(-100%) translateY(200%) ; 
+ }
+
+100% {
+  opacity:1;
+  transform: scale(1) translate(-50%, -50%);
+ }
+`;
 
 export default function Facilities() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
@@ -481,33 +500,41 @@ export default function Facilities() {
         </Box>
       </Box>
 
-      <Modal open={isModalOpen} onClose={closeModal}>
+      <Modal
+        sx={{ backgroundColor: "rgba(42, 42, 42, 0.8)" }}
+        open={isModalOpen}
+        onClose={closeModal}
+      >
         <Box
           sx={{
             height: { xs: "60vh", md: "50vh" },
             width: { xs: "80vw", md: "50vw" },
-            position: "absolute",
+            position: "fixed",
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             borderRadius: "0",
             outline: "none",
+            animation: `${unfoldAnimation} 0.6s ease forwards`,
+            overflow: "hidden",
           }}
         >
           <Box sx={{ height: "100%", width: "100%", position: "relative" }}>
+            {/* Close Button */}
             <Box
               onClick={closeModal}
               sx={{
                 height: "auto",
-                width: "50px",
+                width: { xs: "25px", md: "30px", lg: "35px", xl: "40px" },
                 position: "absolute",
                 top: "20px",
                 right: "20px",
                 zIndex: "30",
                 cursor: "pointer",
                 background:
-                  "radial-gradient(rgba(0,0, 0, 0.4), rgba(255, 255, 255, 0.4))",
+                  "radial-gradient(rgba(0,0,0,0.4), rgba(255,255,255,0.4))",
                 borderRadius: "50%",
+                backdropFilter: "blur(4px)", // Optional: add blur effect
               }}
             >
               <Image
@@ -518,9 +545,11 @@ export default function Facilities() {
                   display: "block",
                 }}
                 src={svgs.Cross}
-                alt="cross"
+                alt="close"
               />
             </Box>
+
+            {/* Background Image */}
             <Image
               style={{
                 position: "absolute",
@@ -530,8 +559,10 @@ export default function Facilities() {
                 zIndex: "10",
               }}
               src={selectedImage}
-              alt="facility1"
+              alt="facility background"
             />
+
+            {/* Gradient Overlay and Text */}
             <Box
               sx={{
                 width: "100%",
@@ -540,7 +571,7 @@ export default function Facilities() {
                 bottom: "0",
                 zIndex: "20",
                 background:
-                  "linear-gradient(180deg, rgba(13, 13, 13, 0) 55%, #000000 91.79%)",
+                  "linear-gradient(180deg, rgba(13,13,13,0) 55%, #000000 91.79%)",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "flex-end",

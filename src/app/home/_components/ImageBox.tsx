@@ -18,7 +18,7 @@ const ImageBox: React.FC<ImageBoxProps> = ({
       sx={{
         cursor: "pointer",
         height: "auto",
-        width: { xs: "45px", sm: "50px", lg: "77px" },
+        width: { xs: "55px", sm: "60px", lg: "85px" },
         outline: `${isSelected ? "2px" : "0px"} solid #FFFFFF`,
       }}
     >

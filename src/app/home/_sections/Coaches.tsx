@@ -102,6 +102,7 @@ export default function CoachesSection() {
               display: "flex",
               gap: { xs: "10px", lg: "20px" },
               paddingTop: { xs: "15px", sm: "20px", lg: "30px" },
+              justifyContent: "center",
             }}
           >
             {coaches.map((coach, index) => (

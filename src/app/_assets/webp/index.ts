@@ -1,4 +1,6 @@
 import BoxerAboutUS from "./boxerAboutUS.webp";
+import BoxerAboutUS2 from "./boxerAboutUs2.webp";
+
 // slider
 import Google from "./google.webp";
 import Amazon from "./amazon.webp";
@@ -55,6 +57,7 @@ import Fighter3 from "./fighter3.webp";
 
 const webp = {
   BoxerAboutUS,
+  BoxerAboutUS2,
   // slider
   Google,
   Amazon,
