@@ -1,13 +1,13 @@
 import BoxerAboutUS from "./boxerAboutUS.webp";
 import BoxerAboutUS2 from "./boxerAboutUs2.webp";
 
-// slider
-import Google from "./google.webp";
-import Amazon from "./amazon.webp";
-import Hardees from "./hardees.webp";
-import Aon from "./aon.webp";
-import FRider from "./fRider.webp";
-import Spotify from "./spotify.webp";
+// partners
+import Jm from "./partners/jm.avif";
+import PrimarySchool from "./partners/primarySchool.avif";
+import Rotherham from "./partners/rotherham.svg";
+import WickersleyPartnership from "./partners/wickersleyPartnership.png";
+import WinterHillSchool from "./partners/winterHillSchool.avif";
+import FundraisingRegulator from "./partners/FundraisingRegulator.svg";
 // faculity
 import F1 from "./facilities/f1.webp";
 import F2 from "./facilities/f2.webp";
@@ -26,7 +26,6 @@ import NavJames from "./navJames.webp";
 import NavDaniel from "./navDaniel.webp";
 //  sponsors
 import Adidas from "./sponsors/adidas.webp";
-import Aons from "./sponsors/aon.webp";
 import Fila from "./sponsors/fila.webp";
 import FR from "./sponsors/fr.webp";
 import Monster from "./sponsors/monster.webp";
@@ -59,13 +58,12 @@ const webp = {
   BoxerAboutUS,
   BoxerAboutUS2,
   // slider
-  Google,
-  Amazon,
-  Hardees,
-  Aons,
-  FRider,
-  Spotify,
-  // faculity
+  Jm,
+  PrimarySchool,
+  Rotherham,
+  WickersleyPartnership,
+  WinterHillSchool,
+  FundraisingRegulator,
   F1,
   F2,
   F3,
@@ -83,7 +81,6 @@ const webp = {
 
   // sponsors
   Adidas,
-  Aon,
   Fila,
   FR,
   Monster,

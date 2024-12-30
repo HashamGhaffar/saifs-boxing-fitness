@@ -50,20 +50,18 @@ export default function Partners() {
   };
 
   const partnerImages = [
-    // whide spaces in google
-    // webp.Google,
-    webp.Amazon,
-    webp.Hardees,
-    webp.Aon,
-    webp.FRider,
-    webp.Spotify,
-
+    webp.Jm,
+    webp.PrimarySchool,
+    webp.Rotherham,
+    webp.WickersleyPartnership,
+    webp.WinterHillSchool,
+    webp.FundraisingRegulator,
     // repeat
-
-    webp.Hardees,
-    webp.Aon,
-    webp.FRider,
-    webp.Spotify,
+    webp.Jm,
+    webp.PrimarySchool,
+    webp.Rotherham,
+    webp.WickersleyPartnership,
+    webp.WinterHillSchool,
   ];
 
   return (
