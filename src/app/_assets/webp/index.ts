@@ -17,6 +17,11 @@ import F5 from "./facilities/f5.webp";
 import F6 from "./facilities/f6.webp";
 import F7 from "./facilities/f7.webp";
 import F8 from "./facilities/f8.webp";
+import F9 from "./facilities/f9.jpg";
+import F10 from "./facilities/f10.jpg";
+import F11 from "./facilities/f11.jpg";
+import F12 from "./facilities/f12.jpg";
+import F13 from "./facilities/f13.jpg";
 // coatches
 import CoachJames from "./coachJames.webp";
 import CoachDaniel from "./coachDaniel.webp";
@@ -74,6 +79,11 @@ const webp = {
   F6,
   F7,
   F8,
+  F9,
+  F10,
+  F11,
+  F12,
+  F13,
   //coatches
   CoachJames,
   CoachDaniel,
