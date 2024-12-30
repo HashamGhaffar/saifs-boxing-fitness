@@ -153,7 +153,7 @@ export default function Navbar() {
                   },
                 }}
               >
-                England Boxing
+                OUR STORIES
               </Typography>
             </Box>
 
@@ -234,7 +234,7 @@ export default function Navbar() {
             onClick={() => router.push("england-boxing")}
             sx={{ ...text, mb: 2, textAlign: "right" }}
           >
-            England Boxing
+            OUR STORIES
           </Typography>
           <Divider sx={{ margin: "16px 0", backgroundColor: "#ffffff" }} />
           <Button

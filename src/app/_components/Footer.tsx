@@ -111,7 +111,7 @@ export default function Footer() {
                 },
               }}
             >
-              England Boxing
+              OUR STORIES
             </Typography>
             <Typography
               onClick={() => router.push("coaching")}
