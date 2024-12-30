@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 import { Box, Typography } from "@mui/material";
 import AOS from "aos";
@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { fighterImages } from "@/app/constants/constants";
+// import { fighterImages } from "@/app/constants/constants";
 import FightersSlider from "../_components/FightersSlider";
 
 export default function Fighters() {
@@ -82,7 +82,7 @@ export default function Fighters() {
               width: "100%",
             }}
           >
-            <Box
+            {/* <Box
               sx={{
                 display: "flex",
                 justifyContent: "center",
@@ -124,7 +124,7 @@ export default function Fighters() {
                   />
                 </Box>
               ))}
-            </Box>
+            </Box> */}
 
             {/* React Slick Slider */}
             <FightersSlider

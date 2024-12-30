@@ -52,7 +52,9 @@ import FuryVsSteel from "./furyVsSteel.webp";
 // fighters
 import Fighter1 from "./fighter1.webp";
 import Fighter2 from "./fighter2.webp";
-import Fighter3 from "./fighter3.webp";
+import Fighter3 from "./fighter3.jpg";
+import Fighter4 from "./fighter4.jpg";
+import Fighter5 from "./fighter5.jpg";
 
 const webp = {
   BoxerAboutUS,
@@ -107,6 +109,8 @@ const webp = {
   Fighter1,
   Fighter2,
   Fighter3,
+  Fighter4,
+  Fighter5,
 };
 
 export default webp;
