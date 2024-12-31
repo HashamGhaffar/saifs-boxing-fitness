@@ -54,6 +54,7 @@ import FooterLogo from "./footerLogo.webp";
 import Intro from "./education/intro.webp";
 import Bubbles from "./Bubbles.jpg";
 import Class from "./education/class.webp";
+import Signature from "./signature.png";
 
 // coaching
 // import Intro from "./education/intro.webp";
@@ -125,6 +126,7 @@ const webp = {
   Intro,
   Bubbles,
   Class,
+  Signature,
   // coaching
   Drumbbell,
   Punching,
