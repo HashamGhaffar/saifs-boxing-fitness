@@ -93,7 +93,7 @@ export const fighters: FighterCardProps[] = [
     description:
       "A fierce middleweight champion known for her precision strikes",
     imageSrc: webp.Fighter4,
-    id: "fighter1",
+    id: "fighter4",
   },
   {
     index: 4,
@@ -101,7 +101,7 @@ export const fighters: FighterCardProps[] = [
     description:
       "A fierce middleweight champion known for her precision strikes",
     imageSrc: webp.Fighter5,
-    id: "fighter2",
+    id: "fighter5",
   },
 ];
 
