@@ -118,7 +118,7 @@ export default function Sponsors() {
                 flexWrap: "wrap",
                 flexDirection: "row",
                 maxWidth: { xs: "400px", md: "500px", lg: "1300px" },
-                rowGap: "50px",
+                gap: "50px",
                 columnGap: { sm: "40px", md: "60px", lg: "90px" },
               }}
             >

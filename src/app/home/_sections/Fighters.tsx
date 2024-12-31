@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-// import Image from "next/image";
+import Image from "next/image";
 
 import { Box, Typography } from "@mui/material";
 import AOS from "aos";
@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// import { fighterImages } from "@/app/constants/constants";
+import { fighterImages } from "@/app/constants/constants";
 import FightersSlider from "../_components/FightersSlider";
 
 export default function Fighters() {
@@ -78,11 +78,11 @@ export default function Fighters() {
               alignItems: "center",
               gap: { xs: "50px", md: "70px", xl: "100px" },
               flexDirection: { xs: "column-reverse", lg: "row" },
-              maxWidth: "1400px",
+              maxWidth: "1250px",
               width: "100%",
             }}
           >
-            {/* <Box
+            <Box
               sx={{
                 display: "flex",
                 justifyContent: "center",
@@ -95,8 +95,8 @@ export default function Fighters() {
                 <Box
                   key={index}
                   sx={{
-                    width: { xs: "50px", md: "77px", xl: "90px" },
-                    height: { xs: "50px", md: "77px", xl: "90px" },
+                    width: { xs: "40px", md: "60px", xl: "80px" },
+                    height: { xs: "40px", md: "60px", xl: "80px" },
                     position: "relative",
                   }}
                   onClick={() => {
@@ -124,7 +124,7 @@ export default function Fighters() {
                   />
                 </Box>
               ))}
-            </Box> */}
+            </Box>
 
             {/* React Slick Slider */}
             <FightersSlider

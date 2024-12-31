@@ -116,4 +116,6 @@ export const fighterImages: FighterImage[] = [
   { index: 0, imagePath: webp.Fighter1, alt: "fighter1", id: "fighter1" },
   { index: 1, imagePath: webp.Fighter2, alt: "fighter2", id: "fighter2" },
   { index: 2, imagePath: webp.Fighter3, alt: "fighter3", id: "fighter3" },
+  { index: 3, imagePath: webp.Fighter4, alt: "fighter4", id: "fighter4" },
+  { index: 4, imagePath: webp.Fighter5, alt: "fighter5", id: "fighter5" },
 ];
