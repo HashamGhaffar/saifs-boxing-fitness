@@ -25,6 +25,7 @@ import F13 from "./facilities/f13.jpg";
 // coatches
 import CoachJames from "./coachJames.webp";
 import CoachDaniel from "./coachDaniel.webp";
+import Basit from "./basit.jpg";
 
 // coach navigations
 import NavJames from "./navJames.webp";
@@ -87,6 +88,7 @@ const webp = {
   //coatches
   CoachJames,
   CoachDaniel,
+  Basit,
   // coach nevigation
   NavJames,
   NavDaniel,

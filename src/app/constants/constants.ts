@@ -12,8 +12,8 @@ export interface CoachCardProps {
 
 export const Coaches: CoachCardProps[] = [
   {
-    name: "James Adam",
-    description: `Coach "James Adam" is a seasoned boxing expert with over 15
+    name: "Basit",
+    description: `Coach "Basit" is a seasoned boxing expert with over 15
 years of experience in the ring. Known for his relentless
 drive and attention to detail, he has trained everyone from
 beginners to competitive fighters, tailoring his approach to
@@ -31,9 +31,9 @@ session. His focus is not just on perfecting technique, but
 also on building mental toughness, confidence, and discipline
 qualities.
 `,
-    image: webp.CoachJames,
+    image: webp.Basit,
     backgroundImage: "url(bgCoachJames.webp)",
-    navImage: webp.NavJames,
+    navImage: webp.Basit,
     isSelected: true,
   },
   {
