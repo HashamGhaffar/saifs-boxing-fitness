@@ -17,12 +17,19 @@ export default function Sponsors() {
 
   const router = useRouter();
   const imageData = [
-    { src: webp.Monster, alt: "Monster energy drink logo" },
-    { src: webp.Fila, alt: "Fila sportswear logo" },
-    { src: webp.FR, alt: "Food Rider service logo" },
-    { src: webp.Aon, alt: "AON company logo" },
-    { src: webp.Adidas, alt: "Adidas brand logo" },
+    { src: webp.Kings, alt: "Kings sponsor logo" },
+    { src: webp.conquest, alt: "Conquest sponsor logo" },
+    { src: webp.goldStar, alt: "Gold Star sponsor logo" },
+    { src: webp.harveys, alt: "Harveys sponsor logo" },
+    { src: webp.homeflair, alt: "Homeflair sponsor logo" },
+    { src: webp.idealrooms, alt: "Ideal Rooms sponsor logo" },
+    { src: webp.Kitchens, alt: "Kitchens sponsor logo" },
+    { src: webp.Lusso, alt: "Lusso sponsor logo" },
+    { src: webp.RoadRunner, alt: "Road Runner sponsor logo" },
+    { src: webp.SabirRestaurant, alt: "Sabir Restaurant sponsor logo" },
+    { src: webp.Swift, alt: "Swift sponsor logo" },
   ];
+
   return (
     <>
       <Box

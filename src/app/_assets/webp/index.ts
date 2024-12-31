@@ -31,10 +31,18 @@ import Basit from "./basit.jpg";
 import NavJames from "./navJames.webp";
 import NavDaniel from "./navDaniel.webp";
 //  sponsors
-import Adidas from "./sponsors/adidas.webp";
-import Fila from "./sponsors/fila.webp";
-import FR from "./sponsors/fr.webp";
-import Monster from "./sponsors/monster.webp";
+import Kings from "./sponsors/kings.png";
+import conquest from "./sponsors/conquest.jpg";
+import goldStar from "./sponsors/goldStar.png";
+import harveys from "./sponsors/harveys.png";
+import homeflair from "./sponsors/homeflair.jpg";
+import idealrooms from "./sponsors/idealrooms.png";
+import Kitchens from "./sponsors/kitchens.jpeg";
+import Lusso from "./sponsors/lusso.jpeg";
+import RoadRunner from "./sponsors/roadRunner.jpg";
+import SabirRestaurant from "./sponsors/sabirRestaurant.png";
+import Swift from "./sponsors/swift.jpg";
+
 // insta links
 import Boxer1 from "./boxer1.webp";
 import Boxer2 from "./boxer2.webp";
@@ -94,10 +102,17 @@ const webp = {
   NavDaniel,
 
   // sponsors
-  Adidas,
-  Fila,
-  FR,
-  Monster,
+  Kings,
+  conquest,
+  goldStar,
+  harveys,
+  homeflair,
+  idealrooms,
+  Kitchens,
+  Lusso,
+  RoadRunner,
+  SabirRestaurant,
+  Swift,
   // insta Links
   Boxer1,
   Boxer2,
