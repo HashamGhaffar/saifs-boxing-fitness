@@ -52,7 +52,7 @@ import FooterLogo from "./footerLogo.webp";
 
 // education
 import Intro from "./education/intro.webp";
-import Signature from "./education/signature.webp";
+import Bubbles from "./Bubbles.jpg";
 import Class from "./education/class.webp";
 
 // coaching
@@ -123,7 +123,7 @@ const webp = {
 
   // education
   Intro,
-  Signature,
+  Bubbles,
   Class,
   // coaching
   Drumbbell,

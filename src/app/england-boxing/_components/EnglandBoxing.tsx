@@ -32,8 +32,6 @@ export default function EnglandBoxingCardBox() {
       }}
     >
       <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
-      <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
-      <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
       {/* <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} /> */}
 
       {/* <Pagination
@@ -100,7 +98,7 @@ export function EnglandBoxingCard({
             borderRadius: "30px",
             objectFit: "cover",
           }}
-          src={webp.Signature}
+          src={webp.Bubbles}
           alt="Signature"
         />
       </Box>
@@ -131,7 +129,7 @@ export function EnglandBoxingCard({
               textTransform: "uppercase",
             }}
           >
-            The Titan Showdown: Fury vs. Steel
+            From Rock Bottom to the Ring: How Boxing Changed My Life
           </Typography>
           <Typography
             sx={{
@@ -146,10 +144,13 @@ export function EnglandBoxingCard({
               color: "#ffffff",
             }}
           >
-            {` Two powerhouses collide in the ring as Fury, known for his lightning-fast strikes,
-             faces Steel, the unstoppable force with unmatched resilience. Will speed outclass 
-             raw strength, or will Steel's endurance reign supreme? Witness this electrifying 
-             bout of skill, power, and determination.`}
+            {` At the young age of 11, my brother tragically passed away.
+             After that, I did nothing with my life but go to school, eat,
+              and play PlayStation. I hit rock bottom because I felt like
+               I had no one left to guide me. Kids would laugh and make jokes,
+                knowing it would make me angry, and I struggled to control my 
+                emotions. This led to frequent fights and caused a lot of distress
+                 for my mum. It all felt out of control because I lacked discipline.`}
           </Typography>
           <Typography
             sx={{
