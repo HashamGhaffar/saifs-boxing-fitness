@@ -7,7 +7,7 @@ import PrimarySchool from "./partners/primarySchool.avif";
 import Rotherham from "./partners/rotherham.svg";
 import WickersleyPartnership from "./partners/wickersleyPartnership.png";
 import WinterHillSchool from "./partners/winterHillSchool.avif";
-import FundraisingRegulator from "./partners/FundraisingRegulator.svg";
+import FundraisingRegulator from "./partners/fundraisingRegulator.svg";
 // faculity
 import F1 from "./facilities/f1.webp";
 import F2 from "./facilities/f2.webp";
@@ -52,7 +52,7 @@ import FooterLogo from "./footerLogo.webp";
 
 // education
 import Intro from "./education/intro.webp";
-import Bubbles from "./Bubbles.jpg";
+import Bubbles from "./bubbles.jpg";
 import Class from "./education/class.webp";
 import Signature from "./signature.png";
 
