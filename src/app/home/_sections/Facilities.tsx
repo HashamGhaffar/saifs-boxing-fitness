@@ -149,7 +149,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
-                  onClick={() => openModal(webp.F1)}
+                  onClick={() => openModal(webp.F12)}
                 >
                   <Image
                     style={{
@@ -157,7 +157,7 @@ export default function Facilities() {
                       height: "100%",
                       objectFit: "cover",
                     }}
-                    src={webp.F1}
+                    src={webp.F12}
                     alt="facility1"
                   />
                 </Box>
@@ -229,7 +229,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
-                  onClick={() => openModal(webp.F1)}
+                  onClick={() => openModal(webp.F12)}
                 >
                   <Image
                     style={{
@@ -237,7 +237,7 @@ export default function Facilities() {
                       height: "100%",
                       objectFit: "cover",
                     }}
-                    src={webp.F1}
+                    src={webp.F12}
                     alt="facility1"
                   />
                 </Box>
@@ -263,7 +263,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
-                  onClick={() => openModal(webp.F3)}
+                  onClick={() => openModal(webp.F11)}
                 >
                   <Image
                     style={{
@@ -271,7 +271,7 @@ export default function Facilities() {
                       height: "100%",
                       objectFit: "cover",
                     }}
-                    src={webp.F3}
+                    src={webp.F11}
                     alt="facility3"
                   />
                 </Box>
@@ -281,6 +281,8 @@ export default function Facilities() {
               <Box
                 sx={{
                   overflow: "hidden",
+                  height: "100%",
+                  width: "100%",
                   transition: "border 0.3s ease",
                   "&:hover": {
                     border: "1.5px solid #ffffff",
@@ -290,7 +292,7 @@ export default function Facilities() {
                 <Box
                   sx={{
                     height: { sm: "100%" },
-                    width: "auto",
+                    width: "100%",
                     transition: "transform 0.3s ease",
                     "&:hover": {
                       transform: "scale(1.1)",
@@ -364,15 +366,15 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
-                  onClick={() => openModal(webp.F6)}
+                  onClick={() => openModal(webp.F9)}
                 >
                   <Image
                     style={{
                       width: "100%",
                       height: "100%",
-                      objectFit: "cover",
+                      objectFit: "contain",
                     }}
-                    src={webp.F6}
+                    src={webp.F9}
                     alt="facility6"
                   />
                 </Box>
@@ -423,7 +425,7 @@ export default function Facilities() {
                         transform: "scale(1.1)",
                       },
                     }}
-                    onClick={() => openModal(webp.F8)}
+                    onClick={() => openModal(webp.F10)}
                   >
                     <Image
                       style={{
@@ -431,7 +433,7 @@ export default function Facilities() {
                         height: "100%",
                         objectFit: "cover",
                       }}
-                      src={webp.F8}
+                      src={webp.F10}
                       alt="facility8"
                     />
                   </Box>
@@ -460,7 +462,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
-                  onClick={() => openModal(webp.F8)}
+                  onClick={() => openModal(webp.F10)}
                 >
                   <Image
                     style={{
@@ -468,7 +470,7 @@ export default function Facilities() {
                       height: "100%",
                       objectFit: "cover",
                     }}
-                    src={webp.F8}
+                    src={webp.F10}
                     alt="facility8"
                   />
                 </Box>
@@ -482,7 +484,7 @@ export default function Facilities() {
                       transform: "scale(1.1)",
                     },
                   }}
-                  onClick={() => openModal(webp.F7)}
+                  onClick={() => openModal(webp.F10)}
                 >
                   <Image
                     style={{
@@ -490,7 +492,7 @@ export default function Facilities() {
                       height: "100%",
                       objectFit: "cover",
                     }}
-                    src={webp.F7}
+                    src={webp.F10}
                     alt="facility7"
                   />
                 </Box>
