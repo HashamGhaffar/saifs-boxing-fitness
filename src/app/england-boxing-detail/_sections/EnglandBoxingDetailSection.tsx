@@ -30,15 +30,15 @@ export default function EnglandBoxingDetailSection() {
         }}
       >
         <Box sx={{ maxWidth: "1600px" }}>
-          {/* main image  */}
-          <Box>
+          {/* Main image */}
+          {/* <Box>
             <Image
               style={{ height: "100%", width: "100%", objectFit: "cover" }}
               src={webp.FuryVsSteel}
               alt="FuryVsSteel"
             />
-          </Box>
-          {/* heading  initial describtion */}
+          </Box> */}
+          {/* Heading and initial description */}
           <Box>
             <Typography
               sx={{
@@ -61,16 +61,43 @@ export default function EnglandBoxingDetailSection() {
                 },
               }}
             >
-              The Titan Showdown: Fury vs. Steel
+              From Rock Bottom to the Ring: How Boxing Changed My Life
             </Typography>
             <Typography sx={{ ...paragraph }}>
-              {`On a cool October evening, boxing fans around the world witnessed one
-          of the most electrifying battles in the history of the sport. The
-          much-anticipated match between the undefeated champion Jack "Iron
-          Fist" Steele and the ferocious up-and-comer, Rico "Thunder" Morales,
-          had fans on the edge of their seats. Billed as the "Clash of Titans,"
-          this bout promised to deliver a high-octane display of skill, power,
-          and heart—and it did not disappoint.`}
+              At the young age of 11, my brother tragically passed away. After
+              that, I did nothing with my life but go to school, eat, and play
+              PlayStation. I hit rock bottom because I felt like I had no one
+              left to guide me. Kids would laugh and make jokes, knowing it
+              would make me angry, and I struggled to control my emotions. This
+              led to frequent fights and caused a lot of distress for my mum. It
+              all felt out of control because I lacked discipline. Primary
+              school was particularly tough because not many kids had diabetes.
+              From a very young age, it had a huge impact on my life. I felt
+              like the odd one out, and other kids would laugh and make fun of
+              me because of it.
+              <br />
+              My weight was also out of control due to my diabetes. It felt like
+              there was no way to manage it.
+              <br />
+              <b>Until...</b>
+              <br />
+              I discovered Saif&apos;s Boxing and Fitness. There was only one
+              thing to do:
+              <br />
+              Join!
+              <br />
+              After lockdown, I started out at a heavy weight of over 110kg.
+              Slowly but surely, my weight began to drop, and my coach was the
+              first person to see any potential in me. He promised me that if I
+              got under 80kg, I could have my first amateur bout&mdash;and I
+              kept pushing towards that goal. It was a tough journey, but the
+              moment I had been waiting for finally arrived.
+              <br />
+              79kg. My first fight. My first win.
+              <br />
+              From there, my weight continued to drop: 77kg, 75kg, 73kg, 72kg. I
+              went on to win my first Yorkshire title, then another, and
+              another.
             </Typography>
           </Box>
           <Box
@@ -97,32 +124,39 @@ export default function EnglandBoxingDetailSection() {
               }}
             >
               <Typography sx={{ ...paragraph }}>
-                Steele, a seasoned veteran with 35 wins and 0 losses, entered
-                the ring with his signature steely determination. Known for his
-                powerful jabs and impeccable defense, he was seen as the
-                favorite. His opponent, Thunder, had stormed through the ranks
-                with an explosive knockout record, leaving his last five
-                opponents crumpled on the canvas in under five rounds. The crowd
-                buzzed with excitement, knowing that while Steele had the
-                experience, Thunder possessed raw, unpredictable power.
+                During my amateur boxing career, I entered the championships
+                after only five bouts. In the competition, I was matched against
+                a highly skilled, top-tier boxer with five times my experience.
+                He was a 4&times; national champion who had stopped nearly
+                everyone he&apos;d faced. People told my coach it was a bad idea
+                for me to fight him. But Saif believed in me when no one else
+                did. The fight went the full distance, and I gave him a real
+                challenge.
               </Typography>
               <Typography sx={{ ...paragraph }}>
-                {`As the first round began, it became clear that both fighters were
-              in peak form. Steele took control early, using his experience to
-              keep Morales at bay with his crisp jabs and precise footwork.
-              However, Thunder’s resilience and relentless pressure were evident
-              as he absorbed blows and continued to press forward, looking for
-              an opening.`}
+                However, due to medical reasons, my weight went out of control
+                again. It felt like there was nothing I could do, and I thought
+                my boxing journey was over. But my coach encouraged me to keep
+                going and entered me into championships at 80kg+, which was four
+                weight categories above where I should have been. It was a
+                daunting challenge because I was up against boys much bigger and
+                naturally stron.
               </Typography>
               <Typography sx={{ ...paragraph }}>
-                {`By the fifth round, the fight took a dramatic turn. Morales,
-              seemingly waiting for the perfect moment, unleashed a series of
-              devastating hooks that shook Steele for the first time in his
-              career. The crowd roared as Steele stumbled back, his defense
-              faltering under the power of Thunder’s strikes. But Steele, ever
-              the tactician, recovered with a perfectly timed uppercut that sent
-              Morales reeling, showing the crowd why he was still the reigning
-              champ.`}
+                In the first fight of the championships, I faced a boy who was
+                taller, more muscular, and far stronger than me. He had
+                previously won the Yorkshire semi-finals by stoppage. Despite
+                the odds, my coach believed I could do it, and I won by
+                unanimous points decision, earning my third Yorkshire title.
+                Next, I fought another skilled opponent while I was ill and
+                didn&apos;t feel up to it. But once again, Saif encouraged me to
+                push forward, and I won. That victory placed me in the top three
+                boys in England. Unfortunately, I lost my next bout, but I gave
+                my opponent a tough fight. I secured a bronze medal and ranked
+                in the top three in the country, competing at a weight I should
+                never have been in. Despite the challenges of living with
+                diabetes and the heartbreaking loss of my brother, everything
+                turned around.
               </Typography>
             </Box>
             <Box
@@ -132,21 +166,19 @@ export default function EnglandBoxingDetailSection() {
             >
               <Image
                 style={{ width: "100%", height: "100%", objectFit: "contain" }}
-                src={webp.Boxer1}
+                src={webp.Bubbles}
                 alt="Boxer1"
               />
             </Box>
           </Box>
           <Box>
             <Typography sx={{ ...paragraph }}>
-              The final rounds were a brutal test of endurance. Both men,
-              bloodied and battered, fought with everything they had. Thunder,
-              despite his early flurry, was showing signs of fatigue, while
-              Steele, though shaken, kept his composure. In the last round,
-              Steele landed a thunderous right hook that sent Morales to the
-              canvas. The crowd held its breath as the referee counted, but
-              somehow, Thunder rose to his feet just before the ten count, ready
-              to keep fighting.
+              This is all thanks to the gym. Joining Saif&apos;s Boxing and
+              Fitness was the best decision I ever made. I can&apos;t express
+              how grateful I am for everything Saif has done for me and everyone
+              else at the gym. Why? Because he created a family, taught us
+              discipline, and showed us love. For me, he became like an older
+              brother.
             </Typography>
             <Typography
               sx={{
@@ -159,18 +191,16 @@ export default function EnglandBoxingDetailSection() {
                 },
               }}
             >
-              The match ended with a split decision, the judges awarding the
-              victory to Jack Steele. Though Morales lost, he gained the respect
-              of fans and fighters alike for his heart, resilience, and
-              relentless pursuit of victory. Steele, now 36-0, remained the
-              undisputed champion, but the world knew they had witnessed a fight
-              for the ages—a battle that would be talked about for years to
-              come.
+              We owe so much to Saif, and this is my way of saying a massive
+              thank you to him for everything he&apos;s done for me and the
+              gym&apos;s community.
             </Typography>
             <Typography sx={{ ...paragraph }}>
-              Both fighters embraced in the ring, a sign of mutual respect. In
-              this epic battle, there were no losers, only warriors who left
-              everything they had under the bright lights of the ring.
+              In a nutshell, I went from being a sad, overweight, and unpopular
+              kid to a confident, disciplined young man&mdash;all thanks to Saif
+              and the gym.
+              <br />
+              &mdash; Ibraheem Nisar
             </Typography>
           </Box>
         </Box>
