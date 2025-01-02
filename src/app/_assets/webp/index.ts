@@ -2,13 +2,17 @@ import BoxerAboutUS from "./boxerAboutUS.webp";
 import BoxerAboutUS2 from "./boxerAboutUs2.webp";
 
 // partners
-import Jm from "./partners/jm.avif";
-import PrimarySchool from "./partners/primarySchool.avif";
-import Rotherham from "./partners/rotherham.svg";
-import WickersleyPartnership from "./partners/wickersleyPartnership.png";
-import WinterHillSchool from "./partners/winterHillSchool.avif";
-import FundraisingRegulator from "./partners/fundraisingRegulator.svg";
-// faculity
+import Clifton from "./partners/clifton.jpg";
+import Oakwood from "./partners/oakwood.jpg";
+import Police from "./partners/police.jpg";
+import Rema from "./partners/rema.jpg";
+import Respect from "./partners/respect.jpg";
+import Rmbc from "./partners/rmbc.jpg";
+import Sense from "./partners/sense.jpg";
+import Trc from "./partners/trc.jpg";
+import Vru from "./partners/vru.jpg";
+import WinterHill from "./partners/winterHill.jpg";
+
 import F1 from "./facilities/f1.webp";
 import F2 from "./facilities/f2.webp";
 import F3 from "./facilities/f3.webp";
@@ -75,12 +79,16 @@ const webp = {
   BoxerAboutUS,
   BoxerAboutUS2,
   // slider
-  Jm,
-  PrimarySchool,
-  Rotherham,
-  WickersleyPartnership,
-  WinterHillSchool,
-  FundraisingRegulator,
+  Clifton,
+  Oakwood,
+  Police,
+  Rema,
+  Respect,
+  Rmbc,
+  Sense,
+  Trc,
+  Vru,
+  WinterHill,
   F1,
   F2,
   F3,

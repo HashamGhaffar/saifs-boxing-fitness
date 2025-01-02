@@ -50,18 +50,16 @@ export default function Partners() {
   };
 
   const partnerImages = [
-    webp.Jm,
-    webp.PrimarySchool,
-    webp.Rotherham,
-    webp.WickersleyPartnership,
-    webp.WinterHillSchool,
-    webp.FundraisingRegulator,
-    // repeat
-    webp.Jm,
-    webp.PrimarySchool,
-    webp.Rotherham,
-    webp.WickersleyPartnership,
-    webp.WinterHillSchool,
+    webp.Clifton,
+    webp.Oakwood,
+    webp.Police,
+    webp.Rema,
+    webp.Respect,
+    webp.Rmbc,
+    webp.Sense,
+    webp.Trc,
+    webp.Vru,
+    webp.WinterHill,
   ];
 
   return (
