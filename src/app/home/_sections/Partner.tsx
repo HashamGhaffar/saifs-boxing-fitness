@@ -50,16 +50,18 @@ export default function Partners() {
   };
 
   const partnerImages = [
-    webp.Clifton,
-    webp.Oakwood,
-    webp.Police,
-    webp.Rema,
-    webp.Respect,
-    webp.Rmbc,
-    webp.Sense,
-    webp.Trc,
-    webp.Vru,
-    webp.WinterHill,
+    webp.Partners1,
+    webp.Partners2,
+    webp.Partners3,
+    webp.Partners4,
+    webp.Partners5,
+    webp.Partners6,
+    webp.Partners7,
+    webp.Partners8,
+    webp.Partners9,
+    webp.Partners10,
+    webp.Partners11,
+    webp.Partners12,
   ];
 
   return (

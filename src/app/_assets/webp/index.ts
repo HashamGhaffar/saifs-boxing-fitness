@@ -1,26 +1,28 @@
 import BoxerAboutUS from "./boxerAboutUS.webp";
 import BoxerAboutUS2 from "./boxerAboutUs2.webp";
 
-// partners
-import Clifton from "./partners/clifton.jpg";
-import Oakwood from "./partners/oakwood.jpg";
-import Police from "./partners/police.jpg";
-import Rema from "./partners/rema.jpg";
-import Respect from "./partners/respect.jpg";
-import Rmbc from "./partners/rmbc.jpg";
-import Sense from "./partners/sense.jpg";
-import Trc from "./partners/trc.jpg";
-import Vru from "./partners/vru.jpg";
-import WinterHill from "./partners/winterHill.jpg";
+// slider partners
+import Partners1 from "./partners/partner1.png";
+import Partners2 from "./partners/partner2.png";
+import Partners3 from "./partners/partner3.png";
+import Partners4 from "./partners/partner4.png";
+import Partners5 from "./partners/partner5.png";
+import Partners6 from "./partners/partner6.png";
+import Partners7 from "./partners/partner7.png";
+import Partners8 from "./partners/partner8.png";
+import Partners9 from "./partners/partner9.png";
+import Partners10 from "./partners/partner10.png";
+import Partners11 from "./partners/partner11.png";
+import Partners12 from "./partners/partner12.png";
 
-import F1 from "./facilities/f1.webp";
+import F1 from "./facilities/f1.jpg";
 import F2 from "./facilities/f2.webp";
-import F3 from "./facilities/f3.webp";
+// import F3 from "./facilities/f3.webp";
 import F4 from "./facilities/f4.webp";
 import F5 from "./facilities/f5.webp";
-import F6 from "./facilities/f6.webp";
+// import F6 from "./facilities/f6.webp";
 import F7 from "./facilities/f7.webp";
-import F8 from "./facilities/f8.webp";
+// import F8 from "./facilities/f8.webp";
 import F9 from "./facilities/f9.jpg";
 import F10 from "./facilities/f10.jpg";
 import F11 from "./facilities/f11.jpg";
@@ -78,25 +80,29 @@ import Fighter5 from "./fighter5.jpg";
 const webp = {
   BoxerAboutUS,
   BoxerAboutUS2,
-  // slider
-  Clifton,
-  Oakwood,
-  Police,
-  Rema,
-  Respect,
-  Rmbc,
-  Sense,
-  Trc,
-  Vru,
-  WinterHill,
+  // slider partners
+  Partners1,
+  Partners2,
+  Partners3,
+  Partners4,
+  Partners5,
+  Partners6,
+  Partners7,
+  Partners8,
+  Partners9,
+  Partners10,
+  Partners11,
+  Partners12,
+
+  // facuity
   F1,
   F2,
-  F3,
+  // F3,
   F4,
   F5,
-  F6,
+  // F6,
   F7,
-  F8,
+  // F8,
   F9,
   F10,
   F11,
