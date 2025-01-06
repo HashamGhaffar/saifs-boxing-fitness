@@ -160,10 +160,10 @@ export default function Schedule() {
                       <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>5-8 Years Old</Typography>
+                      <Typography sx={{ ...topic }}>Girls Only</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>5-8 Years Old</Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                   </TableRow>
                   <TableRow>
@@ -174,7 +174,9 @@ export default function Schedule() {
                       <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>-</Typography>
+                      <Typography sx={{ ...topic }}>
+                        Afternoon Session
+                      </Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
                       <Typography sx={{ ...topic }}>-</Typography>
@@ -186,10 +188,10 @@ export default function Schedule() {
                       <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>9 Years Old +</Typography>
+                      <Typography sx={{ ...topic }}>5-8 Years Old</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>9 Years Old +</Typography>
+                      <Typography sx={{ ...topic }}>5-8 Years Old</Typography>
                     </TableCell>
                   </TableRow>
                   <TableRow>
@@ -197,13 +199,17 @@ export default function Schedule() {
                       12:00PM - 1:00PM
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>-</Typography>
+                      <Typography sx={{ ...topic }}>
+                        Afternoon Session
+                      </Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
                       <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>-</Typography>
+                      <Typography sx={{ ...topic }}>
+                        Afternoon Session
+                      </Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
                       <Typography sx={{ ...topic }}>-</Typography>
@@ -238,10 +244,10 @@ export default function Schedule() {
                       <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>1-2 Open Class</Typography>
+                      <Typography sx={{ ...topic }}>Open Class</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>1-2 Open Class</Typography>
+                      <Typography sx={{ ...topic }}>Open Class</Typography>
                     </TableCell>
                   </TableRow>
                   <TableRow>
@@ -264,10 +270,10 @@ export default function Schedule() {
                       <Typography sx={{ ...topic }}>Adults & Senior</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Girls Only</Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Girls Only</Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                   </TableRow>
                   <TableRow>
@@ -290,10 +296,10 @@ export default function Schedule() {
                       <Typography sx={{ ...topic }}>Juniours Boxing</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Girls Only</Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>{" "}
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Girls Only</Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                   </TableRow>
                   <TableRow>
@@ -316,10 +322,10 @@ export default function Schedule() {
                       <Typography sx={{ ...topic }}>For All</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Girls Only</Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Girls Only</Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                   </TableRow>
                 </Table>
