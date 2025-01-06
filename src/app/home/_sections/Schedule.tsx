@@ -39,11 +39,11 @@ export default function Schedule() {
     fontSize: "12px",
     fontWeight: "900",
   };
-  const description = {
-    fontSize: "10px",
-    fontWeight: "700",
-    color: "#D9D9D9",
-  };
+  // const description = {
+  //   fontSize: "10px",
+  //   fontWeight: "700",
+  //   color: "#D9D9D9",
+  // };
 
   return (
     <>
@@ -138,175 +138,188 @@ export default function Schedule() {
                     <TableCell sx={{ ...headingStyle }}>thursday</TableCell>
                     <TableCell sx={{ ...headingStyle }}>friday</TableCell>
                     <TableCell sx={{ ...headingStyle }}>saturday</TableCell>
+                    <TableCell sx={{ ...headingStyle }}>sunday</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell sx={{ ...headingStyle }}>8:00 Am</TableCell>
-                    <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}>
-                        {" "}
-                        Desert Antony{" "}
-                      </Typography>
+                    <TableCell sx={{ ...headingStyle }}>
+                      10:00AM - 11:00AM
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>5-8 Years Old</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>5-8 Years Old</Typography>
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell sx={{ ...headingStyle }}>10:00 am</TableCell>
-                    <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Cardio</Typography>
-                      <Typography sx={{ ...description }}>
-                        {" "}
-                        Kate Jhonson{" "}
-                      </Typography>
+                    <TableCell sx={{ ...headingStyle }}>
+                      11:00AM - 12:00AM
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>9 Years Old +</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>9 Years Old +</Typography>
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell sx={{ ...headingStyle }}>12:00 pm</TableCell>
-                    <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Boxing</Typography>
-                      <Typography sx={{ ...description }}>John Hard</Typography>
+                    <TableCell sx={{ ...headingStyle }}>
+                      12:00PM - 1:00PM
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>9 Years Old +</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>9 Years Old +</Typography>
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell sx={{ ...headingStyle }}>5:00 pm</TableCell>
-                    <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Power Yoga</Typography>
-                      <Typography sx={{ ...description }}>
-                        Zahra Sharif
-                      </Typography>
+                    <TableCell sx={{ ...headingStyle }}>
+                      1:00PM - 2:00PM
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>-</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>1-2 Open Class</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>1-2 Open Class</Typography>
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell sx={{ ...headingStyle }}>8:00 pm</TableCell>
-                    <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Zumba Dance</Typography>
-                      <Typography sx={{ ...description }}>
-                        Steven Hill
-                      </Typography>
+                    <TableCell sx={{ ...headingStyle }}>
+                      5:30PM - 7:00PM
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>Adults & Senior</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>Adults & Senior</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>Adults & Senior</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>Adults & Senior</Typography>
                     </TableCell>
                     <TableCell sx={{ ...paragraphStyle }}>
-                      <Typography sx={{ ...topic }}>Weight Lifting</Typography>
-                      <Typography sx={{ ...description }}> Desert </Typography>
-                      <Typography sx={{ ...description }}> Antony </Typography>
+                      <Typography sx={{ ...topic }}>Adults & Senior</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>Girls Only</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>Girls Only</Typography>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell sx={{ ...headingStyle }}>
+                      7:00PM - 8:00PM
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>Juniours Boxing</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>Juniours Boxing</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>Juniours Boxing</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>Juniours Boxing</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>Juniours Boxing</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>Girls Only</Typography>
+                    </TableCell>{" "}
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>Girls Only</Typography>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell sx={{ ...headingStyle }}>
+                      8:00PM - 9:00PM
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>For All</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>For All</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>For All</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>For All</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>For All</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>Girls Only</Typography>
+                    </TableCell>
+                    <TableCell sx={{ ...paragraphStyle }}>
+                      <Typography sx={{ ...topic }}>Girls Only</Typography>
                     </TableCell>
                   </TableRow>
                 </Table>
