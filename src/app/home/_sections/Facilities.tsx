@@ -14,17 +14,34 @@ import { keyframes } from "@mui/system";
 //   100% { opacity: 1; transform: scale(1); }
 // `;
 
-const unfoldAnimation = keyframes`
- 
-   0%{
-  opacity:0;
-  transform: scale(0) translateX(-100%) translateY(200%) ; 
- }
+// const unfoldAnimation = keyframes`
 
-100% {
-  opacity:1;
-  transform: scale(1) translate(-50%, -50%);
- }
+//    0%{
+//   opacity:0;
+//   transform: scale(0) translateX(-100%) translateY(200%) ;
+//  }
+
+// 100% {
+//   opacity:1;
+//   transform: scale(1) translate(-50%, -50%);
+//  }
+// `;
+
+const unfoldAnimation = keyframes`
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translate(-50%, -50%);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1) translate(-50%, -50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+  }
 `;
 
 export default function Facilities() {
@@ -517,7 +534,7 @@ export default function Facilities() {
             transform: "translate(-50%, -50%)",
             borderRadius: "0",
             outline: "none",
-            animation: `${unfoldAnimation} 0.6s ease forwards`,
+            animation: `${unfoldAnimation} 0.6s ease-in-out`,
             overflow: "hidden",
           }}
         >
