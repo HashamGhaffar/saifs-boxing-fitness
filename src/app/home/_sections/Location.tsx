@@ -48,8 +48,8 @@ export default function Location() {
         >
           {/* heading  */}
           <Typography
-            data-aos="zoom-in-down"
-            data-aos-duration="1000"
+            // data-aos="zoom-in-down"
+            // data-aos-duration="1000"
             sx={{
               fontSize: {
                 xs: "24px",
@@ -82,7 +82,7 @@ export default function Location() {
           >
             {/* location  */}
             <Box
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="1000"
               sx={{
                 width: {
@@ -102,7 +102,7 @@ export default function Location() {
               <MapComponent />
             </Box>
             <Box
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="1000"
               sx={{
                 width: "100%",

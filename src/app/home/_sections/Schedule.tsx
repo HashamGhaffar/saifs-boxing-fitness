@@ -140,8 +140,8 @@ export default function Schedule() {
       >
         {/* Heading */}
         <Typography
-          data-aos="fade-right"
-          data-aos-duration="1000"
+          // data-aos="fade-right"
+          // data-aos-duration="1000"
           sx={{
             fontSize: {
               xs: "24px",
@@ -172,7 +172,9 @@ export default function Schedule() {
           }}
         >
           <Box sx={{ maxWidth: "1600px", width: "100%" }}>
-            <TableContainer data-aos="fade-left" data-aos-duration="1000">
+            <TableContainer
+            //  data-aos="fade-up" data-aos-duration="1000"
+            >
               <Table
                 sx={{
                   "& .MuiTableCell-root": { padding: "10px 5px" },

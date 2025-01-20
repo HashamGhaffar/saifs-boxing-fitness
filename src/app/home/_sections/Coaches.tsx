@@ -54,8 +54,8 @@ export default function CoachesSection() {
         >
           {/* heading  */}
           <Typography
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            // data-aos="fade-left"
+            // data-aos-duration="1000"
             sx={{
               fontSize: {
                 xs: "24px",
@@ -81,7 +81,7 @@ export default function CoachesSection() {
           </Typography>
 
           {/* coatch card */}
-          <Box data-aos="fade-right" data-aos-duration="1000">
+          <Box data-aos="fade-up" data-aos-duration="1000">
             {coaches
               .filter((coach) => coach.isSelected)
               .map((coach, index) => (
@@ -96,7 +96,7 @@ export default function CoachesSection() {
           </Box>
           {/* nevigation images  */}
           <Box
-            data-aos="fade-up-left"
+            data-aos="fade-up"
             data-aos-duration="1000"
             sx={{
               display: "flex",

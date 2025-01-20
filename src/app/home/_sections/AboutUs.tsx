@@ -5,7 +5,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-export default function AboutUs() {
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * A functional component that renders the AboutUs section
+ * @returns A JSX element rendering the AboutUs section
+ */
+/******  848ae712-8e0a-41c1-b69c-4b1922b02525  *******/ export default function AboutUs() {
   useEffect(() => {
     AOS.init({ duration: 500, once: true });
     AOS.refresh();
@@ -48,7 +53,7 @@ export default function AboutUs() {
             <Grid container alignItems="center" item md={6} sm={10} xs={10}>
               {/* textual content  */}
               <Box
-                data-aos="fade-right"
+                // data-aos="fade-right"
                 sx={{
                   maxWidth: {
                     xs: "500px",
@@ -97,8 +102,8 @@ export default function AboutUs() {
         </Box>
         {/* boxer image  */}
         <Box
-          data-aos="fade-left"
-          data-aos-duration="1000"
+          // data-aos="fade-left"
+          // data-aos-duration="1000"
           sx={{
             maxWidth: {
               xs: "300px",

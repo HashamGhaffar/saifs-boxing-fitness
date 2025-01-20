@@ -94,8 +94,8 @@ export default function Facilities() {
         >
           {/* heading  */}
           <Typography
-            data-aos="fade-left"
-            data-aos-duration="1000"
+            // data-aos="fade-left"
+            // data-aos-duration="1000"
             sx={{
               fontSize: {
                 xs: "24px",
@@ -121,7 +121,7 @@ export default function Facilities() {
           </Typography>
           {/* grid images */}
           <Grid
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="1000"
             container
             spacing={1.25}

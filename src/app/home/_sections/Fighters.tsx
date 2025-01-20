@@ -47,8 +47,8 @@ export default function Fighters() {
         }}
       >
         <Typography
-          data-aos="fade-right"
-          data-aos-duration="1000"
+          // data-aos="fade-right"
+          // data-aos-duration="1000"
           sx={{
             fontSize: {
               xs: "24px",

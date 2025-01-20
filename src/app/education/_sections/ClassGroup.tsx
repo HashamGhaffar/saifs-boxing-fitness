@@ -111,8 +111,8 @@ export function Class({
       <Box>
         {/* Heading */}
         <Typography
-          data-aos="zoom-in"
-          data-aos-duration="1000"
+          // data-aos="zoom-in"
+          // data-aos-duration="1000"
           sx={{
             fontSize: {
               xs: "24px",
@@ -145,7 +145,7 @@ export function Class({
         >
           {/* Typography box */}
           <Box
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="1000"
             sx={{
               maxWidth: {
@@ -166,7 +166,7 @@ export function Class({
 
           {/* Image */}
           <Box
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1000"
             sx={{
               height: "auto",

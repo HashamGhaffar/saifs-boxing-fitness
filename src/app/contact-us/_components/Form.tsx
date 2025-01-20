@@ -59,8 +59,8 @@ export default function ContactUsForm() {
           <Box sx={{ maxWidth: "1600px", width: "100%" }}>
             {/* heading  */}
             <Typography
-              data-aos="zoom-in"
-              data-aos-duration="1000"
+              // data-aos="zoom-in"
+              // data-aos-duration="1000"
               sx={{
                 fontSize: {
                   xs: "24px",
@@ -89,7 +89,7 @@ export default function ContactUsForm() {
               }}
             >
               <Box
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-duration="1000"
                 sx={{
                   backgroundColor: "#0D0D0DB2",
@@ -126,7 +126,7 @@ export default function ContactUsForm() {
                 </Box>
               </Box>
               <Box
-                data-aos="fade-left"
+                data-aos="fade-up"
                 data-aos-duration="1000"
                 sx={{
                   backgroundColor: "#0D0D0DB2",

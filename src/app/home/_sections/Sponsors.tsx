@@ -65,8 +65,8 @@ export default function Sponsors() {
           >
             {/* heading  */}
             <Typography
-              data-aos="fade-right"
-              data-aos-duration="1000"
+              // data-aos="fade-right"
+              // data-aos-duration="1000"
               sx={{
                 fontSize: {
                   xs: "24px",
@@ -85,8 +85,8 @@ export default function Sponsors() {
             </Typography>
             <Box>
               <Button
-                data-aos="fade-left"
-                data-aos-duration="1000"
+                // data-aos="fade-left"
+                // data-aos-duration="1000"
                 onClick={() => router.push("contact-us")}
                 textStyles={{ fontSize: "1rem" }}
               >

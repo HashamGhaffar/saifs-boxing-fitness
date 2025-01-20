@@ -77,8 +77,8 @@ export default function Partners() {
         }}
       >
         <Typography
-          data-aos="fade-down"
-          data-aos-duration="1000"
+          // data-aos="fade-down"
+          // data-aos-duration="1000"
           sx={{
             fontSize: {
               xs: "24px",
@@ -102,7 +102,7 @@ export default function Partners() {
         <Slider {...settings}>
           {partnerImages.map((image, index) => (
             <Box
-              data-aos="flip-up"
+              data-aos="fade-up"
               data-aos-duration="1000"
               key={index}
               sx={{ display: "flex", justifyContent: "center" }}
