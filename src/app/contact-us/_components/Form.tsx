@@ -90,7 +90,7 @@ export default function ContactUsForm() {
             >
               <Box
                 data-aos="fade-up"
-                data-aos-duration="1000"
+                data-aos-duration="500"
                 sx={{
                   backgroundColor: "#0D0D0DB2",
                   padding: { xs: "20px", sm: "20px 30px", md: "40px 20px" },
@@ -127,7 +127,7 @@ export default function ContactUsForm() {
               </Box>
               <Box
                 data-aos="fade-up"
-                data-aos-duration="1000"
+                data-aos-duration="500"
                 sx={{
                   backgroundColor: "#0D0D0DB2",
                   padding: { xs: "20px", sm: "20px 30px" },

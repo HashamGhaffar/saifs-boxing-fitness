@@ -42,8 +42,8 @@ export default function HeroHome() {
         >
           <Box>
             <Typography
-              // data-aos="fade-right"
-              // data-aos-duration="1000"
+              data-aos="fade-up"
+              data-aos-duration="500"
               sx={{
                 textTransform: "uppercase",
                 textAlign: { xl: "center" },
@@ -66,8 +66,8 @@ export default function HeroHome() {
               Unleash Your Inner
             </Typography>
             <Typography
-              // data-aos="fade-left"
-              // data-aos-duration="1000"
+              data-aos="fade-up"
+              data-aos-duration="500"
               sx={{
                 textTransform: "uppercase",
                 textAlign: { xl: "center" },

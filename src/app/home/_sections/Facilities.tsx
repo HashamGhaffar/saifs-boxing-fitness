@@ -139,7 +139,7 @@ export default function Facilities() {
           {/* grid images */}
           <Grid
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="500"
             container
             spacing={1.25}
           >

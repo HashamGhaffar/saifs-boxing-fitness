@@ -87,8 +87,8 @@ export function EnglandBoxingCard({
       }}
     >
       <Box
-        data-aos="fade-up-right"
-        data-aos-duration="1000"
+        data-aos="zoom-in-up"
+        data-aos-duration="500"
         sx={{ height: { md: "380px" }, width: { sm: "500px", md: "400px" } }}
       >
         <Image
@@ -103,8 +103,8 @@ export function EnglandBoxingCard({
         />
       </Box>
       <Box
-        data-aos="fade-up-left"
-        data-aos-duration="1000"
+        data-aos="zoom-in-up"
+        data-aos-duration="500"
         sx={{
           display: "flex",
           flexDirection: "column",

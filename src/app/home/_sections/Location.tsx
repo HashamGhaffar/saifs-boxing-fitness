@@ -83,7 +83,7 @@ export default function Location() {
             {/* location  */}
             <Box
               data-aos="fade-up"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               sx={{
                 width: {
                   xs: "100%",
@@ -103,7 +103,7 @@ export default function Location() {
             </Box>
             <Box
               data-aos="fade-up"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               sx={{
                 width: "100%",
                 display: "flex",

@@ -101,7 +101,7 @@ export function CoachingCard({
       >
         <Grid
           data-aos="fade-up-right"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           item
           xs={12}
           md={6}
@@ -117,7 +117,7 @@ export function CoachingCard({
 
         <Grid
           data-aos="fade-up-left"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           sx={{
             padding: { xs: "20px", md: "30px", xl: "45px" },
             backgroundColor: backgroundColor,

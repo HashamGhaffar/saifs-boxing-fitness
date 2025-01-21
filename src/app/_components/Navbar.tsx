@@ -39,9 +39,8 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <div data-aos="fade-down" data-aos-duration="1000">
+      <div data-aos="fade-down" data-aos-duration="500">
         <Box
-          // data-aos="fade-down"
           sx={{
             padding: {
               xs: "20px 20px",

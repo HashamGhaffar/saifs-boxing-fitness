@@ -53,7 +53,8 @@ import { useEffect } from "react";
             <Grid container alignItems="center" item md={6} sm={10} xs={10}>
               {/* textual content  */}
               <Box
-                // data-aos="fade-right"
+                data-aos="zoom-in"
+                data-aos-duration="500"
                 sx={{
                   maxWidth: {
                     xs: "500px",
@@ -102,8 +103,8 @@ import { useEffect } from "react";
         </Box>
         {/* boxer image  */}
         <Box
-          // data-aos="fade-left"
-          // data-aos-duration="1000"
+          data-aos="zoom-in"
+          data-aos-duration="500"
           sx={{
             maxWidth: {
               xs: "300px",

@@ -171,7 +171,11 @@ export default function Schedule() {
             justifyContent: "center",
           }}
         >
-          <Box sx={{ maxWidth: "1600px", width: "100%" }}>
+          <Box
+            data-aos="fade-up"
+            data-aos-duration="500"
+            sx={{ maxWidth: "1600px", width: "100%" }}
+          >
             <TableContainer
             //  data-aos="fade-up" data-aos-duration="1000"
             >

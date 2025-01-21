@@ -43,7 +43,7 @@ export default function Hero() {
           <Box>
             <Typography
               data-aos="fade-right"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               sx={{
                 textTransform: "uppercase",
                 textAlign: { xl: "center" },
@@ -66,7 +66,7 @@ export default function Hero() {
             </Typography>
             <Typography
               data-aos="fade-left"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               sx={{
                 textTransform: "uppercase",
                 textAlign: { xl: "center" },

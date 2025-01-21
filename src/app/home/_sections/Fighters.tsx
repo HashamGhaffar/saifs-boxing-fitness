@@ -47,8 +47,6 @@ export default function Fighters() {
         }}
       >
         <Typography
-          // data-aos="fade-right"
-          // data-aos-duration="1000"
           sx={{
             fontSize: {
               xs: "24px",
@@ -72,6 +70,8 @@ export default function Fighters() {
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
           <Box
+            data-aos="fade-up"
+            data-aos-duration="500"
             sx={{
               display: "flex",
               justifyContent: { xs: "center", xl: "space-between" },
