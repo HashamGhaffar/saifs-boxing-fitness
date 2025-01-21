@@ -61,7 +61,6 @@ export default function Partners() {
     webp.Partners9,
     webp.Partners10,
     webp.Partners11,
-    webp.Partners12,
   ];
 
   return (
