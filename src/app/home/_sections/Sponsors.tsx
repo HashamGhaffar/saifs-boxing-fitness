@@ -111,8 +111,6 @@ export default function Sponsors() {
             }}
           >
             <Box
-              data-aos="zoom-in"
-              data-aos-duration="500"
               sx={{
                 display: "flex",
                 justifyContent: "center",
@@ -126,6 +124,8 @@ export default function Sponsors() {
             >
               {imageData.map((image, index) => (
                 <Box
+                  data-aos="zoom-in"
+                  data-aos-duration="500"
                   key={index}
                   sx={{
                     height: "auto",

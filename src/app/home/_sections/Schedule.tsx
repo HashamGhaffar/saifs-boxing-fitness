@@ -140,8 +140,6 @@ export default function Schedule() {
       >
         {/* Heading */}
         <Typography
-          // data-aos="fade-right"
-          // data-aos-duration="1000"
           sx={{
             fontSize: {
               xs: "24px",
@@ -171,14 +169,8 @@ export default function Schedule() {
             justifyContent: "center",
           }}
         >
-          <Box
-            data-aos="fade-up"
-            data-aos-duration="500"
-            sx={{ maxWidth: "1600px", width: "100%" }}
-          >
-            <TableContainer
-            //  data-aos="fade-up" data-aos-duration="1000"
-            >
+          <Box sx={{ maxWidth: "1600px", width: "100%" }}>
+            <TableContainer>
               <Table
                 sx={{
                   "& .MuiTableCell-root": { padding: "10px 5px" },
@@ -188,7 +180,7 @@ export default function Schedule() {
                 }}
               >
                 {/* Table Header */}
-                <TableRow>
+                <TableRow data-aos="fade-up" data-aos-duration="500">
                   <TableCell
                     sx={{
                       ...headingStyle,
@@ -219,7 +211,11 @@ export default function Schedule() {
 
                 {/* Table Rows */}
                 {tableRows.map((row, index) => (
-                  <TableRow key={index}>
+                  <TableRow
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                    key={index}
+                  >
                     <TableCell sx={{ ...headingStyle }}>{row.time}</TableCell>
                     {row.activities.map((activity, idx) => (
                       <TableCell key={idx} sx={{ ...paragraphStyle }}>
