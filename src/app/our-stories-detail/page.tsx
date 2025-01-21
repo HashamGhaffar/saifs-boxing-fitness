@@ -1,13 +1,13 @@
 "use client";
 import Hero from "@/app/_components/Hero";
-import EnglandBoxingDetailSection from "./_sections/EnglandBoxingDetailSection";
+import OurStoriesDetailSection from "./_sections/OurStoriesDetailSection";
 import Footer from "../_components/Footer";
 
-export default function EnglandBoxingDetail() {
+export default function OurStoriesDetail() {
   return (
     <>
       <Hero />
-      <EnglandBoxingDetailSection />
+      <OurStoriesDetailSection />
       <Footer />
     </>
   );

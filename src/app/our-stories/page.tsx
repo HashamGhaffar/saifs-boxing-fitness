@@ -1,13 +1,13 @@
 "use client";
 import Hero from "@/app/_components/Hero";
-import EnglandBoxingCardBox from "./_components/EnglandBoxing";
+import OurStoriesSection from "./_components/OurStoriesSection";
 import Footer from "../_components/Footer";
 
-export default function EnglandBoxing() {
+export default function OurStories() {
   return (
     <>
       <Hero />
-      <EnglandBoxingCardBox />
+      <OurStoriesSection />
       <Footer />
     </>
   );

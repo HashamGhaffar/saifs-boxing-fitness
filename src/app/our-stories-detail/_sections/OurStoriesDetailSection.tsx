@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import webp from "@/app/_assets/webp";
 
-export default function EnglandBoxingDetailSection() {
+export default function OurStoriesDetailSection() {
   const paragraph = {
     fontSize: {
       xs: "14px",
@@ -20,7 +20,8 @@ export default function EnglandBoxingDetailSection() {
           flexDirection: "column",
           alignItems: "center",
           paddingBottom: "0px",
-          backgroundColor: "#2a2a2a",
+          backgroundColor: "white",
+          color: "#2a2a2a",
           padding: {
             xs: "40px 20px",
             sm: "60px 50px",

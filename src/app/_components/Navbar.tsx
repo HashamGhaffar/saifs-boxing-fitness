@@ -139,7 +139,7 @@ export default function Navbar() {
                 1-2-1 Coaching
               </Typography>
               <Typography
-                onClick={() => router.push("england-boxing")}
+                onClick={() => router.push("/our-stories")}
                 sx={{
                   ...text,
                   cursor: "pointer",
@@ -230,7 +230,7 @@ export default function Navbar() {
           </Typography>
           <Divider sx={{ margin: "16px 0", backgroundColor: "#ffffff" }} />
           <Typography
-            onClick={() => router.push("england-boxing")}
+            onClick={() => router.push("/our-stories")}
             sx={{ ...text, mb: 2, textAlign: "right" }}
           >
             OUR STORIES

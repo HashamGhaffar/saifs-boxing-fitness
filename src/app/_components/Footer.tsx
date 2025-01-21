@@ -101,7 +101,7 @@ export default function Footer() {
               Education
             </Typography>
             <Typography
-              onClick={() => router.push("england-boxing")}
+              onClick={() => router.push("/our-stories")}
               sx={{
                 ...textStyle,
                 "&:hover": {

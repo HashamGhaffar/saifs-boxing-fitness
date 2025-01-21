@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-export default function EnglandBoxingCardBox() {
+export default function OurStoriesSection() {
   useEffect(() => {
     AOS.init({ duration: 500, once: true });
     AOS.refresh();
@@ -22,7 +22,8 @@ export default function EnglandBoxingCardBox() {
         flexDirection: "column",
         alignItems: "center",
         paddingBottom: "0px",
-        backgroundColor: "#2a2a2a",
+        color: "#2a2a2a",
+        backgroundColor: "white",
         padding: {
           xs: "40px 20px 0 20px",
           sm: "60px 50px 0 50px ",
@@ -31,8 +32,7 @@ export default function EnglandBoxingCardBox() {
         },
       }}
     >
-      <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} />
-      {/* <EnglandBoxingCard onClick={() => router.push("england-boxing-detail")} /> */}
+      <OurStoriesCard onClick={() => router.push("/our-stories-detail")} />
 
       {/* <Pagination
         count={5}
@@ -63,7 +63,7 @@ export default function EnglandBoxingCardBox() {
   );
 }
 
-export function EnglandBoxingCard({
+export function OurStoriesCard({
   onClick = () => {},
 }: {
   onClick?: () => void;
@@ -141,7 +141,7 @@ export function EnglandBoxingCard({
               },
               fontSize: { xs: "12px", sm: "14px", lg: "18px", xl: "20px" },
               fontWeight: "400",
-              color: "#ffffff",
+              // color: "#ffffff",
             }}
           >
             {` At the young age of 11, my brother tragically passed away.
@@ -169,21 +169,22 @@ export function EnglandBoxingCard({
             onClick={onClick}
             variant="outlined"
             sx={{
-              color: "#FFFFFF",
+              color: "#2a2a2a",
               borderColor: "#FFFFFF",
               borderRadius: "0px",
               border: "0px",
-              borderBottom: "2px solid #FFFFFF",
+              borderBottom: "2px solid #2a2a2a",
               padding: "10px 0",
               fontSize: { xs: "12px", sm: "14px", lg: "18px", xl: "20px" },
               transition:
                 "background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,  box-shadow 0.3s ease , padding  0.3s ease ",
               "&:hover": {
                 backgroundColor: "#F63333",
-                color: "#FFFFFF",
+                color: "#fff",
                 transform: "scale(1.05)",
                 boxShadow: "0px 4px 15px #F63333",
                 padding: "10px",
+                borderBottom: "2px solid #2a2a2a",
               },
             }}
           >

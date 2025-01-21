@@ -39,7 +39,8 @@ export default function ClassGroup() {
         imageSrc={webp.Intro}
         imageAlt="Intro"
         headingAlignment={{ textAlign: "left" }}
-        backgroundColor={{ backgroundColor: "#2a2a2a" }}
+        backgroundColor={{ backgroundColor: "#fff" }}
+        textColor={{ color: "#2a2a2a" }}
         alignment={{ xs: "column", lg: "row" }}
       />
       <Class
@@ -55,6 +56,7 @@ export default function ClassGroup() {
         imageAlt="Signature"
         headingAlignment={{ textAlign: "right" }}
         backgroundColor={{ backgroundColor: "#0D0D0D" }}
+        textColor={{ color: "#fff" }}
         alignment={{ xs: "column", lg: "row-reverse" }}
       />
       <Class
@@ -64,7 +66,8 @@ export default function ClassGroup() {
         imageSrc={webp.Intro}
         imageAlt="Intro"
         headingAlignment={{ textAlign: "left" }}
-        backgroundColor={{ backgroundColor: "#2a2a2a" }}
+        backgroundColor={{ backgroundColor: "#fff" }}
+        textColor={{ color: "#2a2a2a" }}
         alignment={{ xs: "column", lg: "row" }}
       />
     </>
@@ -79,6 +82,7 @@ interface ClassProps {
   imageAlt: string;
   headingAlignment?: React.CSSProperties;
   backgroundColor?: React.CSSProperties;
+  textColor?: React.CSSProperties;
   alignment?: { xs: string; lg: string };
 }
 
@@ -90,6 +94,7 @@ export function Class({
   imageAlt,
   headingAlignment,
   backgroundColor,
+  textColor,
   alignment,
 }: ClassProps) {
   return (
@@ -158,8 +163,12 @@ export function Class({
               gap: { xs: "8px", md: "20px" },
             }}
           >
-            <Typography sx={{ ...text }}>{description1}</Typography>
-            <Typography sx={{ ...text }}>{description2}</Typography>
+            <Typography sx={{ ...text, ...textColor }}>
+              {description1}
+            </Typography>
+            <Typography sx={{ ...text, ...textColor }}>
+              {description2}
+            </Typography>
           </Box>
 
           {/* Image */}
