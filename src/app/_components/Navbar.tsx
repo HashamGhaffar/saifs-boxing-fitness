@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 
 import { Typography, Box, Divider } from "@mui/material";
@@ -18,19 +18,30 @@ export default function Navbar() {
   }, []);
 
   const router = useRouter();
+  const pathname = usePathname();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const text = {
     fontSize: {
       xs: "12px",
-      sm: "12px",
       md: "14px",
       lg: "18px",
     },
     fontWeight: "300",
+    cursor: "pointer",
     color: "#FFFFFF",
     overflow: "hidden",
+    transition:
+      "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
+    "&:hover": {
+      color: "#F63333",
+      textShadow: "1px 3px 4px #0D0D0D",
+      scale: "1.1",
+    },
   };
+
+  const getColor = (route: string) =>
+    pathname === route ? "#F63333" : "#FFFFFF";
 
   const toggleDrawer = (open: boolean) => {
     setIsDrawerOpen(open);
@@ -80,13 +91,11 @@ export default function Navbar() {
               />
             </Box>
 
-            {/* Desktop navigation */}
+            {/* Desktop Navigation */}
             <Box
               sx={{
                 display: { xs: "none", md: "flex" },
                 alignItems: "center",
-                color: "#FFFFFF",
-                fontWeight: "300",
                 gap: { xs: "15px", md: "20px", lg: "40px" },
               }}
             >
@@ -94,46 +103,25 @@ export default function Navbar() {
                 onClick={() => router.push("/")}
                 sx={{
                   ...text,
-                  cursor: "pointer",
-                  transition:
-                    "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
-                  "&:hover": {
-                    color: "#F63333",
-                    textShadow: "1px 3px 4px #0D0D0D",
-                    scale: "1.1",
-                  },
+                  color: getColor("/"),
                 }}
               >
                 Home
               </Typography>
               <Typography
-                onClick={() => router.push("education")}
+                onClick={() => router.push("/education")}
                 sx={{
                   ...text,
-                  cursor: "pointer",
-                  transition:
-                    "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
-                  "&:hover": {
-                    color: "#F63333",
-                    textShadow: "1px 3px 4px #0D0D0D",
-                    scale: "1.1",
-                  },
+                  color: getColor("/education"),
                 }}
               >
                 Education
               </Typography>
               <Typography
-                onClick={() => router.push("coaching")}
+                onClick={() => router.push("/coaching")}
                 sx={{
                   ...text,
-                  cursor: "pointer",
-                  transition:
-                    "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
-                  "&:hover": {
-                    color: "#F63333",
-                    textShadow: "1px 3px 4px #0D0D0D",
-                    scale: "1.1",
-                  },
+                  color: getColor("/coaching"),
                 }}
               >
                 1-2-1 Coaching
@@ -142,14 +130,7 @@ export default function Navbar() {
                 onClick={() => router.push("/our-stories")}
                 sx={{
                   ...text,
-                  cursor: "pointer",
-                  transition:
-                    "color 0.4s ease-in-out, text-shadow 0.8s ease-in , scale .3s ease-in-out",
-                  "&:hover": {
-                    color: "#F63333",
-                    textShadow: "1px 3px 4px #0D0D0D",
-                    scale: "1.1",
-                  },
+                  color: getColor("/our-stories"),
                 }}
               >
                 OUR STORIES
@@ -159,14 +140,20 @@ export default function Navbar() {
             {/* Contact Button */}
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               <Button
-                onClick={() => router.push("contact-us")}
-                textStyles={{ fontSize: "1rem" }}
+                onClick={() => router.push("/contact-us")}
+                textStyles={{
+                  fontSize: {
+                    xs: "12px",
+                    md: "14px",
+                    lg: "18px",
+                  },
+                }}
               >
                 Get In Touch
               </Button>
             </Box>
 
-            {/* Hamburger for mobile */}
+            {/* Hamburger for Mobile */}
             <Box
               sx={{
                 width: { xs: "30px", sm: "35px" },
@@ -184,7 +171,7 @@ export default function Navbar() {
         </Box>
       </div>
 
-      {/* Custom Drawer Navigation */}
+      {/* Drawer Navigation */}
       <Box
         sx={{
           position: "fixed",
@@ -197,8 +184,6 @@ export default function Navbar() {
           overflowX: "hidden",
           transition: "all .5s ease",
           zIndex: "10",
-          textWrap: "nowrap",
-          overflow: "hidden",
         }}
       >
         <Box sx={{ padding: "20px" }}>
@@ -209,29 +194,61 @@ export default function Navbar() {
             alt="Cross"
           />
           <Typography
-            onClick={() => router.push("/")}
-            sx={{ ...text, mb: 2, textAlign: "right" }}
+            onClick={() => {
+              router.push("/");
+              toggleDrawer(false);
+            }}
+            sx={{
+              ...text,
+              mb: 2,
+              textAlign: "right",
+              color: getColor("/"),
+            }}
           >
             Home
           </Typography>
           <Divider sx={{ margin: "16px 0", backgroundColor: "#ffffff" }} />
           <Typography
-            onClick={() => router.push("education")}
-            sx={{ ...text, mb: 2, textAlign: "right" }}
+            onClick={() => {
+              router.push("/education");
+              toggleDrawer(false);
+            }}
+            sx={{
+              ...text,
+              mb: 2,
+              textAlign: "right",
+              color: getColor("/education"),
+            }}
           >
             Education
           </Typography>
           <Divider sx={{ margin: "16px 0", backgroundColor: "#ffffff" }} />
           <Typography
-            onClick={() => router.push("coaching")}
-            sx={{ ...text, mb: 2, textAlign: "right" }}
+            onClick={() => {
+              router.push("/coaching");
+              toggleDrawer(false);
+            }}
+            sx={{
+              ...text,
+              mb: 2,
+              textAlign: "right",
+              color: getColor("/coaching"),
+            }}
           >
             1-2-1 Coaching
           </Typography>
           <Divider sx={{ margin: "16px 0", backgroundColor: "#ffffff" }} />
           <Typography
-            onClick={() => router.push("/our-stories")}
-            sx={{ ...text, mb: 2, textAlign: "right" }}
+            onClick={() => {
+              router.push("/our-stories");
+              toggleDrawer(false);
+            }}
+            sx={{
+              ...text,
+              mb: 2,
+              textAlign: "right",
+              color: getColor("/our-stories"),
+            }}
           >
             OUR STORIES
           </Typography>
@@ -244,28 +261,22 @@ export default function Navbar() {
               color: "#0D0D0D",
               backgroundColor: "#FFFFFF",
               borderRadius: "0px",
-              textWrap: "nowrap",
-              padding: {
-                xs: "6px 10px",
-                sm: "8px 15px",
-              },
-              overflow: "hidden",
-              float: "right",
+              padding: { xs: "6px 10px", sm: "8px 15px" },
               "&:hover": {
                 backgroundColor: "#f0f0f0",
               },
-              "&:active": {
-                backgroundColor: "#e0e0e0",
-              },
             }}
-            onClick={() => router.push("contact-us")}
+            onClick={() => {
+              router.push("/contact-us");
+              toggleDrawer(false);
+            }}
           >
             Get In Touch
           </Button>
         </Box>
       </Box>
 
-      {/* Backdrop (grey/blurred) */}
+      {/* Backdrop */}
       {isDrawerOpen && (
         <Box
           onClick={() => toggleDrawer(false)}
