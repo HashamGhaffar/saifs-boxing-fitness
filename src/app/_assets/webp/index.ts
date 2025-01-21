@@ -37,17 +37,18 @@ import Basit from "./basit.jpg";
 import NavJames from "./navJames.webp";
 import NavDaniel from "./navDaniel.webp";
 //  sponsors
-import Kings from "./sponsors/kings.png";
-import conquest from "./sponsors/conquest.jpg";
-import goldStar from "./sponsors/goldStar.png";
-import harveys from "./sponsors/harveys.png";
-import homeflair from "./sponsors/homeflair.jpg";
-import idealrooms from "./sponsors/idealrooms.png";
-import Kitchens from "./sponsors/kitchens.jpeg";
-import Lusso from "./sponsors/lusso.jpeg";
-import RoadRunner from "./sponsors/roadRunner.jpg";
-import SabirRestaurant from "./sponsors/sabirRestaurant.png";
-import Swift from "./sponsors/swift.jpg";
+import sponsor1 from "./sponsors/sponsor1.jpg";
+import sponsor2 from "./sponsors/sponsor2.jpg";
+import sponsor3 from "./sponsors/sponsor3.png";
+import sponsor4 from "./sponsors/sponsor4.jpg";
+import sponsor5 from "./sponsors/sponsor5.jpg";
+import sponsor6 from "./sponsors/sponsor6.jpg";
+import sponsor7 from "./sponsors/sponsor7.jpg";
+import sponsor8 from "./sponsors/sponsor8.jpg";
+import sponsor9 from "./sponsors/sponsor9.jpg";
+import sponsor10 from "./sponsors/sponsor10.jpg";
+import sponsor11 from "./sponsors/sponsor11.jpg";
+import sponsor12 from "./sponsors/sponsor12.jpg";
 
 // insta links
 import Boxer1 from "./boxer1.webp";
@@ -117,17 +118,19 @@ const webp = {
   NavDaniel,
 
   // sponsors
-  Kings,
-  conquest,
-  goldStar,
-  harveys,
-  homeflair,
-  idealrooms,
-  Kitchens,
-  Lusso,
-  RoadRunner,
-  SabirRestaurant,
-  Swift,
+  sponsor1,
+  sponsor2,
+  sponsor3,
+  sponsor4,
+  sponsor5,
+  sponsor6,
+  sponsor7,
+  sponsor8,
+  sponsor9,
+  sponsor10,
+  sponsor11,
+  sponsor12,
+
   // insta Links
   Boxer1,
   Boxer2,

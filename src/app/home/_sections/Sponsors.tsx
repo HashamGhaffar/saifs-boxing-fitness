@@ -17,26 +17,28 @@ export default function Sponsors() {
 
   const router = useRouter();
   const imageData = [
-    { src: webp.Kings, alt: "Kings sponsor logo" },
-    { src: webp.conquest, alt: "Conquest sponsor logo" },
-    { src: webp.goldStar, alt: "Gold Star sponsor logo" },
-    { src: webp.harveys, alt: "Harveys sponsor logo" },
-    { src: webp.homeflair, alt: "Homeflair sponsor logo" },
-    { src: webp.idealrooms, alt: "Ideal Rooms sponsor logo" },
-    { src: webp.Kitchens, alt: "Kitchens sponsor logo" },
-    { src: webp.Lusso, alt: "Lusso sponsor logo" },
-    { src: webp.RoadRunner, alt: "Road Runner sponsor logo" },
-    { src: webp.SabirRestaurant, alt: "Sabir Restaurant sponsor logo" },
-    { src: webp.Swift, alt: "Swift sponsor logo" },
+    { src: webp.sponsor1, alt: "Kings sponsor logo" },
+    { src: webp.sponsor2, alt: "Conquest sponsor logo" },
+    { src: webp.sponsor3, alt: "Gold Star sponsor logo" },
+    { src: webp.sponsor4, alt: "Harveys sponsor logo" },
+    { src: webp.sponsor5, alt: "Homeflair sponsor logo" },
+    { src: webp.sponsor6, alt: "Ideal Rooms sponsor logo" },
+    { src: webp.sponsor7, alt: "Kitchens sponsor logo" },
+    { src: webp.sponsor8, alt: "Lusso sponsor logo" },
+    { src: webp.sponsor9, alt: "Road Runner sponsor logo" },
+    { src: webp.sponsor10, alt: "Sabir Restaurant sponsor logo" },
+    { src: webp.sponsor11, alt: "Swift sponsor logo" },
+    { src: webp.sponsor12, alt: "Swift sponsor logo" },
   ];
 
   return (
     <>
       <Box
         sx={{
-          backgroundImage: "url(bgSponsors.webp)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          // backgroundImage: "url(bgSponsors.webp)",
+          // backgroundSize: "cover",
+          // backgroundPosition: "center",
+          backgroundColor: "white",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
