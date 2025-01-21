@@ -28,7 +28,6 @@ export default function Sponsors() {
     { src: webp.sponsor9, alt: "Road Runner sponsor logo" },
     { src: webp.sponsor10, alt: "Sabir Restaurant sponsor logo" },
     { src: webp.sponsor11, alt: "Swift sponsor logo" },
-    { src: webp.sponsor12, alt: "Swift sponsor logo" },
   ];
 
   return (

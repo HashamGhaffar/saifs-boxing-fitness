@@ -13,7 +13,6 @@ import Partners8 from "./partners/partner8.png";
 import Partners9 from "./partners/partner9.png";
 import Partners10 from "./partners/partner10.png";
 import Partners11 from "./partners/partner11.png";
-import Partners12 from "./partners/partner12.png";
 
 import F1 from "./facilities/f1.jpg";
 import F2 from "./facilities/f2.webp";
@@ -39,7 +38,7 @@ import NavDaniel from "./navDaniel.webp";
 //  sponsors
 import sponsor1 from "./sponsors/sponsor1.jpg";
 import sponsor2 from "./sponsors/sponsor2.jpg";
-import sponsor3 from "./sponsors/sponsor3.png";
+import sponsor3 from "./sponsors/sponsor3.jpg";
 import sponsor4 from "./sponsors/sponsor4.jpg";
 import sponsor5 from "./sponsors/sponsor5.jpg";
 import sponsor6 from "./sponsors/sponsor6.jpg";
@@ -48,7 +47,6 @@ import sponsor8 from "./sponsors/sponsor8.jpg";
 import sponsor9 from "./sponsors/sponsor9.jpg";
 import sponsor10 from "./sponsors/sponsor10.jpg";
 import sponsor11 from "./sponsors/sponsor11.jpg";
-import sponsor12 from "./sponsors/sponsor12.jpg";
 
 // insta links
 import Boxer1 from "./boxer1.webp";
@@ -93,7 +91,6 @@ const webp = {
   Partners9,
   Partners10,
   Partners11,
-  Partners12,
 
   // facuity
   F1,
@@ -129,7 +126,6 @@ const webp = {
   sponsor9,
   sponsor10,
   sponsor11,
-  sponsor12,
 
   // insta Links
   Boxer1,

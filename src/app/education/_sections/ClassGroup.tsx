@@ -111,8 +111,6 @@ export function Class({
       <Box>
         {/* Heading */}
         <Typography
-          // data-aos="zoom-in"
-          // data-aos-duration="1000"
           sx={{
             fontSize: {
               xs: "24px",

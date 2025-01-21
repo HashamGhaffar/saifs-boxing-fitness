@@ -96,16 +96,12 @@ export function CoachingCard({
       }}
     >
       <Grid
+        data-aos="fade-up"
+        data-aos-duration="500"
         sx={{ maxWidth: { xs: "1200px", sm: "600px", md: "1200px" } }}
         container
       >
-        <Grid
-          data-aos="fade-up-right"
-          data-aos-duration="500"
-          item
-          xs={12}
-          md={6}
-        >
+        <Grid item xs={12} md={6}>
           <Box>
             <Image
               style={{ height: "100%", width: "100%" }}
@@ -116,8 +112,6 @@ export function CoachingCard({
         </Grid>
 
         <Grid
-          data-aos="fade-up-left"
-          data-aos-duration="500"
           sx={{
             padding: { xs: "20px", md: "30px", xl: "45px" },
             backgroundColor: backgroundColor,

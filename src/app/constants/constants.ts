@@ -48,7 +48,7 @@ qualities.
       Beyond his boxing expertise, he is known for her ability to inspire and uplift his fighters. 
       He believes that boxing is as much about building character as it is about learning technique.`,
     image: webp.CoachDaniel,
-    backgroundImage: "url(bgCoachDaniel.webp)",
+    backgroundImage: "url(bgCoachJames.webp)",
     navImage: webp.NavDaniel,
     isSelected: false,
   },

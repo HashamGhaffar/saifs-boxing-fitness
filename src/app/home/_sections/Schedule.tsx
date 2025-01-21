@@ -180,7 +180,7 @@ export default function Schedule() {
                 }}
               >
                 {/* Table Header */}
-                <TableRow data-aos="fade-up" data-aos-duration="500">
+                <TableRow data-aos="zoom-in" data-aos-duration="500">
                   <TableCell
                     sx={{
                       ...headingStyle,
@@ -212,7 +212,7 @@ export default function Schedule() {
                 {/* Table Rows */}
                 {tableRows.map((row, index) => (
                   <TableRow
-                    data-aos="fade-up"
+                    data-aos="zoom-in"
                     data-aos-duration="500"
                     key={index}
                   >
