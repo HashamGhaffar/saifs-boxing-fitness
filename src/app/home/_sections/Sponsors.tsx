@@ -37,7 +37,7 @@ export default function Sponsors() {
           // backgroundImage: "url(bgSponsors.webp)",
           // backgroundSize: "cover",
           // backgroundPosition: "center",
-          backgroundColor: "#000",
+          backgroundColor: "#010101",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -66,8 +66,6 @@ export default function Sponsors() {
           >
             {/* heading  */}
             <Typography
-              // data-aos="fade-right"
-              // data-aos-duration="1000"
               sx={{
                 fontSize: {
                   xs: "24px",
@@ -86,8 +84,6 @@ export default function Sponsors() {
             </Typography>
             <Box>
               <Button
-                // data-aos="fade-left"
-                // data-aos-duration="1000"
                 onClick={() => router.push("contact-us")}
                 textStyles={{ fontSize: "1rem" }}
               >
@@ -124,6 +120,8 @@ export default function Sponsors() {
               }}
             >
               <Image
+                data-aos="zoom-in"
+                data-aos-duration="500"
                 style={{
                   height: "100%",
                   width: "100%",
