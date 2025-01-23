@@ -184,6 +184,7 @@ export default function Navbar() {
           overflowX: "hidden",
           transition: "all .5s ease",
           zIndex: "10",
+          textWrap: "nowrap",
         }}
       >
         <Box sx={{ padding: "20px" }}>
@@ -261,6 +262,7 @@ export default function Navbar() {
               color: "#0D0D0D",
               backgroundColor: "#FFFFFF",
               borderRadius: "0px",
+              width: "100%",
               padding: { xs: "6px 10px", sm: "8px 15px" },
               "&:hover": {
                 backgroundColor: "#f0f0f0",
