@@ -76,6 +76,8 @@ import Fighter3 from "./fighter3.jpg";
 import Fighter4 from "./fighter4.jpg";
 import Fighter5 from "./fighter5.jpg";
 
+import AllSponsors from "./allSponsors.jpg.jpg";
+
 const webp = {
   BoxerAboutUS,
   BoxerAboutUS2,
@@ -153,6 +155,8 @@ const webp = {
   Fighter3,
   Fighter4,
   Fighter5,
+
+  AllSponsors,
 };
 
 export default webp;

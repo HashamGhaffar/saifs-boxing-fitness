@@ -16,19 +16,19 @@ export default function Sponsors() {
   }, []);
 
   const router = useRouter();
-  const imageData = [
-    { src: webp.sponsor1, alt: "Kings sponsor logo" },
-    { src: webp.sponsor2, alt: "Conquest sponsor logo" },
-    { src: webp.sponsor3, alt: "Gold Star sponsor logo" },
-    { src: webp.sponsor4, alt: "Harveys sponsor logo" },
-    { src: webp.sponsor5, alt: "Homeflair sponsor logo" },
-    { src: webp.sponsor6, alt: "Ideal Rooms sponsor logo" },
-    { src: webp.sponsor7, alt: "Kitchens sponsor logo" },
-    { src: webp.sponsor8, alt: "Lusso sponsor logo" },
-    { src: webp.sponsor9, alt: "Road Runner sponsor logo" },
-    { src: webp.sponsor10, alt: "Sabir Restaurant sponsor logo" },
-    { src: webp.sponsor11, alt: "Swift sponsor logo" },
-  ];
+  // const imageData = [
+  //   { src: webp.sponsor1, alt: "Kings sponsor logo" },
+  //   { src: webp.sponsor2, alt: "Conquest sponsor logo" },
+  //   { src: webp.sponsor3, alt: "Gold Star sponsor logo" },
+  //   { src: webp.sponsor4, alt: "Harveys sponsor logo" },
+  //   { src: webp.sponsor5, alt: "Homeflair sponsor logo" },
+  //   { src: webp.sponsor6, alt: "Ideal Rooms sponsor logo" },
+  //   { src: webp.sponsor7, alt: "Kitchens sponsor logo" },
+  //   { src: webp.sponsor8, alt: "Lusso sponsor logo" },
+  //   { src: webp.sponsor9, alt: "Road Runner sponsor logo" },
+  //   { src: webp.sponsor10, alt: "Sabir Restaurant sponsor logo" },
+  //   { src: webp.sponsor11, alt: "Swift sponsor logo" },
+  // ];
 
   return (
     <>
@@ -37,11 +37,11 @@ export default function Sponsors() {
           // backgroundImage: "url(bgSponsors.webp)",
           // backgroundSize: "cover",
           // backgroundPosition: "center",
-          backgroundColor: "white",
+          backgroundColor: "#000",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          minHeight: "100vh",
+          // minHeight: "100vh",
           padding: {
             xs: "40px 20px 40px",
             sm: "60px 50px 60px",
@@ -116,12 +116,24 @@ export default function Sponsors() {
                 alignItems: "center",
                 flexWrap: "wrap",
                 flexDirection: "row",
-                maxWidth: { xs: "400px", md: "500px", lg: "1300px" },
+                maxWidth: { lg: "1300px" },
                 gap: "50px",
                 columnGap: { sm: "40px", md: "60px", lg: "90px" },
+                height: "100%",
+                width: "100%",
               }}
             >
-              {imageData.map((image, index) => (
+              <Image
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  objectFit: "cover",
+                  maxWidth: "1300px",
+                }}
+                src={webp.AllSponsors}
+                alt="all sponsors"
+              />
+              {/* {imageData.map((image, index) => (
                 <Box
                   data-aos="zoom-in"
                   data-aos-duration="500"
@@ -147,7 +159,7 @@ export default function Sponsors() {
                     alt={image.alt}
                   />
                 </Box>
-              ))}
+              ))} */}
             </Box>
           </Box>
         </Box>

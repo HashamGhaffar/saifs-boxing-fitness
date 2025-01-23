@@ -9,7 +9,6 @@ import Fighters from "./_sections/Fighters";
 import Coatches from "./_sections/Coaches";
 import Location from "./_sections/Location";
 import Sponsors from "./_sections/Sponsors";
-// import InstagramFollow from "./_sections/InstagramFollow";
 import Footer from "../_components/Footer";
 import Schedule from "./_sections/Schedule";
 import svgs from "../_assets/svgs";
@@ -53,7 +52,6 @@ export default function Home() {
       <Schedule />
       <Location />
       <Sponsors />
-      {/* <InstagramFollow /> */}
       <Footer />
 
       {isVisible && (
