@@ -1,17 +1,61 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, CircularProgress } from "@mui/material";
 import CustomTextField from "../../_components/CustomTextField";
 import Button from "../../_components/Button";
-import TextField from "@mui/material/TextField";
 import Navbar from "@/app/_components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useForm, Controller } from "react-hook-form";
+import { showError, showSuccess } from "@/app/_utils/toast";
+import axios from "axios";
+
+interface FormValues {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+}
 
 export default function ContactUsForm() {
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     AOS.init({ duration: 500, once: true });
     AOS.refresh();
   }, []);
+
+  const {
+    handleSubmit,
+    control,
+    reset,
+    formState: { errors },
+  } = useForm<FormValues>();
+
+  const onSubmit = async (data: FormValues) => {
+    try {
+      setLoading(true);
+      const response = await axios.post("/api/contactus", data, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      setLoading(false);
+
+      if (response?.status === 200) {
+        showSuccess("Email sent successfully!");
+        reset();
+      } else {
+        showError(`Failed to send email: ${response?.data?.error}`);
+        reset();
+      }
+    } catch (error) {
+      console.error(error, "error");
+      showError(`Failed to send email`);
+      reset();
+    }
+  };
+
   const cardHeading = {
     color: "#FFFFFF",
     fontWeight: "700",
@@ -32,6 +76,7 @@ export default function ContactUsForm() {
       lg: "18px",
     },
   };
+
   return (
     <>
       <Box
@@ -57,10 +102,7 @@ export default function ContactUsForm() {
           }}
         >
           <Box sx={{ maxWidth: "1600px", width: "100%" }}>
-            {/* heading  */}
             <Typography
-              // data-aos="zoom-in"
-              // data-aos-duration="1000"
               sx={{
                 fontSize: {
                   xs: "24px",
@@ -77,7 +119,7 @@ export default function ContactUsForm() {
                 width: "100%",
               }}
             >
-              contact us
+              Contact Us
             </Typography>
             <Box
               sx={{
@@ -89,8 +131,6 @@ export default function ContactUsForm() {
               }}
             >
               <Box
-                data-aos="fade-up"
-                data-aos-duration="500"
                 sx={{
                   backgroundColor: "#0D0D0DB2",
                   padding: { xs: "20px", sm: "20px 30px", md: "40px 20px" },
@@ -101,15 +141,10 @@ export default function ContactUsForm() {
                   flexDirection: "column",
                   justifyContent: "space-between",
                   minHeight: { xs: "300px", sm: "400px", md: "auto" },
-                  border: {
-                    sx: "1px solid #ffffff",
-                    md: "2px solid #ffffff",
-                    lg: "3px solid #ffffff",
-                  },
                 }}
               >
                 <Box>
-                  <Typography sx={{ ...cardHeading }}>location</Typography>
+                  <Typography sx={{ ...cardHeading }}>Location</Typography>
                   <Typography sx={{ ...cardText }}>
                     1-5 Canklow Rd, Rotherham S60 2JB, United Kingdom
                   </Typography>
@@ -119,20 +154,17 @@ export default function ContactUsForm() {
                   <Typography sx={{ ...cardText }}>+447860606986</Typography>
                 </Box>
                 <Box>
-                  <Typography sx={{ ...cardHeading }}>email</Typography>
+                  <Typography sx={{ ...cardHeading }}>Email</Typography>
                   <Typography sx={{ ...cardText }}>
                     info@saifsboxing.com
                   </Typography>
                 </Box>
               </Box>
               <Box
-                data-aos="fade-up"
-                data-aos-duration="500"
                 sx={{
                   backgroundColor: "#0D0D0DB2",
                   padding: { xs: "20px", sm: "20px 30px" },
                   height: "100%",
-                  minWidth: { md: "500px" },
                   width: "100%",
                   display: "flex",
                   flexDirection: "column",
@@ -141,81 +173,139 @@ export default function ContactUsForm() {
                   gap: "20px",
                 }}
               >
-                <Box
-                  sx={{
-                    display: "flex",
-                    gap: "20px",
-                    flexDirection: { xs: "column", md: "row" },
-                  }}
-                >
-                  <CustomTextField type="text" placeholder="Name" />
-                  <CustomTextField type="email" placeholder="Email" />
-                </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    gap: "20px",
-                    flexDirection: { xs: "column", md: "row" },
-                  }}
-                >
-                  <CustomTextField type="number" placeholder="Phone" />
-                  <CustomTextField type="text" placeholder="Subject" />
-                </Box>
-                <Box sx={{ width: "100%" }}>
-                  <TextField
-                    type="text"
-                    placeholder="Message"
-                    variant="outlined"
-                    multiline
-                    rows={6}
+                <form onSubmit={handleSubmit(onSubmit)}>
+                  <Box
                     sx={{
-                      width: "100%",
-                      "& .MuiOutlinedInput-root": {
-                        borderRadius: "0px",
-                        fontSize: "18px",
-                        color: "#FFFFFF",
-                        "& fieldset": {
-                          borderColor: "#FFFFFF",
-                        },
-                        "&:hover fieldset": {
-                          borderColor: "#FFFFFF",
-                        },
-                        "&.Mui-focused fieldset": {
-                          borderColor: "#FFFFFF",
-                        },
-                      },
-                      "& .MuiInputLabel-root": {
-                        fontSize: "18px",
-                        color: "#FFFFFF",
-                      },
-                      "& .MuiInputLabel-root.Mui-focused": {
-                        color: "#FFFFFF",
-                      },
-                      "& .MuiInputBase-input": {
-                        color: "#FFFFFF",
-                        fontSize: "18px",
-                      },
-                      "& .MuiInputBase-input::placeholder": {
-                        color: "#FFFFFF66",
-                        opacity: 1,
-                        fontSize: "18px",
-                      },
-                    }}
-                  />
-                </Box>
-                <Box sx={{ width: { xs: "100%", sm: "200px" } }}>
-                  <Button
-                    textStyles={{
-                      fontSize: {
-                        xs: "14px",
-                        sm: "16px",
-                        lg: "18px",
-                      },
+                      display: "flex",
+                      gap: "20px",
+                      flexDirection: { xs: "column", md: "row" },
                     }}
                   >
-                    Submit
-                  </Button>
-                </Box>
+                    <Controller
+                      name="name"
+                      control={control}
+                      defaultValue=""
+                      rules={{ required: "Name is required" }}
+                      render={({ field }) => (
+                        <CustomTextField
+                          {...field}
+                          type="text"
+                          placeholder="Name"
+                          error={!!errors.name}
+                          helperText={errors.name?.message}
+                        />
+                      )}
+                    />
+                    <Controller
+                      name="email"
+                      control={control}
+                      defaultValue=""
+                      rules={{
+                        required: "Email is required",
+                        pattern: {
+                          value:
+                            /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                          message: "Invalid email format",
+                        },
+                      }}
+                      render={({ field }) => (
+                        <CustomTextField
+                          {...field}
+                          type="email"
+                          placeholder="Email"
+                          error={!!errors.email}
+                          helperText={errors.email?.message}
+                        />
+                      )}
+                    />
+                  </Box>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      gap: "20px",
+                      flexDirection: { xs: "column", md: "row" },
+                    }}
+                  >
+                    <Controller
+                      name="phone"
+                      control={control}
+                      defaultValue=""
+                      rules={{
+                        required: "Phone is required",
+                        pattern: {
+                          value: /^[0-9]{10,15}$/,
+                          message: "Invalid phone number",
+                        },
+                      }}
+                      render={({ field }) => (
+                        <CustomTextField
+                          {...field}
+                          type="number"
+                          placeholder="Phone"
+                          error={!!errors.phone}
+                          helperText={errors.phone?.message}
+                        />
+                      )}
+                    />
+                    <Controller
+                      name="subject"
+                      control={control}
+                      defaultValue=""
+                      rules={{ required: "Subject is required" }}
+                      render={({ field }) => (
+                        <CustomTextField
+                          {...field}
+                          type="text"
+                          placeholder="Subject"
+                          error={!!errors.subject}
+                          helperText={errors.subject?.message}
+                        />
+                      )}
+                    />
+                  </Box>
+                  <Box>
+                    <Controller
+                      name="message"
+                      control={control}
+                      defaultValue=""
+                      rules={{ required: "Message is required" }}
+                      render={({ field }) => (
+                        <CustomTextField
+                          {...field}
+                          type="text"
+                          placeholder="Message"
+                          multiline
+                          error={!!errors.message}
+                          helperText={errors.message?.message}
+                        />
+                      )}
+                    />
+                  </Box>
+                  <Box
+                    sx={{
+                      width: { xs: "100%", sm: "200px" },
+                      position: "relative",
+                    }}
+                  >
+                    <Button
+                      textStyles={{
+                        fontSize: {
+                          xs: "14px",
+                          sm: "16px",
+                          lg: "18px",
+                        },
+                      }}
+                      type="submit"
+                      disabled={loading}
+                    >
+                      {loading ? (
+                        <CircularProgress size={24} sx={{ color: "#F63333" }} />
+                      ) : (
+                        "Submit"
+                      )}
+                    </Button>
+                  </Box>
+                </form>
               </Box>
             </Box>
           </Box>

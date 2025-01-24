@@ -9,6 +9,8 @@ interface CustomTextFieldProps {
   value?: string;
   defaultValue?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  error?: boolean;
+  helperText?: string;
 }
 
 export default function CustomTextField({
@@ -18,6 +20,8 @@ export default function CustomTextField({
   value,
   defaultValue,
   onChange,
+  error = false,
+  helperText = "",
   ...props
 }: CustomTextFieldProps) {
   return (
@@ -30,6 +34,8 @@ export default function CustomTextField({
       value={value} // Controls the input
       defaultValue={defaultValue} // Provides an initial value if needed
       onChange={onChange} // Allows for external state control
+      error={error}
+      helperText={helperText}
       sx={{
         width: "100%",
         "& .MuiOutlinedInput-root": {
