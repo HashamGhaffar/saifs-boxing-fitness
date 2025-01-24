@@ -178,6 +178,7 @@ export default function ContactUsForm() {
                     sx={{
                       display: "flex",
                       gap: "20px",
+                      marginBottom: "20px",
                       flexDirection: { xs: "column", md: "row" },
                     }}
                   >
@@ -223,6 +224,7 @@ export default function ContactUsForm() {
                     sx={{
                       display: "flex",
                       gap: "20px",
+                      marginBottom: "20px",
                       flexDirection: { xs: "column", md: "row" },
                     }}
                   >
@@ -263,7 +265,7 @@ export default function ContactUsForm() {
                       )}
                     />
                   </Box>
-                  <Box>
+                  <Box sx={{ marginBottom: "20px" }}>
                     <Controller
                       name="message"
                       control={control}
