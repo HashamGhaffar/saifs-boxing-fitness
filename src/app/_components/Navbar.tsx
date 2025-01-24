@@ -133,7 +133,7 @@ export default function Navbar() {
                   color: getColor("/our-stories"),
                 }}
               >
-                OUR STORIES
+                Our Stories
               </Typography>
             </Box>
 
