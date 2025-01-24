@@ -75,30 +75,18 @@ export default function OurStoriesDetailSection() {
               school was particularly tough because not many kids had diabetes.
               From a very young age, it had a huge impact on my life. I felt
               like the odd one out, and other kids would laugh and make fun of
-              me because of it.
-              <br />
-              My weight was also out of control due to my diabetes. It felt like
-              there was no way to manage it.
-              <br />
-              <b>Until...</b>
-              <br />
-              I discovered Saif&apos;s Boxing and Fitness. There was only one
-              thing to do:
-              <br />
-              Join!
-              <br />
-              After lockdown, I started out at a heavy weight of over 110kg.
-              Slowly but surely, my weight began to drop, and my coach was the
-              first person to see any potential in me. He promised me that if I
-              got under 80kg, I could have my first amateur bout&mdash;and I
-              kept pushing towards that goal. It was a tough journey, but the
-              moment I had been waiting for finally arrived.
-              <br />
-              79kg. My first fight. My first win.
-              <br />
-              From there, my weight continued to drop: 77kg, 75kg, 73kg, 72kg. I
-              went on to win my first Yorkshire title, then another, and
-              another.
+              me because of it. My weight was also out of control due to my
+              diabetes. It felt like there was no way to manage it.
+              <b>Until...</b>I discovered Saif&apos;s Boxing and Fitness. There
+              was only one thing to do: Join! After lockdown, I started out at a
+              heavy weight of over 110kg. Slowly but surely, my weight began to
+              drop, and my coach was the first person to see any potential in
+              me. He promised me that if I got under 80kg, I could have my first
+              amateur bout&mdash;and I kept pushing towards that goal. It was a
+              tough journey, but the moment I had been waiting for finally
+              arrived. 79kg. My first fight. My first win. From there, my weight
+              continued to drop: 77kg, 75kg, 73kg, 72kg. I went on to win my
+              first Yorkshire title, then another, and another.
             </Typography>
           </Box>
           <Box
@@ -117,11 +105,12 @@ export default function OurStoriesDetailSection() {
           >
             <Box
               sx={{
-                maxWidth: { xs: "700px", xl: "1000px" },
+                maxWidth: { md: "700px", xl: "1000px" },
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "space-between",
-                gap: "30px",
+                justifyContent: "space-evenly",
+                width: "100%",
+                gap: { xs: "10px", lg: "0px" },
               }}
             >
               <Typography sx={{ ...paragraph }}>
@@ -141,7 +130,7 @@ export default function OurStoriesDetailSection() {
                 going and entered me into championships at 80kg+, which was four
                 weight categories above where I should have been. It was a
                 daunting challenge because I was up against boys much bigger and
-                naturally stron.
+                naturally strong.
               </Typography>
               <Typography sx={{ ...paragraph }}>
                 In the first fight of the championships, I faced a boy who was
@@ -159,6 +148,12 @@ export default function OurStoriesDetailSection() {
                 diabetes and the heartbreaking loss of my brother, everything
                 turned around.
               </Typography>
+              <Typography sx={{ ...paragraph }}>
+                This is all thanks to the gym. Joining Saif&apos;s Boxing and
+                Fitness was the best decision I ever made. I can&apos;t express
+                how grateful I am for everything Saif has done for me and
+                everyone else at the gym.
+              </Typography>
             </Box>
             <Box
               sx={{
@@ -166,7 +161,7 @@ export default function OurStoriesDetailSection() {
               }}
             >
               <Image
-                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 src={webp.Bubbles}
                 alt="Boxer1"
               />
@@ -174,34 +169,13 @@ export default function OurStoriesDetailSection() {
           </Box>
           <Box>
             <Typography sx={{ ...paragraph }}>
-              This is all thanks to the gym. Joining Saif&apos;s Boxing and
-              Fitness was the best decision I ever made. I can&apos;t express
-              how grateful I am for everything Saif has done for me and everyone
-              else at the gym. Why? Because he created a family, taught us
-              discipline, and showed us love. For me, he became like an older
-              brother.
-            </Typography>
-            <Typography
-              sx={{
-                ...paragraph,
-                padding: {
-                  xs: "20px 0",
-                  sm: "30px 0",
-                  md: "40px 0",
-                  xl: "60px 0",
-                },
-              }}
-            >
-              We owe so much to Saif, and this is my way of saying a massive
-              thank you to him for everything he&apos;s done for me and the
-              gym&apos;s community.
-            </Typography>
-            <Typography sx={{ ...paragraph }}>
+              Why? Because he created a family, taught us discipline, and showed
+              us love. For me, he became like an older brother. We owe so much
+              to Saif, and this is my way of saying a massive thank you to him
+              for everything he&apos;s done for me and the gym&apos;s community.
               In a nutshell, I went from being a sad, overweight, and unpopular
               kid to a confident, disciplined young man&mdash;all thanks to Saif
-              and the gym.
-              <br />
-              &mdash; Ibraheem Nisar
+              and the gym. &mdash; Ibraheem Nisar
             </Typography>
           </Box>
         </Box>
