@@ -16,7 +16,7 @@ export const POST = async (request: Request) => {
     // Define email options
     const mailOptions = {
       from: "marsad11223@gmail.com",
-      to: "info@saifsboxing.com",
+      to: "contact@pulsetechnologysolutions.co.uk",
       subject: "Contact Form Submission",
       text: message,
       html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Phone:</strong> ${phone}</p><p><strong>Message:</strong> ${message}</p>`,
