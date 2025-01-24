@@ -53,7 +53,7 @@ export default function Facilities() {
 
   function openModal(
     selectedImage: StaticImageData,
-    selectedImageText: string = "Build strength and conditioning, incorporating dumbbells and bodyweight exercises to keep your heart rate elevated."
+    selectedImageText: string = "Build strength and conditioning, incorporating dumbbells and bodyweight exercises to keep your heart rate elevated. We have a wide range of bags including heavy, speed and aqua bags enabling boxers to practice all types of punches and techniques. We also have two full-size boxing rings, including a 20 foot olympic sized ring."
   ) {
     setSelectedImage(selectedImage);
     setSelectedImageText(selectedImageText);
