@@ -12,10 +12,10 @@ export interface CoachCardProps {
 
 export const Coaches: CoachCardProps[] = [
   {
-    name: "Safe",
-    description: `Coach Saif is a highly respected boxing coach with 
-    a reputation for transforming fighters into champions. With over a decade of
-     experience, his approach combines technical precision, strategic insight, and
+    name: "Saif",
+    description: `Head Coach Saif is a highly respected boxing coach with 
+      a reputation for transforming fighters into amateur champions. With over a decade of
+      experience, his approach combines technical precision, strategic insight, and
       an emphasis on mental resilience. His training sessions are intense, yet supportive, 
       helping each boxer develop their own unique style while mastering the fundamentals. 
       From first-timers to seasoned pros, she pushes everyone to exceed their own expectations.
@@ -64,7 +64,7 @@ export interface FighterCardProps {
 export const fighters: FighterCardProps[] = [
   {
     index: 0,
-    name: "Allen Rivera",
+    name: "Allen Rivera1",
     description:
       "A fierce middleweight champion known for her precision strikes",
     imageSrc: webp.Fighter1,
@@ -72,7 +72,7 @@ export const fighters: FighterCardProps[] = [
   },
   {
     index: 1,
-    name: "Allen Rivera",
+    name: "Allen Rivera2",
     description:
       "A fierce middleweight champion known for her precision strikes",
     imageSrc: webp.Fighter2,
@@ -80,7 +80,7 @@ export const fighters: FighterCardProps[] = [
   },
   {
     index: 2,
-    name: "Allen Rivera",
+    name: "Allen Rivera3",
     description:
       "A fierce middleweight champion known for her precision strikes",
     imageSrc: webp.Fighter3,
@@ -88,7 +88,7 @@ export const fighters: FighterCardProps[] = [
   },
   {
     index: 3,
-    name: "Allen Rivera",
+    name: "Allen Rivera4",
     description:
       "A fierce middleweight champion known for her precision strikes",
     imageSrc: webp.Fighter4,
@@ -96,7 +96,7 @@ export const fighters: FighterCardProps[] = [
   },
   {
     index: 4,
-    name: "Allen Rivera",
+    name: "Allen Rivera5",
     description:
       "A fierce middleweight champion known for her precision strikes",
     imageSrc: webp.Fighter5,
