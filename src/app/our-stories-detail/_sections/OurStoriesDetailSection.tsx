@@ -179,7 +179,7 @@ export default function OurStoriesDetailSection() {
             </Typography>
           </Box>
         </Box>
-      </Box>
+      </Box> 
     </>
   );
 }
