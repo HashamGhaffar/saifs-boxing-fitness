@@ -103,7 +103,7 @@ export default function Location() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4079.895784897233!2d-1.3580812999999998!3d53.4262782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487977e6a75c9621%3A0x500736cd87d2e92e!2sSaif&#39;s%20Boxing%20and%20Fitness!5e1!3m2!1sen!2suk!4v1737824673531!5m2!1sen!2suk" 
                 width="600" 
                 height="450" 
-                style="border:0;" 
+                // style="border:0;" 
                 // allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
