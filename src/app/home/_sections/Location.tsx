@@ -1,4 +1,4 @@
-import MapComponent from "../../_components/Map";
+// import MapComponent from "../../_components/Map";
 import { Box, Typography } from "@mui/material";
 // import Image from "next/image";
 // import webp from "@/app/_assets/webp";
