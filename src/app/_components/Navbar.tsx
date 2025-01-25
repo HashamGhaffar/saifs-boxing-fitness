@@ -251,7 +251,7 @@ export default function Navbar() {
               color: getColor("/our-stories"),
             }}
           >
-            OUR STORIES
+            Our Stories
           </Typography>
           <Divider sx={{ margin: "16px 0", backgroundColor: "#ffffff" }} />
           <Button

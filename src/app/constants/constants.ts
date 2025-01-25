@@ -64,41 +64,41 @@ export interface FighterCardProps {
 export const fighters: FighterCardProps[] = [
   {
     index: 0,
-    name: "Allen Rivera1",
+    name: "Hassan",
     description:
-      "A fierce middleweight champion known for her precision strikes",
+      "A yorkshire champion with the slickest style.",
     imageSrc: webp.Fighter1,
     id: "fighter1",
   },
   {
     index: 1,
-    name: "Allen Rivera2",
+    name: "Younas",
     description:
-      "A fierce middleweight champion known for her precision strikes",
+      "A tricky southpaw with the most amateur bouts in the gym. Ooh, and he's a national champion too 👀",
     imageSrc: webp.Fighter2,
     id: "fighter2",
   },
   {
     index: 2,
-    name: "Allen Rivera3",
+    name: "Enny",
     description:
-      "A fierce middleweight champion known for her precision strikes",
+      "A hard working talent that is built like an ox",
     imageSrc: webp.Fighter3,
     id: "fighter3",
   },
   {
     index: 3,
-    name: "Allen Rivera4",
+    name: "Carter",
     description:
-      "A fierce middleweight champion known for her precision strikes",
+      "Fast & Strong, what could go wrong for his opponents",
     imageSrc: webp.Fighter4,
     id: "fighter4",
   },
   {
     index: 4,
-    name: "Allen Rivera5",
+    name: "Ibraheem",
     description:
-      "A fierce middleweight champion known for her precision strikes",
+      "King bubbles (ibby) regularly schools kids twice his size",
     imageSrc: webp.Fighter5,
     id: "fighter5",
   },

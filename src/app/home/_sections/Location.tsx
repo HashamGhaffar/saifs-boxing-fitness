@@ -196,7 +196,7 @@ export default function Location() {
                     paddingTop: "15px",
                   }}
                 >
-                  info@saifsboxing.com
+                  hello@saifsboxing.com
                 </Typography>
               </Box>
             </Box>
