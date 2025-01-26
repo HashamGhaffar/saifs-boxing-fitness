@@ -66,7 +66,7 @@ export default function Fighters() {
             },
           }}
         >
-          our Fighters
+          Our Champions
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
           <Box

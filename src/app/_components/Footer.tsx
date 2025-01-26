@@ -111,7 +111,7 @@ export default function Footer() {
                 },
               }}
             >
-              OUR STORIES
+              Our Stories
             </Typography>
             <Typography
               onClick={() => router.push("coaching")}
@@ -333,7 +333,7 @@ export function MobileFooter() {
                 alt="Email"
               />
               <Typography sx={{ ...textStyle, fontSize: "14px" }}>
-                info@sabirs.com
+                hello@saifsboxing.com
               </Typography>
             </Box>
             <Box

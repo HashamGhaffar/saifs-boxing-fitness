@@ -12,35 +12,10 @@ export interface CoachCardProps {
 
 export const Coaches: CoachCardProps[] = [
   {
-    name: "Basit",
-    description: `Coach "Basit" is a seasoned boxing expert with over 15
-years of experience in the ring. Known for his relentless
-drive and attention to detail, he has trained everyone from
-beginners to competitive fighters, tailoring his approach to
-fit each individual’s needs. His unique blend of technical
-mastery and motivational coaching style makes him a favorite
-among those who want to push past their limits and unlock
-their full potential. With a background in both amateur and
-professional boxing, he brings a wealth of knowledge and a
-hands-on approach to every session. His focus is not just on
-perfecting technique, but also on building mental toughness,
-confidence, and discipline qualities.<br><br>
-With a background in both amateur and professional boxing, he
-brings a wealth of knowledge and a hands-on approach to every
-session. His focus is not just on perfecting technique, but
-also on building mental toughness, confidence, and discipline
-qualities.
-`,
-    image: webp.Basit,
-    backgroundImage: "url(bgCoachJames.webp)",
-    navImage: webp.Basit,
-    isSelected: true,
-  },
-  {
-    name: "Daniel",
-    description: `Coach “Daniel Jayson” is a highly respected boxing coach with 
-    a reputation for transforming fighters into champions. With over a decade of
-     experience, his approach combines technical precision, strategic insight, and
+    name: "Saif",
+    description: `Head Coach Saif is a highly respected boxing coach with 
+      a reputation for transforming fighters into amateur champions. With over a decade of
+      experience, his approach combines technical precision, strategic insight, and
       an emphasis on mental resilience. His training sessions are intense, yet supportive, 
       helping each boxer develop their own unique style while mastering the fundamentals. 
       From first-timers to seasoned pros, she pushes everyone to exceed their own expectations.
@@ -51,6 +26,30 @@ qualities.
     backgroundImage: "url(bgCoachJames.webp)",
     navImage: webp.NavDaniel,
     isSelected: false,
+  },
+  {
+    name: "Basit",
+    description: `Coach Basit is a seasoned boxing expert with over 15
+      years of experience in the ring. Known for his relentless
+      drive and attention to detail, he has trained everyone from
+      beginners to competitive fighters, tailoring his approach to
+      fit each individual’s needs. His unique blend of technical
+      mastery and motivational coaching style makes him a favorite
+      among those who want to push past their limits and unlock
+      their full potential. With a background in both amateur and
+      professional boxing, he brings a wealth of knowledge and a
+      hands-on approach to every session. His focus is not just on
+      perfecting technique, but also on building mental toughness,
+      confidence, and discipline qualities.<br><br>
+      With a background in both amateur and professional boxing, he
+      brings a wealth of knowledge and a hands-on approach to every
+      session. His focus is not just on perfecting technique, but
+      also on building mental toughness, confidence, and discipline
+      qualities.`,
+    image: webp.Basit,
+    backgroundImage: "url(bgCoachJames.webp)",
+    navImage: webp.Basit,
+    isSelected: true,
   },
 ];
 
@@ -65,41 +64,41 @@ export interface FighterCardProps {
 export const fighters: FighterCardProps[] = [
   {
     index: 0,
-    name: "Allen Rivera",
+    name: "Hassan",
     description:
-      "A fierce middleweight champion known for her precision strikes",
+      "A yorkshire champion with the slickest style.",
     imageSrc: webp.Fighter1,
     id: "fighter1",
   },
   {
     index: 1,
-    name: "Allen Rivera",
+    name: "Younas",
     description:
-      "A fierce middleweight champion known for her precision strikes",
+      "A tricky southpaw with the most amateur bouts in the gym. Ooh, and he's a national champion too 👀",
     imageSrc: webp.Fighter2,
     id: "fighter2",
   },
   {
     index: 2,
-    name: "Allen Rivera",
+    name: "Enny",
     description:
-      "A fierce middleweight champion known for her precision strikes",
+      "A hard working talent that is built like an ox",
     imageSrc: webp.Fighter3,
     id: "fighter3",
   },
   {
     index: 3,
-    name: "Allen Rivera",
+    name: "Carter",
     description:
-      "A fierce middleweight champion known for her precision strikes",
+      "Fast & Strong, what could go wrong for his opponents",
     imageSrc: webp.Fighter4,
     id: "fighter4",
   },
   {
     index: 4,
-    name: "Allen Rivera",
+    name: "Ibraheem",
     description:
-      "A fierce middleweight champion known for her precision strikes",
+      "King bubbles (ibby) regularly schools kids twice his size",
     imageSrc: webp.Fighter5,
     id: "fighter5",
   },

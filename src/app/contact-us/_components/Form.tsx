@@ -156,7 +156,7 @@ export default function ContactUsForm() {
                 <Box>
                   <Typography sx={{ ...cardHeading }}>Email</Typography>
                   <Typography sx={{ ...cardText }}>
-                    info@saifsboxing.com
+                    hello@saifsboxing.com
                   </Typography>
                 </Box>
               </Box>
