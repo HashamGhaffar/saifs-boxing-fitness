@@ -1,24 +1,14 @@
 import React from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const MapComponent: React.FC = () => {
-  const mapStyles = {
-    height: "100%",
-    width: "100%",
-  };
-
-  // Set default coordinates
-  const defaultCenter = {
-    lat: 40.712776, // Default latitude
-    lng: -74.005974, // Default longitude
-  };
-
   return (
-    <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-      <GoogleMap mapContainerStyle={mapStyles} zoom={15} center={defaultCenter}>
-        <Marker position={defaultCenter} />
-      </GoogleMap>
-    </LoadScript>
+    <iframe
+      loading="lazy"
+      src="https://maps.google.com/maps?q=Saif's%20Boxing%20and%20Fitness&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
+      title="Saif's Boxing and Fitness"
+      aria-label="Saif's Boxing and Fitness"
+      style={{ width: "100%", height: "100%" }}
+    ></iframe>
   );
 };
 
