@@ -202,7 +202,47 @@ export default function Footer() {
           </Box>
         </Box>
       </Box>
+
       <MobileFooter />
+
+      <Box
+        sx={{
+          padding: { xs: "20px", md: "25px" },
+          textAlign: "center",
+          backgroundColor: "#FFFFFF10",
+        }}
+      >
+        <Typography
+          sx={{
+            color: "#FFFFFF",
+            fontSize: "12px",
+            fontFamily: '"Roboto", sans-serif',
+            letterSpacing: "0.5px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "6px",
+            "&:hover": {
+              "& span:last-child": {
+                color: "#F63333",
+                textShadow: "1px 2px 3px #FFFFFF",
+              },
+            },
+          }}
+        >
+          <span>© {2025} All Rights Reserved</span>
+          <span
+            style={{
+              fontFamily: '"Poppins", sans-serif',
+              fontWeight: 500,
+              marginLeft: "8px",
+              transition: "color 0.3s ease-in-out",
+            }}
+          >
+            Powered by QashNova
+          </span>
+        </Typography>
+      </Box>
     </>
   );
 }
