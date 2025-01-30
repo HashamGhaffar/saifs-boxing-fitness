@@ -101,7 +101,7 @@ export default function OurStoriesDetailSection() {
               },
               flexDirection: { xs: "column", md: "row" },
               justifyContent: "space-between",
-            }}
+            }} 
           >
             <Box
               sx={{
