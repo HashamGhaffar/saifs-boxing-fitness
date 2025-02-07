@@ -170,13 +170,14 @@ export default function Schedule() {
           }}
         >
           <Box sx={{ maxWidth: "1600px", width: "100%" }}>
-            <TableContainer>
+            <TableContainer sx={{ overflowX: "auto", maxWidth: "100%" }}>
               <Table
                 sx={{
                   "& .MuiTableCell-root": { padding: "10px 5px" },
                   tableLayout: "auto",
                   borderCollapse: "separate",
                   borderSpacing: { xs: "20px 15px", xl: "30px 25px" },
+                  minWidth: "900px", // Ensures horizontal scrolling
                 }}
               >
                 {/* Table Header */}
@@ -186,6 +187,10 @@ export default function Schedule() {
                       ...headingStyle,
                       display: "flex",
                       justifyContent: "center",
+                      position: "sticky",
+                      left: 0,
+                      backgroundColor: "#FFF",
+                      zIndex: 2,
                     }}
                   >
                     <Box sx={{ height: "55px", width: "95px" }}>
@@ -216,7 +221,18 @@ export default function Schedule() {
                     data-aos-duration="500"
                     key={index}
                   >
-                    <TableCell sx={{ ...headingStyle }}>{row.time}</TableCell>
+                    {/* Sticky First Column */}
+                    <TableCell
+                      sx={{
+                        ...headingStyle,
+                        position: "sticky",
+                        left: 0,
+                        backgroundColor: "#FFF",
+                        zIndex: 1,
+                      }}
+                    >
+                      {row.time}
+                    </TableCell>
                     {row.activities.map((activity, idx) => (
                       <TableCell key={idx} sx={{ ...paragraphStyle }}>
                         <Typography sx={{ ...topic }}>{activity}</Typography>
