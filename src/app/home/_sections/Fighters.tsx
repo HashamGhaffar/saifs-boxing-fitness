@@ -95,8 +95,8 @@ export default function Fighters() {
                 <Box
                   key={index}
                   sx={{
-                    width: { xs: "40px", md: "60px", xl: "80px" },
-                    height: { xs: "40px", md: "60px", xl: "80px" },
+                    width: { xs: "55px", md: "60px", xl: "80px" },
+                    height: { xs: "55px", md: "60px", xl: "80px" },
                     position: "relative",
                   }}
                   onClick={() => {
@@ -111,10 +111,12 @@ export default function Fighters() {
                       objectFit: "cover",
                       position: "absolute",
                       top: "0",
-                      border: "1px solid white",
-                      // outline: `${
-                      //   activeFighter === fighterImage.id ? "2px" : "0px"
-                      // } solid #FFFFFF`,
+                      // border: "1px solid white",
+                      border: `${
+                        activeFighter === fighterImage.id
+                          ? "2px  solid #FFFFFF"
+                          : "2px solid grey"
+                      }`,
                       filter:
                         activeFighter === fighterImage.id
                           ? "grayscale(0%)"
