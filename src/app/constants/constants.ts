@@ -25,7 +25,7 @@ export const Coaches: CoachCardProps[] = [
     image: webp.CoachDaniel,
     backgroundImage: "url(bgCoachJames.webp)",
     navImage: webp.NavDaniel,
-    isSelected: false,
+    isSelected: true,
   },
   {
     name: "Basit",
@@ -49,7 +49,7 @@ export const Coaches: CoachCardProps[] = [
     image: webp.Basit,
     backgroundImage: "url(bgCoachJames.webp)",
     navImage: webp.Basit,
-    isSelected: true,
+    isSelected: false,
   },
 ];
 
@@ -65,8 +65,7 @@ export const fighters: FighterCardProps[] = [
   {
     index: 0,
     name: "Hassan",
-    description:
-      "A yorkshire champion with the slickest style.",
+    description: "A yorkshire champion with the slickest style.",
     imageSrc: webp.Fighter1,
     id: "fighter1",
   },
@@ -81,24 +80,21 @@ export const fighters: FighterCardProps[] = [
   {
     index: 2,
     name: "Enny",
-    description:
-      "A hard working talent that is built like an ox",
+    description: "A hard working talent that is built like an ox",
     imageSrc: webp.Fighter3,
     id: "fighter3",
   },
   {
     index: 3,
     name: "Carter",
-    description:
-      "Fast & Strong, what could go wrong for his opponents",
+    description: "Fast & Strong, what could go wrong for his opponents",
     imageSrc: webp.Fighter4,
     id: "fighter4",
   },
   {
     index: 4,
     name: "Ibraheem",
-    description:
-      "King bubbles (ibby) regularly schools kids twice his size",
+    description: "King bubbles (ibby) regularly schools kids twice his size",
     imageSrc: webp.Fighter5,
     id: "fighter5",
   },

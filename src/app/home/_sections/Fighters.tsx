@@ -111,9 +111,10 @@ export default function Fighters() {
                       objectFit: "cover",
                       position: "absolute",
                       top: "0",
-                      outline: `${
-                        activeFighter === fighterImage.id ? "2px" : "0px"
-                      } solid #FFFFFF`,
+                      border: "1px solid white",
+                      // outline: `${
+                      //   activeFighter === fighterImage.id ? "2px" : "0px"
+                      // } solid #FFFFFF`,
                       filter:
                         activeFighter === fighterImage.id
                           ? "grayscale(0%)"
