@@ -129,7 +129,7 @@ export default function Facilities() {
     AOS.refresh();
   }, []);
 
-  // close the modal on 10% scroll either direction
+  // close the modal on 10% scroll either direction deploy
 
   // useEffect(() => {
   //   const handleScroll = () => {
