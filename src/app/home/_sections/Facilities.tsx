@@ -130,20 +130,21 @@ export default function Facilities() {
   }, []);
 
   // close the modal on 10% scroll either direction
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPercentage =
-        window.scrollY /
-        (document.documentElement.scrollHeight - window.innerHeight);
-      if (scrollPercentage > 0.1 || scrollPercentage < 0.9) {
-        setIsModalOpen(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPercentage =
+  //       window.scrollY /
+  //       (document.documentElement.scrollHeight - window.innerHeight);
+  //     if (scrollPercentage > 0.1 || scrollPercentage < 0.9) {
+  //       setIsModalOpen(false);
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // });
   return (
     <>
       <Box
