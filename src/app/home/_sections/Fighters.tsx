@@ -88,15 +88,15 @@ export default function Fighters() {
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: { xs: "row", lg: "column" },
-                gap: "25px",
+                gap: "15px",
               }}
             >
               {fighterImages.map((fighterImage, index) => (
                 <Box
                   key={index}
                   sx={{
-                    width: { xs: "55px", md: "60px", xl: "80px" },
-                    height: { xs: "55px", md: "60px", xl: "80px" },
+                    width: { xs: "60px", md: "60px", xl: "80px" },
+                    height: { xs: "60px", md: "60px", xl: "80px" },
                     position: "relative",
                   }}
                   onClick={() => {
