@@ -152,12 +152,12 @@ export default function Footer() {
 
             <Box sx={{ display: "flex", gap: "10px", alignItems: "center" }}>
               <Image src={svgs.Phone} alt="Phone" />
-              <Typography sx={{ ...textStyle }}>+447860606986</Typography>
+              <Typography sx={{ ...textStyle }}>07860606986</Typography>
             </Box>
 
             <Box sx={{ display: "flex", gap: "10px", alignItems: "center" }}>
               <Image src={svgs.Email} alt="Email" />
-              <Typography sx={{ ...textStyle }}>+info@sabirs.com</Typography>
+              <Typography sx={{ ...textStyle }}>saifsboxinggym@gmail.com</Typography>
             </Box>
             {/* location   */}
             <Box
@@ -352,7 +352,7 @@ export function MobileFooter() {
                 src={svgs.Phone}
                 alt="Phone"
               />
-              <Typography sx={{ ...textStyle }}>+447860606986</Typography>
+              <Typography sx={{ ...textStyle }}>07860606986</Typography>
             </Box>
             <Box
               sx={{
@@ -373,7 +373,7 @@ export function MobileFooter() {
                 alt="Email"
               />
               <Typography sx={{ ...textStyle, fontSize: "14px" }}>
-                hello@saifsboxing.com
+                saifsboxinggym@gmail.com
               </Typography>
             </Box>
             <Box

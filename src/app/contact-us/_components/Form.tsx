@@ -151,12 +151,12 @@ export default function ContactUsForm() {
                 </Box>
                 <Box>
                   <Typography sx={{ ...cardHeading }}>Phone</Typography>
-                  <Typography sx={{ ...cardText }}>+447860606986</Typography>
+                  <Typography sx={{ ...cardText }}>07860606986</Typography>
                 </Box>
                 <Box>
                   <Typography sx={{ ...cardHeading }}>Email</Typography>
                   <Typography sx={{ ...cardText }}>
-                    hello@saifsboxing.com
+                    saifsboxinggym@gmail.com
                   </Typography>
                 </Box>
               </Box>

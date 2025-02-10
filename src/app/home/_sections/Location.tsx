@@ -170,7 +170,7 @@ export default function Location() {
                     paddingTop: "15px",
                   }}
                 >
-                  +447860606986
+                  07860606986
                 </Typography>
               </Box>
               <Box
@@ -196,7 +196,7 @@ export default function Location() {
                     paddingTop: "15px",
                   }}
                 >
-                  hello@saifsboxing.com
+                  saifsboxinggym@gmail.com
                 </Typography>
               </Box>
             </Box>

@@ -20,22 +20,21 @@ export default function ClassGroup() {
   return (
     <>
       <Class
-        Heading="Intro Class"
-        description1={`An "Intro Class" is the perfect starting point for anyone new to
-                    boxing, offering a safe and supportive environment to learn the
-                    basics. In this beginner-friendly session, participants are
-                    introduced to essential boxing techniques like proper stance,
-                    footwork, and basic punches. The class also focuses on building
-                    strength, endurance, and agility, making it ideal for those
-                    looking to improve overall fitness while learning the fundamentals
-                    of the sport.`}
-        description2={`Led by experienced trainers, the Intro Class emphasizes proper
-                    form and technique to ensure participants develop a strong
-                    foundation. Whether you're looking to pursue boxing competitively
-                    or as a workout routine, this class offers a great opportunity to
-                    build confidence, improve coordination, and experience the
-                    intensity of boxing in a welcoming atmosphere. No prior experience
-                    is required—just bring your energy and enthusiasm!`}
+        Heading="Work in Schools"
+        description1={`At Saifs Boxing Gym, our head coach dedicates one day a week at 
+                    Winterhill School in Rotherham, where he works with children facing 
+                    behavioural challenges. His sessions focus on teaching discipline 
+                    through boxing, encouraging these young people to channel their 
+                    energy positively. By engaging in structured training, the children 
+                    learn respect, resilience, and self‐control—qualities that not only 
+                    enhance their physical well‑being but also lay a foundation for 
+                    academic improvement..`}
+        description2={`In these sessions, boxing becomes a medium for personal growth 
+                    beyond the gym. The head coach tailors programmes that support both 
+                    the sporting and educational development of the children. By 
+                    instilling a sense of routine and commitment, he helps them build 
+                    confidence in the classroom and in life, transforming challenges into 
+                    opportunities for success.`}
         imageSrc={webp.Intro}
         imageAlt="Intro"
         headingAlignment={{ textAlign: "left" }}
@@ -44,14 +43,20 @@ export default function ClassGroup() {
         alignment={{ xs: "column", lg: "row" }}
       />
       <Class
-        Heading="signature o.g."
-        description1={`"Signature O.G" represents the essence of classic boxing, 
-          combining timeless techniques with the spirit of the sport’s pioneers.
-           It's all about honoring the original grit, determination, and craftsmanship
-            that defined boxing in its early days. The phrase encapsulates the raw, authentic 
-            style of fighters who built the foundation of the sport with their blood, sweat,
-             and relentless discipline.`}
-        description2={`In today’s boxing scene, Signature O.G. stands as a reminder of the roots and traditions that shaped the sport. It highlights a respect for the fundamentals—perfecting footwork, mastering defense, and delivering powerful, strategic punches—elements that still form the backbone of any champion. For those passionate about preserving the purity of boxing, Signature O.G. embodies the core values that make the sport legendary.`}
+        Heading="Work for the Less Fortunate"
+        description1={`At Saifs Boxing Gym, our commitment extends to supporting 
+                    the less fortunate in the community. We work closely with local 
+                    charities to deliver specialised sessions for children who suffer 
+                    from autism and other mental health challenges. These carefully 
+                    designed programmes help create a supportive environment where the 
+                    children can develop social skills and experience the positive 
+                    benefits of physical exercise, fostering both mental and physical well‑being.`}
+        description2={`During school holidays, we further our efforts by offering sessions 
+                    to children from low‑income families, ensuring equal opportunities for all. 
+                    By removing barriers to access, our initiatives empower young people through 
+                    sport, boosting their confidence and teaching them valuable life skills. 
+                    This work reflects our dedication to inclusivity and our belief in giving every 
+                    child the chance to thrive.`}
         imageSrc={webp.Signature}
         imageAlt="Signature"
         headingAlignment={{ textAlign: "right" }}
@@ -60,9 +65,19 @@ export default function ClassGroup() {
         alignment={{ xs: "column", lg: "row-reverse" }}
       />
       <Class
-        Heading="5 v 5 class"
-        description1={`A "5 v 5 Class" is an exciting group boxing session designed to build both fitness and camaraderie. In this dynamic class, two teams of five face off in a series of intense, fast-paced drills that combine technique, agility, and strength. Each participant gets the chance to work on combinations, footwork, and defensive skills, all while pushing their limits in a fun, competitive environment.`}
-        description2={`Whether you’re a seasoned boxer or just starting out, the 5 v 5 class offers an engaging way to improve your boxing skills and overall fitness. With personalized coaching and a team-based atmosphere, this class is perfect for those looking to challenge themselves and stay motivated in their boxing journey.`}
+        Heading="Charity Work"
+        description1={`Saifs Boxing Gym proudly supports a range of charitable causes, 
+                    both locally and internationally. We actively back local charities 
+                    through fundraising events and community initiatives, using home 
+                    shows and sponsorships to raise vital funds. Our charity work is 
+                    a testament to our belief that sport can unite communities and 
+                    drive positive change, helping those in need within our own region.`}
+        description2={`Most recently, we raised £5,000 to support Palestinian orphans, 
+                    enabling them to undertake their pilgrimage to Saudi Arabia. This achievement, 
+                    realised through the generosity of our sponsors and community members, 
+                    underscores our global commitment. We remain dedicated to assisting the 
+                    less fortunate at home and abroad, ensuring that our passion for boxing 
+                    goes hand in hand with making a tangible difference in people’s lives.`}
         imageSrc={webp.Intro}
         imageAlt="Intro"
         headingAlignment={{ textAlign: "left" }}
