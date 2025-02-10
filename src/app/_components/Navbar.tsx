@@ -115,7 +115,7 @@ export default function Navbar() {
                   color: getColor("/education"),
                 }}
               >
-                Education
+                Community
               </Typography>
               <Typography
                 onClick={() => router.push("/coaching")}
@@ -221,7 +221,7 @@ export default function Navbar() {
               color: getColor("/education"),
             }}
           >
-            Education
+            Community
           </Typography>
           <Divider sx={{ margin: "16px 0", backgroundColor: "#ffffff" }} />
           <Typography

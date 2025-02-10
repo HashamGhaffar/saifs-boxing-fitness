@@ -20,7 +20,7 @@ export default function ClassGroup() {
   return (
     <>
       <Class
-        Heading="Work in Schools"
+        Heading="Boxing For Education"
         description1={`At Saifs Boxing Gym, our head coach dedicates one day a week at 
                     Winterhill School in Rotherham, where he works with children facing 
                     behavioural challenges. His sessions focus on teaching discipline 
@@ -43,7 +43,7 @@ export default function ClassGroup() {
         alignment={{ xs: "column", lg: "row" }}
       />
       <Class
-        Heading="Work for the Less Fortunate"
+        Heading="Boxing For Less-Fortunate"
         description1={`At Saifs Boxing Gym, our commitment extends to supporting 
                     the less fortunate in the community. We work closely with local 
                     charities to deliver specialised sessions for children who suffer 
@@ -65,7 +65,7 @@ export default function ClassGroup() {
         alignment={{ xs: "column", lg: "row-reverse" }}
       />
       <Class
-        Heading="Charity Work"
+        Heading="Boxing For Charity"
         description1={`Saifs Boxing Gym proudly supports a range of charitable causes, 
                     both locally and internationally. We actively back local charities 
                     through fundraising events and community initiatives, using home 

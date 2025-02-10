@@ -98,7 +98,7 @@ export default function Footer() {
                 },
               }}
             >
-              Education
+              Community
             </Typography>
             <Typography
               onClick={() => router.push("/our-stories")}
@@ -315,7 +315,7 @@ export function MobileFooter() {
                   textAlign: "center",
                 }}
               >
-                <Typography sx={{ ...textStyle }}>Education</Typography>
+                <Typography sx={{ ...textStyle }}>Community</Typography>
               </td>
               <td
                 style={{
