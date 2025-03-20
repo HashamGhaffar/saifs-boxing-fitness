@@ -39,6 +39,12 @@ export function FighterCard({
         <Box
           sx={{
             maxWidth: "300px",
+            maxHeight: {
+              xs: "264px",
+              sm: "330px",
+              md: "330px",
+            },
+            overflow: "hidden",
           }}
         >
           <Image
@@ -74,6 +80,12 @@ export function FighterCard({
               fontWeight: "700",
               fontFamily: "lato, sans-serif",
               fontSize: { xs: "16px", md: "18px", lg: "20px", xl: "22px" },
+              // ELIPESIS
+              display: "-webkit-box",
+              WebkitLineClamp: 1,
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
             }}
           >
             {name}
@@ -85,6 +97,12 @@ export function FighterCard({
               fontWeight: "400",
               fontFamily: "lato, sans-serif",
               fontSize: { xs: "14px", xl: "16px" },
+              // elipesis
+              display: "-webkit-box",
+              WebkitLineClamp: 2,
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
             }}
           >
             {description}

@@ -98,6 +98,62 @@ export const fighters: FighterCardProps[] = [
     imageSrc: webp.Fighter5,
     id: "fighter5",
   },
+  {
+    index: 5,
+    name: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imageSrc: webp.Fighter6,
+    id: "fighter6",
+  },
+  {
+    index: 6,
+    name: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imageSrc: webp.Fighter7,
+    id: "fighter7",
+  },
+  {
+    index: 7,
+    name: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imageSrc: webp.Fighter8,
+    id: "fighter8",
+  },
+  {
+    index: 8,
+    name: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imageSrc: webp.Fighter9,
+    id: "fighter9",
+  },
+  {
+    index: 9,
+    name: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imageSrc: webp.Fighter10,
+    id: "fighter10",
+  },
+  {
+    index: 10,
+    name: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imageSrc: webp.Fighter11,
+    id: "fighter11",
+  },
+  {
+    index: 11,
+    name: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    imageSrc: webp.Fighter12,
+    id: "fighter12",
+  },
 ];
 
 export interface FighterImage {
@@ -113,4 +169,11 @@ export const fighterImages: FighterImage[] = [
   { index: 2, imagePath: webp.Fighter3, alt: "fighter3", id: "fighter3" },
   { index: 3, imagePath: webp.Fighter4, alt: "fighter4", id: "fighter4" },
   { index: 4, imagePath: webp.Fighter5, alt: "fighter5", id: "fighter5" },
+  { index: 5, imagePath: webp.Fighter6, alt: "fighter6", id: "fighter6" },
+  { index: 6, imagePath: webp.Fighter7, alt: "fighter7", id: "fighter7" },
+  { index: 7, imagePath: webp.Fighter8, alt: "fighter8", id: "fighter8" },
+  { index: 8, imagePath: webp.Fighter9, alt: "fighter9", id: "fighter9" },
+  { index: 9, imagePath: webp.Fighter10, alt: "fighter10", id: "fighter10" },
+  { index: 10, imagePath: webp.Fighter11, alt: "fighter11", id: "fighter11" },
+  { index: 11, imagePath: webp.Fighter12, alt: "fighter12", id: "fighter12" },
 ];

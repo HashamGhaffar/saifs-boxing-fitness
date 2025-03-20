@@ -77,7 +77,7 @@ export default function Fighters() {
               justifyContent: { xs: "center", xl: "space-between" },
               alignItems: "center",
               gap: { xs: "50px", md: "70px", xl: "100px" },
-              flexDirection: { xs: "column-reverse", lg: "row" },
+              flexDirection: { xs: "column-reverse", lg: "column-reverse" },
               maxWidth: "1250px",
               width: "100%",
             }}
@@ -87,8 +87,10 @@ export default function Fighters() {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                flexDirection: { xs: "row", lg: "column" },
+                flexDirection: { xs: "row", lg: "row" },
+                flexWrap: "wrap",
                 gap: "15px",
+                maxWidth: { xs: "400px", sm: "800px", lg: "900px" },
               }}
             >
               {fighterImages.map((fighterImage, index) => (
@@ -111,7 +113,6 @@ export default function Fighters() {
                       objectFit: "cover",
                       position: "absolute",
                       top: "0",
-                      // border: "1px solid white",
                       border: `${
                         activeFighter === fighterImage.id
                           ? "2px  solid #FFFFFF"
@@ -128,7 +129,6 @@ export default function Fighters() {
                 </Box>
               ))}
             </Box>
-
             {/* React Slick Slider */}
             <FightersSlider
               activeFighter={activeFighter}

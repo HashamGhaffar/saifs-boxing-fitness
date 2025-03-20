@@ -70,11 +70,18 @@ import WarmUp from "./coaching/warmUp.webp";
 import FuryVsSteel from "./furyVsSteel.webp";
 
 // fighters
-import Fighter1 from "./fighter1.webp";
-import Fighter2 from "./fighter2.webp";
-import Fighter3 from "./fighter3.jpg";
-import Fighter4 from "./fighter4.jpg";
-import Fighter5 from "./fighter5.jpg";
+import Fighter1 from "./fighters/fighter1.webp";
+import Fighter2 from "./fighters/fighter2.webp";
+import Fighter3 from "./fighters/fighter3.jpg";
+import Fighter4 from "./fighters/fighter4.jpg";
+import Fighter5 from "./fighters/fighter5.jpg";
+import Fighter6 from "./fighters/fighter6.jpeg";
+import Fighter7 from "./fighters/fighter7.jpeg";
+import Fighter8 from "./fighters/fighter8.jpeg";
+import Fighter9 from "./fighters/fighter9.jpeg";
+import Fighter10 from "./fighters/fighter10.jpeg";
+import Fighter11 from "./fighters/fighter11.jpeg";
+import Fighter12 from "./fighters/fighter12.jpeg";
 
 import AllSponsors from "./allSponsors.png";
 
@@ -155,6 +162,13 @@ const webp = {
   Fighter3,
   Fighter4,
   Fighter5,
+  Fighter6,
+  Fighter7,
+  Fighter8,
+  Fighter9,
+  Fighter10,
+  Fighter11,
+  Fighter12,
 
   AllSponsors,
 };
