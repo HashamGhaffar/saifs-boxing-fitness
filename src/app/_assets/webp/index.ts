@@ -30,7 +30,7 @@ import F13 from "./facilities/f13.webp";
 // coatches
 import CoachJames from "./coachJames.webp";
 import CoachDaniel from "./coachDaniel.webp";
-import Basit from "./basit.png";
+import Basit from "./basit.webp";
 
 // coach navigations
 import NavJames from "./navJames.webp";
