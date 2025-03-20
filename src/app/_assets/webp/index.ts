@@ -2,31 +2,31 @@ import BoxerAboutUS from "./boxerAboutUS.webp";
 import BoxerAboutUS2 from "./boxerAboutUs2.webp";
 
 // slider partners
-import Partners1 from "./partners/partner1.png";
-import Partners2 from "./partners/partner2.png";
-import Partners3 from "./partners/partner3.png";
-import Partners4 from "./partners/partner4.png";
-import Partners5 from "./partners/partner5.png";
-import Partners6 from "./partners/partner6.png";
-import Partners7 from "./partners/partner7.png";
-import Partners8 from "./partners/partner8.png";
-import Partners9 from "./partners/partner9.png";
-import Partners10 from "./partners/partner10.png";
-import Partners11 from "./partners/partner11.png";
+import Partners1 from "./partners/partner1.webp";
+import Partners2 from "./partners/partner2.webp";
+import Partners3 from "./partners/partner3.webp";
+import Partners4 from "./partners/partner4.webp";
+import Partners5 from "./partners/partner5.webp";
+import Partners6 from "./partners/partner6.webp";
+import Partners7 from "./partners/partner7.webp";
+import Partners8 from "./partners/partner8.webp";
+import Partners9 from "./partners/partner9.webp";
+import Partners10 from "./partners/partner10.webp";
+import Partners11 from "./partners/partner11.webp";
 
-import F1 from "./facilities/f1.jpg";
+import F1 from "./facilities/f1.webp";
 import F2 from "./facilities/f2.webp";
 // import F3 from "./facilities/f3.webp";
 import F4 from "./facilities/f4.webp";
 import F5 from "./facilities/f5.webp";
 // import F6 from "./facilities/f6.webp";
-import F7 from "./facilities/f7.jpg";
+import F7 from "./facilities/f7.webp";
 // import F8 from "./facilities/f8.webp";
-import F9 from "./facilities/f9.jpg";
-import F10 from "./facilities/f10.jpg";
-import F11 from "./facilities/f11.jpg";
-import F12 from "./facilities/f12.jpg";
-import F13 from "./facilities/f13.jpg";
+import F9 from "./facilities/f9.webp";
+import F10 from "./facilities/f10.webp";
+import F11 from "./facilities/f11.webp";
+import F12 from "./facilities/f12.webp";
+import F13 from "./facilities/f13.webp";
 // coatches
 import CoachJames from "./coachJames.webp";
 import CoachDaniel from "./coachDaniel.webp";
@@ -36,17 +36,17 @@ import Basit from "./basit.png";
 import NavJames from "./navJames.webp";
 import NavDaniel from "./navDaniel.webp";
 //  sponsors
-import sponsor1 from "./sponsors/sponsor1.jpg";
-import sponsor2 from "./sponsors/sponsor2.jpg";
-import sponsor3 from "./sponsors/sponsor3.jpg";
-import sponsor4 from "./sponsors/sponsor4.jpg";
-import sponsor5 from "./sponsors/sponsor5.jpg";
-import sponsor6 from "./sponsors/sponsor6.jpg";
-import sponsor7 from "./sponsors/sponsor7.jpg";
-import sponsor8 from "./sponsors/sponsor8.jpg";
-import sponsor9 from "./sponsors/sponsor9.jpg";
-import sponsor10 from "./sponsors/sponsor10.jpg";
-import sponsor11 from "./sponsors/sponsor11.jpg";
+import sponsor1 from "./sponsors/sponsor1.webp";
+import sponsor2 from "./sponsors/sponsor2.webp";
+import sponsor3 from "./sponsors/sponsor3.webp";
+import sponsor4 from "./sponsors/sponsor4.webp";
+import sponsor5 from "./sponsors/sponsor5.webp";
+import sponsor6 from "./sponsors/sponsor6.webp";
+import sponsor7 from "./sponsors/sponsor7.webp";
+import sponsor8 from "./sponsors/sponsor8.webp";
+import sponsor9 from "./sponsors/sponsor9.webp";
+import sponsor10 from "./sponsors/sponsor10.webp";
+import sponsor11 from "./sponsors/sponsor11.webp";
 
 // insta links
 import Boxer1 from "./boxer1.webp";
@@ -57,9 +57,9 @@ import FooterLogo from "./footerLogo.webp";
 
 // education
 import Intro from "./education/intro.webp";
-import Bubbles from "./bubbles.jpg";
+import Bubbles from "./bubbles.webp";
 import Class from "./education/class.webp";
-import Signature from "./signature.png";
+import Signature from "./signature.webp";
 
 // coaching
 // import Intro from "./education/intro.webp";
@@ -72,18 +72,18 @@ import FuryVsSteel from "./furyVsSteel.webp";
 // fighters
 import Fighter1 from "./fighters/fighter1.webp";
 import Fighter2 from "./fighters/fighter2.webp";
-import Fighter3 from "./fighters/fighter3.jpg";
-import Fighter4 from "./fighters/fighter4.jpg";
-import Fighter5 from "./fighters/fighter5.jpg";
-import Fighter6 from "./fighters/fighter6.jpeg";
-import Fighter7 from "./fighters/fighter7.jpeg";
-import Fighter8 from "./fighters/fighter8.jpeg";
-import Fighter9 from "./fighters/fighter9.jpeg";
-import Fighter10 from "./fighters/fighter10.jpeg";
-import Fighter11 from "./fighters/fighter11.jpeg";
-import Fighter12 from "./fighters/fighter12.jpeg";
+import Fighter3 from "./fighters/fighter3.webp";
+import Fighter4 from "./fighters/fighter4.webp";
+import Fighter5 from "./fighters/fighter5.webp";
+import Fighter6 from "./fighters/fighter6.webp";
+import Fighter7 from "./fighters/fighter7.webp";
+import Fighter8 from "./fighters/fighter8.webp";
+import Fighter9 from "./fighters/fighter9.webp";
+import Fighter10 from "./fighters/fighter10.webp";
+import Fighter11 from "./fighters/fighter11.webp";
+import Fighter12 from "./fighters/fighter12.webp";
 
-import AllSponsors from "./allSponsors.png";
+import AllSponsors from "./allSponsors.webp";
 
 const webp = {
   BoxerAboutUS,

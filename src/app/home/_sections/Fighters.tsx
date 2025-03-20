@@ -129,6 +129,7 @@ export default function Fighters() {
                 </Box>
               ))}
             </Box>
+
             {/* React Slick Slider */}
             <FightersSlider
               activeFighter={activeFighter}
